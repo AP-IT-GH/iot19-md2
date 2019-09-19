@@ -21,4 +21,33 @@ Per doos moeten er ook bepaalde specificaties ingesteld kunnen worden; bv. Hoeve
 
 De leverancier moet producten kunnen kiezen welke hij meeneemt. Wanneer de leverancier een van de voorwaarden dreigt te overschrijden dient de webapplicatie op de smartphone/tablet een melding te geven zodat men hier tijdig op kan anticiperen.
 
+#### Algemene architectuur
+
 ![Algemene architectuur](./img/algemene_architectuur.png)
+De verschillende boxen zullen als nodes werken en samen in een transportmiddel gestoken worden. Deze boxen sturen na een ingestelde tijdspanne data door indien er over de ingestelde grenzen is gegaan. De data wordt verstuurd naar LoRa Gateways. De sensor data die worden vergaard zijn oriëntatie, schokken, temperatuur, vochtigheid en positie. Aangezien het over afgelegen gebieden zou kunnen gaan waar geen LoRa gateway verbinding aanwezig zou zijn, kan er gebruikt gemaakt worden van een versterker zodat de reikwijdte vergroot wordt. De data zal gefilterd moeten worden via de end nodes zelf en enkel nodige data doorsturen.
+
+## Detail analyse
+
+### Smart Object
+
+#### Blokdiagram
+
+| Blok             | Specificatie | Min  | Nominaal | Max  |
+| ---------------- | ------------ | ---- | -------- | ---- |
+| RFM95W           | Werkspanning | 1.8V |          | 3.7V |
+| Lithium batterij | Spanning     |      | 3.7V     |      |
+|                  | Capaciteit   |      | 2000mAh  |      |
+
+| Blok | Argumentatie | Alternatieven |
+| ---- | ------------ | ------------- |
+|      |              |               |
+
+#### Elektrisch schema
+
+#### State Diagram
+
+#### Flowchart
+
+### Front End
+
+![Mockup](./img/mockup.png)
