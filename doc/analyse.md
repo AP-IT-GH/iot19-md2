@@ -20,3 +20,5 @@ De mogelijkheid moet er ook zijn om alle producten onderweg op een kaart te zien
 Per doos moeten er ook bepaalde specificaties ingesteld kunnen worden; bv. Hoeveel schokken kan deze doos aan, de maximum en minimum temperatuur, etc.
 
 De leverancier moet producten kunnen kiezen welke hij meeneemt. Wanneer de leverancier een van de voorwaarden dreigt te overschrijden dient de webapplicatie op de smartphone/tablet een melding te geven zodat men hier tijdig op kan anticiperen.
+
+![Algemene architectuur](./img/algemene_architectuur.png)
