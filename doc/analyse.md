@@ -32,6 +32,8 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 
 #### Blokdiagram
 
+![Mockup](./img/blockscheme.png)
+
 | Blok             | Specificatie | Min  | Nominaal | Max  |
 | ---------------- | ------------ | ---- | -------- | ---- |
 | RFM95W           | Werkspanning | 1.8V |          | 3.7V |
@@ -40,6 +42,7 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 
 | Blok | Argumentatie | Alternatieven |
 | ---- | ------------ | ------------- |
+|      |              |               |
 |      |              |               |
 
 #### Elektrisch schema
