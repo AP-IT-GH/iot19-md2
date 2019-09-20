@@ -52,6 +52,8 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 
 #### Flowchart
 
+![Flowchart](./img/flowchart.png)
+
 ### Front End
 
 ![Mockup](./img/mockup.png)
