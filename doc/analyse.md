@@ -39,6 +39,7 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 | RFM95W           | Werkspanning | 1.8V |          | 3.7V |
 | Lithium batterij | Spanning     |      | 3.7V     |      |
 |                  | Capaciteit   |      | 2000mAh  |      |
+| GPS Receiver     |              |      |          |      |
 
 | Blok | Argumentatie | Alternatieven |
 | ---- | ------------ | ------------- |
