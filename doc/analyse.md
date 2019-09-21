@@ -47,24 +47,27 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 
 ##### Specificatietabel
 
-| Blok               | Specificatie                      | Min  | Nominaal | Max  |
-| ------------------ | --------------------------------- | ---- | -------- | ---- |
-| RFM95W             | Werkspanning                      | 1.8V |          | 3.7V |
-| Lithium batterij   | Spanning                          |      | 3.7V     |      |
-|                    | Capaciteit                        |      | 2000mAh  |      |
-| MTK3339 GPS Module | Werkspanning                      | 3.0V | 3.3V     | 4.3V |
-|                    | Stroomverbruik signal acquisition |      | 20mA     |      |
-|                    | Stroomverbruik tracking           |      | 25mA     |      |
-|                    | Positie update rate               | 1Hz  | 1Hz      | 10Hz |
-|                    | Channels                          |      | 66       |      |
-|                    | Baud rate                         |      | 9600 bps |      |
+| Blok               | Specificatie                      | Min   | Nominaal   | Max   |
+| ------------------ | --------------------------------- | ----- | ---------- | ----- |
+| Atmel SAM D21      | Werkspanning                      | 1.62V |            | 3.63V |
+|                    | Low-power verbruik                |       | <70 µA/MHz |       |
+| RFM95W             | Werkspanning                      | 1.8V  |            | 3.7V  |
+| Lithium batterij   | Spanning                          |       | 3.7V       |       |
+|                    | Capaciteit                        |       | 2000mAh    |       |
+| MTK3339 GPS Module | Werkspanning                      | 3.0V  | 3.3V       | 4.3V  |
+|                    | Stroomverbruik signal acquisition |       | 20mA       |       |
+|                    | Stroomverbruik tracking           |       | 25mA       |       |
+|                    | Positie update rate               | 1Hz   | 1Hz        | 10Hz  |
+|                    | Channels                          |       | 66         |       |
+|                    | Baud rate                         |       | 9600 bps   |       |
 
 ##### Argumentatietabel
 
-| Blok        | Argumentatie                                                                                                                                                                                                                                                                                                                   | Alternatieven  |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------- |
-| GPS         | Er wordt gebruik gemaakt van de MTK3339 gps module van GlobalTop deze module gebruikt relatief weinig stroom (20mA - 25mA) en heeft een ingebouwde antenne die uitbreidbaar is met een externe. Ook heeft hij een hogere update rate van 10 Hz wat inhoudt dat de gps module tot 10 maal per seconde de positie kan berekenen. | NEO-6M, BN-280 |
-| LoRa module | RFM95W werd gekozen omdat deze aanzienlijk minder stroom verbruikt dan concurrerende modules. De hoge sensitiviteit met de +20dBm eindversterker levert een industry leading link budget op, waardoor het optimaal is voor elke toepassing die bereik of robuustheid vereist.                                                  | RN2483         |
+| Blok            | Argumentatie                                                                                                                                                                                                                                                                                                                   | Alternatieven  |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------- |
+| Microcontroller | Atmel SAM D21G gekozen omdat deze low power is. Heeft tot 6 Serial Communication Modules (SERCOM) dat elk geconfigureerd kunnen worden als een USART, UART, SPI of I²C.                                                                                                                                                        | ATmega328p     |
+| GPS             | Er wordt gebruik gemaakt van de MTK3339 gps module van GlobalTop deze module gebruikt relatief weinig stroom (20mA - 25mA) en heeft een ingebouwde antenne die uitbreidbaar is met een externe. Ook heeft hij een hogere update rate van 10 Hz wat inhoudt dat de gps module tot 10 maal per seconde de positie kan berekenen. | NEO-6M, BN-280 |
+| LoRa module     | RFM95W werd gekozen omdat deze aanzienlijk minder stroom verbruikt dan concurrerende modules. De hoge sensitiviteit met de +20dBm eindversterker levert een industry leading link budget op, waardoor het optimaal is voor elke toepassing die bereik of robuustheid vereist.                                                  | RN2483         |
 
 #### Elektrisch schema
 
