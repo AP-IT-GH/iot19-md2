@@ -61,10 +61,10 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 
 ##### Argumentatietabel
 
-| Blok | Argumentatie | Alternatieven |
-| ---- | ------------ | ------------- |
-| GPS  |              |               |
-|      |              |               |
+| Blok | Argumentatie                                                                                                                                                                                                                                                                                                                | Alternatieven  |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| GPS  | We gaan gebruik maken van de MTK3339 gps module van GlobalTop deze module gebruikt relatief weinig stroom (20mA - 25mA) en heeft een ingebouwde antenne die uitbreidbaar is met een externe. Ook heeft hij een hogere update rate van 10 Hz wat inhoudt dat de gps module tot 10 maal per seconde de positie kan berekenen. | NEO-6M, BN-280 |
+|      |                                                                                                                                                                                                                                                                                                                             |                |
 
 #### Elektrisch schema
 
