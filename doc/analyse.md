@@ -28,16 +28,16 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 
 ## Marktonderzoek
 
-|                        | Medicalcouriers                             | Hydropac                                | Worldcourier                                                                                | Actioncourier                        | Zipline                                                                      | TNT Healtcare section Supplies                                                                             |
-| ---------------------- | ------------------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------ | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Sensors                | ?                                           | ?                                       | Ambient temperature, internal temperature, light, tilt, pressureand physical shock sensors. | ?                                    | ?                                                                            | Ambient temperature and internal temperature sensors                                                       |
-| Tracking               | Tracking APP, Tracking center               | /                                       | GPS (Customer Resource Center (CRC) )                                                       | Digital Log Tracking, GPS            | 3D sattelite map and manual ground surveys                                   |                                                                                                            |
-| Temperature control    | /                                           | Can choose min and max of temperature   | controls ambient an internal temperature                                                    | /                                    | /                                                                            |                                                                                                            |
-| Communication protocol | /                                           | /                                       | BLE, GSM                                                                                    | /                                    | SMS                                                                          |                                                                                                            |
-| App Control            | Realtimedata, Dashboard                     | /                                       | Realtime, monitoring                                                                        | Monitoring                           | On-demand through a simple app, when they need it, monitoring, realtime data |                                                                                                            |
-| Transit time           | /                                           | Adjustable                              | /                                                                                           | Non-stop delivery                    | 30 - 45 min delivery                                                         |                                                                                                            |
-| Type                   | Medical Courier                             | Insulated Shipping Systems              | Medical logistics                                                                           | Medical Courier serivce              | Blood delivery by drone                                                      |                                                                                                            |
-| Website                | [Website](https://www.medicalcouriers.com/) | [Website](https://hydropac.co.uk/#medi) | [Website](https://www.worldcourier.com/)                                                    | [Website](https://actioncourier.com) | [Website](https://flyzipline.com/)                                           | [Website](https://common.tnt.com/express/en_xx/site/home/services/industry_sol/healthcare/pharmasafe.html) |
+|                        | Medicalcouriers                             | Hydropac                                | Worldcourier                                                                                | Actioncourier                        | Zipline                                                                      | TNT Healtcare section Supplies                                                                                                                                                                                       |
+| ---------------------- | ------------------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------ | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Sensors                | ?                                           | ?                                       | Ambient temperature, internal temperature, light, tilt, pressureand physical shock sensors. | ?                                    | ?                                                                            | Ambient temperature and internal temperature sensors                                                                                                                                                                 |
+| Tracking               | Tracking APP, Tracking center               | /                                       | GPS (Customer Resource Center (CRC) )                                                       | Digital Log Tracking, GPS            | 3D sattelite map and manual ground surveys                                   | GPS                                                                                                                                                                                                                  |
+| Temperature control    | /                                           | Can choose min and max of temperature   | controls ambient an internal temperature                                                    | /                                    | /                                                                            | Realtime tracking of temprature                                                                                                                                                                                      |
+| Communication protocol | /                                           | /                                       | BLE, GSM                                                                                    | /                                    | SMS                                                                          | /                                                                                                                                                                                                                    |
+| App Control            | Realtimedata, Dashboard                     | /                                       | Realtime, monitoring                                                                        | Monitoring                           | On-demand through a simple app, when they need it, monitoring, realtime data | Realtimedata, Monitoring                                                                                                                                                                                             |
+| Transit time           | /                                           | Adjustable                              | /                                                                                           | Non-stop delivery                    | 30 - 45 min delivery                                                         | Sameday Delivery (ophaling en levering via de weg, na ophaling rechtstreekse levering bij de opgegeven ontvanger), Onboard courier ( zendingen die persoonlijke aandacht eisen), Air charter ( dringende zendingen ) |
+| Type                   | Medical Courier                             | Insulated Shipping Systems              | Medical logistics                                                                           | Medical Courier serivce              | Blood delivery by drone                                                      | Transport                                                                                                                                                                                                            |
+| Website                | [Website](https://www.medicalcouriers.com/) | [Website](https://hydropac.co.uk/#medi) | [Website](https://www.worldcourier.com/)                                                    | [Website](https://actioncourier.com) | [Website](https://flyzipline.com/)                                           | [Website](https://common.tnt.com/express/en_xx/site/home/services/industry_sol/healthcare/pharmasafe.html)                                                                                                           |
 
 ## Detail analyse
 
@@ -47,23 +47,23 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 
 ##### Specificatietabel
 
-| Blok             | Specificatie | Min  | Nominaal | Max  |
-| ---------------- | ------------ | ---- | -------- | ---- |
-| RFM95W           | Werkspanning | 1.8V |          | 3.7V |
-| Lithium batterij | Spanning     |      | 3.7V     |      |
-|                  | Capaciteit   |      | 2000mAh  |      |
-| MTK3339 GPS Module| Werkspanning | 3.0V | 3.3V | 4.3V |
-|                  | Stroomverbruik signal acquisition |  | 20mA |  |
-|                  | Stroomverbruik tracking   |      | 25mA  |      |
-|                  | Positie update rate   |    1Hz  |  1Hz |   10Hz   |
-|                  | Channels   |     |  66 |      |
-|                  | Baud rate   |     |  9600 bps |      |
+| Blok               | Specificatie                      | Min  | Nominaal | Max  |
+| ------------------ | --------------------------------- | ---- | -------- | ---- |
+| RFM95W             | Werkspanning                      | 1.8V |          | 3.7V |
+| Lithium batterij   | Spanning                          |      | 3.7V     |      |
+|                    | Capaciteit                        |      | 2000mAh  |      |
+| MTK3339 GPS Module | Werkspanning                      | 3.0V | 3.3V     | 4.3V |
+|                    | Stroomverbruik signal acquisition |      | 20mA     |      |
+|                    | Stroomverbruik tracking           |      | 25mA     |      |
+|                    | Positie update rate               | 1Hz  | 1Hz      | 10Hz |
+|                    | Channels                          |      | 66       |      |
+|                    | Baud rate                         |      | 9600 bps |      |
 
 ##### Argumentatietabel
 
 | Blok | Argumentatie | Alternatieven |
 | ---- | ------------ | ------------- |
-|  GPS    |              |               |
+| GPS  |              |               |
 |      |              |               |
 
 #### Elektrisch schema
