@@ -41,9 +41,13 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 | RFM95W           | Werkspanning | 1.8V |          | 3.7V |
 | Lithium batterij | Spanning     |      | 3.7V     |      |
 |                  | Capaciteit   |      | 2000mAh  |      |
-| Ultimate GPS Module| Werkspanning | 3.0V | 3.3V | 4.3V |
-|                  | Stroomberbruik signal acquisition |  | 20mA |  |
-|                  | Stroomberbruik tracking   |      | 25mA  |      |
+| MTK3339 GPS Module| Werkspanning | 3.0V | 3.3V | 4.3V |
+|                  | Stroomverbruik signal acquisition |  | 20mA |  |
+|                  | Stroomverbruik tracking   |      | 25mA  |      |
+|                  | Positie update rate   |    1Hz  |  1Hz |   10Hz   |
+|                  | Channels   |     |  66 |      |
+|                  | Baud rate   |     |  9600 bps |      |
+
 
 
 
@@ -52,7 +56,7 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 
 | Blok | Argumentatie | Alternatieven |
 | ---- | ------------ | ------------- |
-|      |              |               |
+|  GPS    |              |               |
 |      |              |               |
 
 #### Elektrisch schema
