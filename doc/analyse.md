@@ -58,6 +58,10 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 |                    | Positie update rate               | 1Hz  | 1Hz      | 10Hz |
 |                    | Channels                          |      | 66       |      |
 |                    | Baud rate                         |      | 9600 bps |      |
+| LMT87 Temperatuur Sensor| Werkspanning                 | 2.7V |          | 5.5V |
+|                    | Stroomverbruik                    |  5.4µA |      |  9µA   |
+|                    | Temperatuurlezing limiet          | -50℃|  	      | 150℃ |
+|                    | Temperatuurlezing accuracy        | 0.4℃ |  	      |  0.6℃ |
 
 ##### Argumentatietabel
 
