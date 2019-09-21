@@ -47,19 +47,23 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 
 ##### Specificatietabel
 
-| Blok               | Specificatie                      | Min   | Nominaal   | Max   |
-| ------------------ | --------------------------------- | ----- | ---------- | ----- |
-| Atmel SAM D21      | Werkspanning                      | 1.62V |            | 3.63V |
-|                    | Low-power verbruik                |       | <70 µA/MHz |       |
-| RFM95W             | Werkspanning                      | 1.8V  |            | 3.7V  |
-| Lithium batterij   | Spanning                          |       | 3.7V       |       |
-|                    | Capaciteit                        |       | 2000mAh    |       |
-| MTK3339 GPS Module | Werkspanning                      | 3.0V  | 3.3V       | 4.3V  |
-|                    | Stroomverbruik signal acquisition |       | 20mA       |       |
-|                    | Stroomverbruik tracking           |       | 25mA       |       |
-|                    | Positie update rate               | 1Hz   | 1Hz        | 10Hz  |
-|                    | Channels                          |       | 66         |       |
-|                    | Baud rate                         |       | 9600 bps   |       |
+| Blok                     | Specificatie                      | Min   | Nominaal   | Max   |
+| ------------------------ | --------------------------------- | ----- | ---------- | ----- |
+| Atmel SAM D21            | Werkspanning                      | 1.62V |            | 3.63V |
+|                          | Low-power verbruik                |       | <70 µA/MHz |       |
+| RFM95W                   | Werkspanning                      | 1.8V  |            | 3.7V  |
+| Lithium batterij         | Spanning                          |       | 3.7V       |       |
+|                          | Capaciteit                        |       | 2000mAh    |       |
+| MTK3339 GPS Module       | Werkspanning                      | 3.0V  | 3.3V       | 4.3V  |
+|                          | Stroomverbruik signal acquisition |       | 20mA       |       |
+|                          | Stroomverbruik tracking           |       | 25mA       |       |
+|                          | Positie update rate               | 1Hz   | 1Hz        | 10Hz  |
+|                          | Channels                          |       | 66         |       |
+|                          | Baud rate                         |       | 9600 bps   |       |
+| LMT87 Temperatuur Sensor | Werkspanning                      | 2.7V  |            | 5.5V  |
+|                          | Stroomverbruik                    | 5.4µA |            | 9µA   |
+|                          | Temperatuurlezing limiet          | -50℃  |            | 150℃  |
+|                          | Temperatuurlezing accuracy        | 0.4℃  |            | 0.6℃  |
 
 ##### Argumentatietabel
 
