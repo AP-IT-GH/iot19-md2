@@ -47,13 +47,14 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 
 ##### Specificatietabel
 
-| Blok              | Specificatie                  | Min  | Nominaal | Max  |
-| ----------------- | ----------------------------- | ---- | -------- | ---- |
-| RFM95W            | Werkspanning                  | 1.8V |          | 3.7V |
-| Lithium batterij  | Spanning                      |      | 3.7V     |      |
-|                   | Capaciteit                    |      | 2000mAh  |      |
-| NEO-6M GPS Module | Werkspanning                  | 2.7V | 3.0V     | 3.6V |
-|                   | Stroomberbruik tracking (eco) |      | 37mA     | 67mA |
+| Blok                | Specificatie                      | Min  | Nominaal | Max  |
+| ------------------- | --------------------------------- | ---- | -------- | ---- |
+| RFM95W              | Werkspanning                      | 1.8V |          | 3.7V |
+| Lithium batterij    | Spanning                          |      | 3.7V     |      |
+|                     | Capaciteit                        |      | 2000mAh  |      |
+| Ultimate GPS Module | Werkspanning                      | 3.0V | 3.3V     | 4.3V |
+|                     | Stroomberbruik signal acquisition |      | 20mA     |      |
+|                     | Stroomberbruik tracking           |      | 25mA     |      |
 
 ##### Argumentatietabel
 
