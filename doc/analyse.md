@@ -26,9 +26,20 @@ De leverancier moet producten kunnen kiezen welke hij meeneemt. Wanneer de lever
 ![Algemene architectuur](./img/algemene_architectuur.png)
 De verschillende boxen zullen als nodes werken en samen in een transportmiddel gestoken worden. Deze boxen sturen na een ingestelde tijdspanne data door indien er over de ingestelde grenzen is gegaan. De data wordt verstuurd naar LoRa Gateways. De sensor data die worden vergaard zijn oriëntatie, schokken, temperatuur, vochtigheid en positie. Aangezien het over afgelegen gebieden zou kunnen gaan waar geen LoRa gateway verbinding aanwezig zou zijn, kan er gebruikt gemaakt worden van een versterker zodat de reikwijdte vergroot wordt. De data zal gefilterd moeten worden via de end nodes zelf en enkel nodige data doorsturen.
 
-## Detail analyse
+## Marktonderzoek
 
-### Smart Object
+|                        | Medicalcouriers                             | Hydropac                                | Worldcourier                                                                                | Actioncourier                        | Zipline                                                                      | Atlantic Medical Supplies                                               |
+| ---------------------- | ------------------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------ | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Sensors                | ?                                           | ?                                       | Ambient temperature, internal temperature, light, tilt, pressureand physical shock sensors. | ?                                    | ?                                                                            |                                                                         |
+| Tracking               | Tracking APP, Tracking center               | /                                       | GPS (Customer Resource Center (CRC) )                                                       | Digital Log Tracking, GPS            | 3D sattelite map and manual ground surveys                                   |                                                                         |
+| Temperature control    | /                                           | Can choose min and max of temperature   | controls ambient an internal temperature                                                    | /                                    | /                                                                            |                                                                         |
+| Communication protocol | /                                           | /                                       | BLE, GSM                                                                                    | /                                    | SMS                                                                          |                                                                         |
+| App Control            | Realtimedata, Dashboard                     | /                                       | Realtime, monitoring                                                                        | Monitoring                           | On-demand through a simple app, when they need it, monitoring, realtime data |                                                                         |
+| Transit time           | /                                           | Adjustable                              | /                                                                                           | Non-stop delivery                    | 30 - 45 min delivery                                                         |                                                                         |
+| Type                   | Medical Courier                             | Insulated Shipping Systems              | Medical logistics                                                                           | Medical Courier serivce              | Blood delivery by drone                                                      |                                                                         |
+| Website                | [Website](https://www.medicalcouriers.com/) | [Website](https://hydropac.co.uk/#medi) | [Website](https://www.worldcourier.com/)                                                    | [Website](https://actioncourier.com) | [Website](https://flyzipline.com/)                                           | [Website](https://atlanticmedicalsupplies.co.za/pages/delivery-options) |
+
+## Detail analyse
 
 #### Blokdiagram
 
@@ -36,14 +47,13 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 
 ##### Specificatietabel
 
-| Blok             | Specificatie | Min  | Nominaal | Max  |
-| ---------------- | ------------ | ---- | -------- | ---- |
-| RFM95W           | Werkspanning | 1.8V |          | 3.7V |
-| Lithium batterij | Spanning     |      | 3.7V     |      |
-|                  | Capaciteit   |      | 2000mAh  |      |
-| NEO-6M GPS Module| Werkspanning | 2.7V | 3.0V     | 3.6V |
-|                  | Stroomberbruik tracking (eco) |  | 37mA | 67mA |
-
+| Blok              | Specificatie                  | Min  | Nominaal | Max  |
+| ----------------- | ----------------------------- | ---- | -------- | ---- |
+| RFM95W            | Werkspanning                  | 1.8V |          | 3.7V |
+| Lithium batterij  | Spanning                      |      | 3.7V     |      |
+|                   | Capaciteit                    |      | 2000mAh  |      |
+| NEO-6M GPS Module | Werkspanning                  | 2.7V | 3.0V     | 3.6V |
+|                   | Stroomberbruik tracking (eco) |      | 37mA     | 67mA |
 
 ##### Argumentatietabel
 
