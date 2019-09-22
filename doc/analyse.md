@@ -92,11 +92,13 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 
 ### Back End
 
-![Database Model](./img/database_model.png)
-
-### Software blockscheme
+Er wordt gebruik gemaakt van firebase als "back end" dit omdat het makkelijk is om te scalen. De realtime database is ook een troef van Firebase waardoor de data in real-time wordt verstuurd naar de app of webapp wat aangenamer is voor de eindgbruiker.
 
 ![Software blockscheme](./img/blockscheme_software.png)
+
+#### Database Model
+
+![Database Model](./img/database_model.png)
 
 ## Niet functionele analyse
 
