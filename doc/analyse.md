@@ -73,7 +73,7 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 | Microcontroller   | Atmel SAM D21G gekozen omdat deze low power is. Heeft tot 6 Serial Communication Modules (SERCOM) dat elk geconfigureerd kunnen worden als een USART, UART, SPI of I²C.                                                                                                                                                        | ATmega328p        |
 | GPS               | Er wordt gebruik gemaakt van de MTK3339 gps module van GlobalTop deze module gebruikt relatief weinig stroom (20mA - 25mA) en heeft een ingebouwde antenne die uitbreidbaar is met een externe. Ook heeft hij een hogere update rate van 10 Hz wat inhoudt dat de gps module tot 10 maal per seconde de positie kan berekenen. | NEO-6M, BN-280    |
 | LoRa module       | RFM95W werd gekozen omdat deze aanzienlijk minder stroom verbruikt dan concurrerende modules. De hoge sensitiviteit met de +20dBm eindversterker levert een industry leading link budget op, waardoor het optimaal is voor elke toepassing die bereik of robuustheid vereist.                                                  | RN2483            |
-| Temperatuursensor | De geschikte temperatuursensor is de LMT87 aangezien deze een gemiddelde nauwkeurigheid van 0.5°C heeft en temperaturen van -50°C tot 150°C kan meten. De werkspanning range is ideaal met de spanningsbron die gebruikt zal worden ( Lithium batterij 3.7V).                                                                  | LM35, MCP9700     |
+| Temperatuursensor | De meest geschikte temperatuursensor is de LMT87 aangezien deze een gemiddelde nauwkeurigheid van 0.5°C heeft en temperaturen van -50°C tot 150°C kan meten. De werkspanning range is ideaal met de spanningsbron die gebruikt zal worden ( Lithium batterij 3.7V).                                                            | LM35, MCP9700     |
 | IMU 9DOF v2.0     | Ultra-low power, low voltage. Heeft een wide detecting range.                                                                                                                                                                                                                                                                  | 9DoF Sensor Stick |
 
 #### Elektrisch schema
@@ -89,3 +89,20 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 ### Front End
 
 ![Mockup](./img/mockup.png)
+
+## Niet functionele analyse
+
+## Release plan
+
+## Inventarisatie Hardware
+
+- Atmel SAM D21G - Microcontroller
+- RFM95W - LoRa Module
+- MTK3339 - GPS Module
+- LMT87 - Temperature sensor
+- IMU 9DOF v2.0 - 9DoF
+
+## Inventarisatie software
+
+- AtmelStudio
+- Angular
