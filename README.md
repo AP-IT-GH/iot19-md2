@@ -1,7 +1,11 @@
-# Internet of Things - Naam Project
+# Internet of Things - Medical delivery
 
 ## Groepsleden
-Naam - Verantwoordelijkheid
+
+Jarno Cools -  
+Imad El-Azzouzi -  
+Oussama Es-Salhi -  
+Cristian Baba -
 
 ## Documentatie
 
