@@ -90,6 +90,10 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 
 ![Mockup](./img/mockup.png)
 
+### Back End
+
+![Database Model](./img/database_model.png)
+
 ## Niet functionele analyse
 
 ## Release plan
