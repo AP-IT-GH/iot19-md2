@@ -112,3 +112,4 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 
 - AtmelStudio
 - Angular
+- Firebase
