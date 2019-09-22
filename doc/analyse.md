@@ -94,6 +94,10 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 
 ![Database Model](./img/database_model.png)
 
+### Software blockscheme
+
+![Software blockscheme](./img/blockscheme_software.png)
+
 ## Niet functionele analyse
 
 ## Release plan
