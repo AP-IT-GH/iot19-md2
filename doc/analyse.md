@@ -94,6 +94,8 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 
 ## Release plan
 
+![Release plan sprint 1-2](./img/release_plan_sprint1_2.png)
+
 ## Inventarisatie Hardware
 
 - Atmel SAM D21G - Microcontroller
