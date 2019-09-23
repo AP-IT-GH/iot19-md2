@@ -5,6 +5,11 @@ Vermogen W (**P = U \* I**) van dit vermogen wordt Wh genomen (**Wh = W \* h**).
 
 ### Atmel SAMD21G
 
+When the CPU is running a Fibonacci algorithm at 3.3V (25°C). The max. power consumption is 4.6mA.
+
+- P = U _ I => P = 3.3V _ 4.6mA = 0.01518W . Wh = 0.01518Wh (t = 1h)
+- mAh = 1000 \* 0.1518Wh/3.3V = 20mAh
+
 ### MTK3339
 
 ### LMT87
