@@ -54,17 +54,30 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 | RFM95W                   | Werkspanning                      | 1.8V  |            | 3.7V  |
 | Lithium batterij         | Spanning                          |       | 3.7V       |       |
 |                          | Capaciteit                        |       | 2000mAh    |       |
-| MTK3339 GPS Module       | Werkspanning                      | 3.0V  | 3.3V       | 4.3V  |
-|                          | Stroomverbruik signal acquisition |       | 20mA       |       |
-|                          | Stroomverbruik tracking           |       | 25mA       |       |
-|                          | Positie update rate               | 1Hz   | 1Hz        | 10Hz  |
-|                          | Channels                          |       | 66         |       |
-|                          | Baud rate                         |       | 9600 bps   |       |
-| LMT87 Temperatuur Sensor | Werkspanning                      | 2.7V  |            | 5.5V  |
-|                          | Stroomverbruik                    | 5.4µA |            | 9µA   |
-|                          | Temperatuurlezing limiet          | -50℃  |            | 150℃  |
-|                          | Temperatuurlezing accuracy        | 0.4℃  |            | 0.6℃  |
+| Telit SL876Q5-A GPS      | Werkspanning                      | 1.71V |            | 1.89V |
+|                          | Stroomverbruik signal acquisition |       | 85mW       |       |
+|                          | Stroomverbruik tracking           |       | 83mW       |       |
+|                          | Horizontale positie nauwkeurigheid|       | 1.5m       |       |
+|                          | Snelheid nauwkeurigheid           |       | 0.01 m/s   |       |
+|                          | Richting nauwkeurigheid           |       | 0.01 deg   |       |
+| HIH8120-021-001 TEMP HUM | Werkspanning                      | 2.3V  | 3.3        | 5.5V  |
+|                          | Temperatuur range                 | -40°C |            | 125°C |
+|                          | Temperatuur nauwkeurigheid        |       | ±0.8       |       |
+|                          | Humidity range                    | 0RH   |            | 100RH |
+|                          | Humidity nauwkeurigheid           |       | ±2.0 RH    |       |
+|                          | Sleep current                     |       | 0.6µA      | 1µA   |
+|                          | Supply current (I²C)              |       | 0.65mA     | 1mA   |
 | IMU 9DOF v2.0            | Werkspanning                      | 2.4V  |            | 3.6V  |
+| USB3140-30-0230-1-C      | Voltage rating                    |       | 30V (AC)   |       |
+|                          | Current rating                    | 1.0A  |            | 1.8A  |
+|                          | Temperatuur range                 | -30°C |            | +85°C |
+| TPS73533DRVT             | Werkspanning                      | 2.7V  |            | 6.5V  |
+|                          | Uitgangspanning                   |       | 3.3V       |       |
+|                          | Stroomverbruik                    | 0     |            | 500mA |
+|                          | Temperatuur range                 | -40°C |            | 125°C |
+| Q13MC30610003 MC-306     | Frequency range                   | 20kHz | 32.768kHz  | 165kHz |
+|                          | Laad Capaciteit                   |       | 12.5pF     |       |
+|                          |                                   |       |            |       |
 
 ##### Argumentatietabel
 
