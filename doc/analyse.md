@@ -105,7 +105,7 @@ Er wordt gebruik gemaakt van firebase als "back end" dit omdat het makkelijk is 
 
 ## Release plan
 
-![Release plan sprint 1-2](./img/release_plan_sprint1_2.png)
+![Release plan sprint 1-2](./img/release_plan.png)
 
 ## Inventarisatie Hardware
 
