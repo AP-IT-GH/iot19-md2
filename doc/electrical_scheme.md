@@ -1,4 +1,4 @@
-# Electrical Scheme
+# 1. Electrical Scheme
 
 ## ATSAMD21
 
@@ -34,3 +34,23 @@ Schematic used for the Fixed-Voltage version. ([Datasheet TPS735](./datasheets/t
 
 > ([Datasheet TPS735](./datasheets/tps735.pdf) p. 4, 5. Pin configuration)  
 > Given all the connections for the pins, minimum and maximum values for capacitors.
+
+# 2. GPS Module PCB
+
+> ([Datasheet SE876Q5-A](./datasheets/Telit_SE876Q5-A_Datasheet.pdf))  
+> ([gps_module_sch.png](../src/pcb/img/gps_module_sch.png))
+
+## Voltage divider
+
+The voltage retrieved from the supply on the MCU's PCB is 3.3V. The maximum voltage of the GPS module is 1.8V. Therefore there is a voltage divider.
+
+> Vout = I \* R2  
+> I = Vin/(R1+R2)  
+> Vout = Vin \* (R2/(R1 + R2))
+
+Vin = 3.3V  
+R2 = 120 Ohm and R1 = 100 Ohm
+
+## SE876Q5-A
+
+For this project is the serial port of the MCU used. So the TX from the GPS is connected to the RX from the MCU.
