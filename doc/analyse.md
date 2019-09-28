@@ -93,7 +93,7 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 #### Elektrisch schema
 
 ![Flowchart](./img/electrical_scheme.png)
-
+[Elektrisch Schema](./electrical_scheme.md)
 #### State Diagram
 
 #### Flowchart
