@@ -54,16 +54,19 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 | RFM95W                   | Werkspanning                      | 1.8V  |            | 3.7V  |
 | Lithium batterij         | Spanning                          |       | 3.7V       |       |
 |                          | Capaciteit                        |       | 2000mAh    |       |
-| MTK3339 GPS Module       | Werkspanning                      | 3.0V  | 3.3V       | 4.3V  |
-|                          | Stroomverbruik signal acquisition |       | 20mA       |       |
-|                          | Stroomverbruik tracking           |       | 25mA       |       |
-|                          | Positie update rate               | 1Hz   | 1Hz        | 10Hz  |
-|                          | Channels                          |       | 66         |       |
-|                          | Baud rate                         |       | 9600 bps   |       |
-| LMT87 Temperatuur Sensor | Werkspanning                      | 2.7V  |            | 5.5V  |
-|                          | Stroomverbruik                    | 5.4µA |            | 9µA   |
-|                          | Temperatuurlezing limiet          | -50℃  |            | 150℃  |
-|                          | Temperatuurlezing accuracy        | 0.4℃  |            | 0.6℃  |
+| Telit SL876Q5-A GPS      | Werkspanning                      | 1.71V |            | 1.89V |
+|                          | Stroomverbruik signal acquisition |       | 85mW       |       |
+|                          | Stroomverbruik tracking           |       | 83mW       |       |
+|                          | Horizontale positie nauwkeurigheid|       | 1.5m       |       |
+|                          | Snelheid nauwkeurigheid           |       | 0.01 m/s   |       |
+|                          | Richting nauwkeurigheid           |       | 0.01 deg   |       |
+| HIH8120-021-001 TEMP HUM | Werkspanning                      | 2.3V  | 3.3        | 5.5V  |
+|                          | Temperatuur range                 | -40°C |            | 125°C |
+|                          | Temperatuur nauwkeurigheid        |       | ±0.8       |       |
+|                          | Humidity range                    | 0RH   |            | 100RH |
+|                          | Humidity nauwkeurigheid           |       | ±2.0 %RH    |       |
+|                          | Sleep current                     |       | 0.6µA      | 1µA   |
+|                          | Supply current (I²C)              |       | 0.65mA     | 1mA   |
 | IMU 9DOF v2.0            | Werkspanning                      | 2.4V  |            | 3.6V  |
 
 ##### Argumentatietabel
@@ -71,9 +74,9 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 | Blok              | Argumentatie                                                                                                                                                                                                                                                                                                                   | Alternatieven     |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------- |
 | Microcontroller   | Atmel SAM D21G gekozen omdat deze low power is. Heeft tot 6 Serial Communication Modules (SERCOM) dat elk geconfigureerd kunnen worden als een USART, UART, SPI of I²C.                                                                                                                                                        | ATmega328p        |
-| GPS               | Er wordt gebruik gemaakt van de MTK3339 gps module van GlobalTop deze module gebruikt relatief weinig stroom (20mA - 25mA) en heeft een ingebouwde antenne die uitbreidbaar is met een externe. Ook heeft hij een hogere update rate van 10 Hz wat inhoudt dat de gps module tot 10 maal per seconde de positie kan berekenen. | NEO-6M, BN-280    |
+| GPS               | Er wordt gebruik gemaakt van de Telit SL876Q5-A GPS module van Telit deze module gebruikt relatief weinig vermogen (83mW - 85mW) en heeft verschillende modi die energie kunnen besparen. Ook heeft hij een hogere update rate van 10 Hz. Deze module ondersteund zowel GPS als GLONASS waardoor er meer satellieten zijn voor een nauwkeurige positie.    | NEO-6M, BN-280    |
 | LoRa module       | RFM95W werd gekozen omdat deze aanzienlijk minder stroom verbruikt dan concurrerende modules. De hoge sensitiviteit met de +20dBm eindversterker levert een industry leading link budget op, waardoor het optimaal is voor elke toepassing die bereik of robuustheid vereist.                                                  | RN2483            |
-| Temperatuursensor | De meest geschikte temperatuursensor is de LMT87 aangezien deze een gemiddelde nauwkeurigheid van 0.5°C heeft en temperaturen van -50°C tot 150°C kan meten. De werkspanning range is ideaal met de spanningsbron die gebruikt zal worden ( Lithium batterij 3.7V).                                                            | LM35, MCP9700     |
+| Temperatuur / Humidity sensor | De Honeywell 2-in-1 temperatuur- en vochtigheidssensor is nauwkeurig tot 0.8°C, 2.0 %RH en heeft een temperatuur range van -40°C tot 125°C. Door deze sensor te gebruiken wordt er pcb oppervlakte bespaart. De I2C output zorgt voor een makkelijkere integratie met de microcontroller.                                                      |  LMT87, LM35, MCP9700     |
 | IMU 9DOF v2.0     | Ultra-low power, low voltage. Heeft een wide detecting range.                                                                                                                                                                                                                                                                  | 9DoF Sensor Stick |
 
 #### Elektrisch schema
