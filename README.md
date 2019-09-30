@@ -2,10 +2,10 @@
 
 ## Groepsleden
 
-Jarno Cools - Project Manager  
+Jarno Cools - Project Manager, Documentating and all-round  
 Imad El-Azzouzi - PCB designer  
 Oussama Es-Salhi - Back-end Programmer / Systems integrator  
-Cristian Baba -
+Cristian Baba - 
 
 ## Documentatie
 
