@@ -59,3 +59,4 @@ R2 = 120 Ohm and R1 = 100 Ohm
 ## SE876Q5-A
 
 For this project is the serial port of the MCU used. So the TX from the GPS is connected to the RX from the MCU.
+The TX from the MCU will be used for sending commands to the GPS.
