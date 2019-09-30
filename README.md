@@ -9,4 +9,4 @@ Cristian Baba -
 
 ## Documentatie
 
-[Medical Delivery documentatie](/doc/analyse.md)
+[Medical Delivery Analyse](/doc/analyse.md)
