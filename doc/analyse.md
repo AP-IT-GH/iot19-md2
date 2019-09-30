@@ -127,7 +127,7 @@ Er wordt gebruik gemaakt van firebase als "back end" dit omdat het makkelijk is 
 - Telit SL876Q5-A - GPS Module
 - HIH8120-021-001 - Temperature/Humidity sensor
 - IMU 9DOF v2.0 - 9DoF
-- TPS73533DRVT - Voltage regulator
+- MIC5219-3.3YM5-TR - Voltage regulator
 - Lithium battery
 
 [Bill of materials](./Bill_of_materials.pdf)
