@@ -37,6 +37,7 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 | App Control            | Realtimedata, Dashboard                     | /                                       | Realtime, monitoring                                                                        | Monitoring                           | On-demand through a simple app, when they need it, monitoring, realtime data | Realtimedata, Monitoring                                                                                                                                                                                             |
 | Transit time           | /                                           | Adjustable                              | /                                                                                           | Non-stop delivery                    | 30 - 45 min delivery                                                         | Sameday Delivery (ophaling en levering via de weg, na ophaling rechtstreekse levering bij de opgegeven ontvanger), Onboard courier ( zendingen die persoonlijke aandacht eisen), Air charter ( dringende zendingen ) |
 | Type                   | Medical Courier                             | Insulated Shipping Systems              | Medical logistics                                                                           | Medical Courier serivce              | Blood delivery by drone                                                      | Transport                                                                                                                                                                                                            |
+| Leveringen in          |     Washington, Oregon, Montana, Idaho, Wyoming, Californiä, Nevada, Utah, Arizona, New Mexico, Colorado, Oklahoma, Texas, Louisiana, Mississippi, Georgia, Alabama, Florida, North Carolina, Iowa, Minnesota, Wisconsin, Illinois, Michigan, Kentucky, Ohio, Indiana, Pennsylvania                                        |  UK                                       |      Europa, North America, Asia PAcific, Latin America, Middle East, Africa                                                                                       |Oklahoma, Texas, Louisiana, Mississippi, Georgia, Alabama, Florida, North/South Carolina, Iowa, Minnesota, Wisconsin, Illinois, Michigan, Kentucky, Ohio, Indiana, Pennsylvania, Arkansas, Tennessee, Missouri, Virginia-West Virginia, Maryland, Delaware, New Jersey, New York, Connecticut, Massachusetts, Rhode Island, Maine, New Hampshire, Vermont                                      |            Rwanda & Ghana                                                                  |Europe, Asia, Middle East, US|
 | Website                | [Website](https://www.medicalcouriers.com/) | [Website](https://hydropac.co.uk/#medi) | [Website](https://www.worldcourier.com/)                                                    | [Website](https://actioncourier.com) | [Website](https://flyzipline.com/)                                           | [Website](https://common.tnt.com/express/en_xx/site/home/services/industry_sol/healthcare/pharmasafe.html)                                                                                                           |
 
 ## Detail analyse
@@ -68,6 +69,16 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 |                          | Sleep current                     |       | 0.6µA      | 1µA   |
 |                          | Supply current (I²C)              |       | 0.65mA     | 1mA   |
 | IMU 9DOF v2.0            | Werkspanning                      | 2.4V  |            | 3.6V  |
+| USB3140-30-0230-1-C      | Voltage rating                    |       | 30V (AC)   |       |
+|                          | Current rating                    | 1.0A  |            | 1.8A  |
+|                          | Temperatuur range                 | -30°C |            | +85°C |
+| TPS73533DRVT             | Werkspanning                      | 2.7V  |            | 6.5V  |
+|                          | Uitgangspanning                   |       | 3.3V       |       |
+|                          | Stroomverbruik                    | 0     |            | 500mA |
+|                          | Temperatuur range                 | -40°C |            | 125°C |
+| Q13MC30610003 MC-306     | Frequency range                   | 20kHz | 32.768kHz  | 165kHz |
+|                          | Laad Capaciteit                   |       | 12.5pF     |       |
+|                          |                                   |       |            |       |
 
 ##### Argumentatietabel
 
@@ -82,7 +93,7 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 #### Elektrisch schema
 
 ![Flowchart](./img/electrical_scheme.png)
-
+[Elektrisch Schema](./electrical_scheme.md)
 #### State Diagram
 
 #### Flowchart
@@ -107,15 +118,17 @@ Er wordt gebruik gemaakt van firebase als "back end" dit omdat het makkelijk is 
 
 ## Release plan
 
-![Release plan sprint 1-2](./img/release_plan_sprint1_2.png)
+![Release plan sprint 1-2](./img/release_plan.png)
 
 ## Inventarisatie Hardware
 
-- Atmel SAM D21G - Microcontroller
+- Atmel SAM D21E - Microcontroller
 - RFM95W - LoRa Module
-- MTK3339 - GPS Module
-- LMT87 - Temperature sensor
+- Telit SL876Q5-A - GPS Module
+- HIH8120-021-001 - Temperature/Humidity sensor
 - IMU 9DOF v2.0 - 9DoF
+- TPS73533DRVT - Voltage regulator 
+- Lithium battery
 
 ## Inventarisatie software
 

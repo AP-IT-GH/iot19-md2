@@ -2,7 +2,7 @@
 
 ## Groepsleden
 
-Jarno Cools -  
+Jarno Cools - Project Manager   
 Imad El-Azzouzi -  
 Oussama Es-Salhi -  
 Cristian Baba -
