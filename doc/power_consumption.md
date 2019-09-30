@@ -86,10 +86,10 @@ Vermogen W (**P = U \* I**) van dit vermogen wordt Wh genomen (**Wh = W \* h**).
 
 ## Totale verbruik
 
-- mAh(totaal) = 20mAh + 0.65mAh + 25.15mAh + 0.045mAh + 0.33mAh + 0.066mAh + 49mAh + 20mAh = 115.241mAh
+- mAh(totaal) = 20mAh + 0.65mAh + 25.15mAh + 0.045mAh + 0.33mAh + 49mAh + 20mAh = 115.175mAh
 
 Het aantal uren voordat de batterij leeg is:
 
-- Capaciteit / Totale Verbruik => 2000mAh / 115.241mAh = 17.35 Uur
+- Capaciteit / Totale Verbruik => 2000mAh / 115.175mAh = 17.36 Uur
 
 _\*Opmerking: In deze berekening is er geen rekening gehouden met het feit dat de LoRa module niet continu gaat uitzenden en de mogelijke optimalisatie van het verbruik van de verschillende componenten. Dit betekent dat het totale verbruik behoorlijk lager zal liggen._
