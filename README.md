@@ -3,7 +3,7 @@
 ## Groepsleden
 
 Jarno Cools - Project Manager  
-Imad El-Azzouzi -  
+Imad El-Azzouzi - PCB designer  
 Oussama Es-Salhi -  
 Cristian Baba -
 
