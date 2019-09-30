@@ -4,7 +4,7 @@
 
 Jarno Cools - Project Manager  
 Imad El-Azzouzi - PCB designer  
-Oussama Es-Salhi - Back-end Programmer / Systems integrator
+Oussama Es-Salhi - Back-end Programmer / Systems integrator  
 Cristian Baba -
 
 ## Documentatie
