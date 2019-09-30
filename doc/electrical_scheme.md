@@ -40,6 +40,11 @@ Schematic used for the Fixed-Voltage version. ([Datasheet TPS735](./datasheets/t
 > ([Datasheet SE876Q5-A](./datasheets/Telit_SE876Q5-A_Datasheet.pdf))  
 > ([gps_module_sch.png](../src/pcb/img/gps_module_sch.png))
 
+### Power supply
+
+> ([User Guide SE876Q5-A](./datasheets/Telit_SE876Q5-A_User_Guide.pdf) p. 34, 8.4.3 )  
+> Capacitors are recommended with a minimum value of 10uF in parallel with a 0.1uF ceramic capacitor.
+
 ## Voltage divider
 
 The voltage retrieved from the supply on the MCU's PCB is 3.3V. The maximum voltage of the GPS module is 1.8V. Therefore there is a voltage divider.
