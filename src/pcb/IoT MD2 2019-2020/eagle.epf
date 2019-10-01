@@ -1,5 +1,5 @@
 [Eagle]
-Version="09 05 00"
+Version="09 05 01"
 Platform="Windows"
 Globals="Globals"
 Desktop="Desktop"
@@ -267,11 +267,13 @@ UsedLibraryUrn="urn:adsk.eagle:library:198"
 UsedLibraryUrn="urn:adsk.eagle:library:199"
 UsedLibrary="C:/Users/cools/Documents/EAGLE/libraries/TPS73533DRVT.lbr"
 UsedLibrary="C:/Users/cools/Documents/EAGLE/libraries/USB3140-XX-XXXX-X-X_REVC.lbr"
+UsedLibrary="C:/Users/cools/code/iot19-md2/src/pcb/footprints/Eagle/ATSAMD21E18A-AF.lbr"
+UsedLibrary="C:/Users/cools/code/iot19-md2/src/pcb/footprints/Eagle/S2B-PH-SM4-TB.lbr"
 
 [Win_1]
 Type="Control Panel"
 Number=0
 
 [Desktop]
-Screen="1128 752"
+Screen="2085 1832"
 Window="Win_1"
