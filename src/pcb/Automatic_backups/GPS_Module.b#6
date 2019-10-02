@@ -1541,11 +1541,18 @@ design rules under a new name.</description>
 <wire x1="8.89" y1="25.72" x2="13.97" y2="25.72" width="0.3048" layer="1"/>
 <wire x1="13.97" y1="25.72" x2="15.24" y2="26.99" width="0.3048" layer="1"/>
 <wire x1="20" y1="26.99" x2="15.24" y2="26.99" width="0.3048" layer="1"/>
-<wire x1="21.59" y1="25.4" x2="21.59" y2="22.18" width="0.3048" layer="1"/>
-<wire x1="21.59" y1="22.18" x2="18.4" y2="22.18" width="0.3048" layer="1"/>
+<wire x1="21.59" y1="25.4" x2="21.59" y2="22.86" width="0.3048" layer="1"/>
+<wire x1="21.59" y1="22.86" x2="20.91" y2="22.18" width="0.3048" layer="1"/>
+<wire x1="20.91" y1="22.18" x2="18.4" y2="22.18" width="0.3048" layer="1"/>
 <wire x1="20" y1="26.99" x2="21.59" y2="25.4" width="0.3048" layer="1"/>
 <wire x1="7" y1="25.42" x2="7" y2="22.18" width="0.3048" layer="1"/>
 <wire x1="7" y1="25.42" x2="7.3" y2="25.72" width="0.3048" layer="1"/>
+<polygon width="0.1524" layer="1">
+<vertex x="0" y="35.56"/>
+<vertex x="24.13" y="35.56"/>
+<vertex x="24.13" y="10.16"/>
+<vertex x="0" y="10.16"/>
+</polygon>
 <wire x1="13.97" y1="25.72" x2="13.97" y2="32.7" width="0" layer="19" extent="1-1"/>
 <wire x1="18.4" y1="20.58" x2="18.4" y2="22.18" width="0" layer="19" extent="1-1"/>
 <wire x1="18.4" y1="16.58" x2="18.4" y2="20.58" width="0" layer="19" extent="1-1"/>
