@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6aG90bWFpbDY1Mzg5" projecturn="a.YnVzaW5lc3M6aG90bWFpbDY1Mzg5I0QyMDE5MDkyODIyMDA1ODM3Ng" f3durn="urn:adsk.wipprod:dm.lineage:KzSlArEYRVO6wvjfa0oVZg" pcbguid="ebf4a580-fadc-4f0f-b7d8-5e078fd26f8d" lastpulledtime="" lastsyncedchangeguid="bdface93-1f0a-7969-1048-1f6c891c56d1"/>
+<fusionsync huburn="a.YnVzaW5lc3M6aG90bWFpbDY1Mzg5" projecturn="a.YnVzaW5lc3M6aG90bWFpbDY1Mzg5I0QyMDE5MDkyODIyMDA1ODM3Ng" f3durn="urn:adsk.wipprod:dm.lineage:KzSlArEYRVO6wvjfa0oVZg" pcbguid="ebf4a580-fadc-4f0f-b7d8-5e078fd26f8d" lastpulledtime="" lastsyncedchangeguid="4a6e281f-c9cb-8827-eb76-1958ab32a137"/>
 <plain>
 <wire x1="23.8" y1="10.16" x2="23.8" y2="35.55" width="0" layer="20"/>
 <wire x1="23.8" y1="35.55" x2="0" y2="35.539840625" width="0" layer="20"/>
@@ -1572,14 +1572,14 @@ design rules under a new name.</description>
 <wire x1="13.97" y1="30.8" x2="13.97" y2="27.62" width="0.3048" layer="1"/>
 <wire x1="13.97" y1="27.62" x2="20.4116" y2="27.62" width="0.3048" layer="1"/>
 <wire x1="20.4116" y1="27.62" x2="22.6316" y2="25.4" width="0.3048" layer="1"/>
-<wire x1="22.6316" y1="25.4" x2="22.6316" y2="13.64" width="0.3048" layer="1"/>
-<wire x1="22.6316" y1="13.64" x2="20.32" y2="11.3284" width="0.3048" layer="1"/>
-<wire x1="20.32" y1="11.3284" x2="3.9116" y2="11.3284" width="0.3048" layer="1"/>
-<wire x1="1.27" y1="13.97" x2="1.27" y2="17.78" width="0.3048" layer="1"/>
+<wire x1="22.6316" y1="25.4" x2="22.6316" y2="12.37" width="0.3048" layer="1"/>
+<wire x1="22.6316" y1="12.37" x2="21.59" y2="11.3284" width="0.3048" layer="1"/>
+<wire x1="21.59" y1="11.3284" x2="2.6416" y2="11.3284" width="0.3048" layer="1"/>
+<wire x1="1.27" y1="12.7" x2="1.27" y2="17.78" width="0.3048" layer="1"/>
 <wire x1="1.27" y1="17.78" x2="1.4748" y2="17.9848" width="0.3048" layer="1"/>
 <wire x1="1.4748" y1="17.9848" x2="6.8048" y2="17.9848" width="0.3048" layer="1"/>
 <wire x1="6.8048" y1="17.9848" x2="7" y2="18.18" width="0.3048" layer="1"/>
-<wire x1="3.9116" y1="11.3284" x2="1.27" y2="13.97" width="0.3048" layer="1"/>
+<wire x1="2.6416" y1="11.3284" x2="1.27" y2="12.7" width="0.3048" layer="1"/>
 </signal>
 <signal name="RX">
 <contactref element="U1" pad="15"/>
