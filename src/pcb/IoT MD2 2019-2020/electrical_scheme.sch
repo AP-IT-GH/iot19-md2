@@ -17650,13 +17650,13 @@ http://www.micrel.com&lt;p&gt;
 <attribute name="NAME" x="99.06" y="133.35" size="1.778" layer="95"/>
 <attribute name="VALUE" x="116.84" y="116.84" size="1.778" layer="96"/>
 </instance>
-<instance part="C1" gate="G$1" x="127" y="121.92" smashed="yes">
-<attribute name="NAME" x="128.524" y="122.301" size="1.778" layer="95"/>
-<attribute name="VALUE" x="128.524" y="117.221" size="1.778" layer="96"/>
+<instance part="C1" gate="G$1" x="127" y="116.84" smashed="yes" rot="R180">
+<attribute name="NAME" x="125.476" y="116.459" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="125.476" y="121.539" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C2" gate="G$1" x="91.44" y="114.3" smashed="yes">
-<attribute name="NAME" x="92.964" y="114.681" size="1.778" layer="95"/>
-<attribute name="VALUE" x="92.964" y="109.601" size="1.778" layer="96"/>
+<instance part="C2" gate="G$1" x="91.44" y="111.76" smashed="yes" rot="R180">
+<attribute name="NAME" x="89.916" y="111.379" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="89.916" y="116.459" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C3" gate="G$1" x="185.42" y="73.66" smashed="yes">
 <attribute name="NAME" x="186.944" y="74.041" size="1.778" layer="95"/>
@@ -17686,8 +17686,8 @@ http://www.micrel.com&lt;p&gt;
 <instance part="GND4" gate="1" x="210.82" y="-12.7" smashed="yes">
 <attribute name="VALUE" x="208.28" y="-15.24" size="1.778" layer="96"/>
 </instance>
-<instance part="GND5" gate="1" x="210.82" y="20.32" smashed="yes">
-<attribute name="VALUE" x="208.28" y="17.78" size="1.778" layer="96"/>
+<instance part="GND5" gate="1" x="210.82" y="22.86" smashed="yes">
+<attribute name="VALUE" x="208.28" y="20.32" size="1.778" layer="96"/>
 </instance>
 <instance part="GND6" gate="1" x="185.42" y="60.96" smashed="yes">
 <attribute name="VALUE" x="182.88" y="58.42" size="1.778" layer="96"/>
@@ -17738,13 +17738,13 @@ http://www.micrel.com&lt;p&gt;
 </net>
 <net name="VDD" class="0">
 <segment>
-<wire x1="127" y1="129.54" x2="127" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="127" y1="129.54" x2="142.24" y2="129.54" width="0.1524" layer="91"/>
-<junction x="127" y="129.54"/>
+<wire x1="116.84" y1="129.54" x2="127" y2="129.54" width="0.1524" layer="91"/>
 <label x="142.24" y="129.54" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G1" pin="OUT"/>
-<wire x1="116.84" y1="129.54" x2="127" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="127" y1="129.54" x2="142.24" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="127" y1="121.92" x2="127" y2="129.54" width="0.1524" layer="91"/>
+<junction x="127" y="129.54"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VDDIN"/>
@@ -17777,11 +17777,6 @@ http://www.micrel.com&lt;p&gt;
 <label x="203.2" y="-5.08" size="1.4224" layer="95"/>
 </segment>
 <segment>
-<wire x1="198.12" y1="27.94" x2="203.2" y2="27.94" width="0.1524" layer="91"/>
-<label x="203.2" y="27.94" size="1.4224" layer="95"/>
-<pinref part="SV5" gate="1" pin="4"/>
-</segment>
-<segment>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="124.46" x2="182.88" y2="129.54" width="0.1524" layer="91"/>
 <label x="182.88" y="129.54" size="1.778" layer="95"/>
@@ -17790,6 +17785,11 @@ http://www.micrel.com&lt;p&gt;
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="81.28" x2="83.82" y2="88.9" width="0.1524" layer="91"/>
 <label x="83.82" y="88.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV5" gate="1" pin="3"/>
+<wire x1="198.12" y1="25.4" x2="203.2" y2="25.4" width="0.1524" layer="91"/>
+<label x="203.2" y="25.4" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -17880,26 +17880,9 @@ http://www.micrel.com&lt;p&gt;
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="SV3" gate="1" pin="2"/>
-<wire x1="152.4" y1="-10.16" x2="157.48" y2="-10.16" width="0.1524" layer="91"/>
-<label x="157.48" y="-10.16" size="1.4224" layer="95"/>
-</segment>
-<segment>
-<pinref part="SV4" gate="1" pin="2"/>
-<wire x1="198.12" y1="-10.16" x2="203.2" y2="-10.16" width="0.1524" layer="91"/>
-<label x="203.2" y="-10.16" size="1.4224" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="PA23"/>
 <wire x1="259.08" y1="73.66" x2="266.7" y2="73.66" width="0.1524" layer="91"/>
 <label x="266.7" y="73.66" size="1.9304" layer="95"/>
-</segment>
-</net>
-<net name="SDA" class="0">
-<segment>
-<pinref part="SV3" gate="1" pin="1"/>
-<wire x1="152.4" y1="-12.7" x2="157.48" y2="-12.7" width="0.1524" layer="91"/>
-<label x="157.48" y="-12.7" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <pinref part="SV4" gate="1" pin="1"/>
@@ -17907,9 +17890,26 @@ http://www.micrel.com&lt;p&gt;
 <label x="203.2" y="-12.7" size="1.4224" layer="95"/>
 </segment>
 <segment>
+<pinref part="SV3" gate="1" pin="1"/>
+<wire x1="152.4" y1="-12.7" x2="157.48" y2="-12.7" width="0.1524" layer="91"/>
+<label x="157.48" y="-12.7" size="1.4224" layer="95"/>
+</segment>
+</net>
+<net name="SDA" class="0">
+<segment>
 <pinref part="U1" gate="G$1" pin="PA22"/>
 <wire x1="259.08" y1="76.2" x2="266.7" y2="76.2" width="0.1524" layer="91"/>
 <label x="266.7" y="76.2" size="1.9304" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV4" gate="1" pin="2"/>
+<wire x1="198.12" y1="-10.16" x2="203.2" y2="-10.16" width="0.1524" layer="91"/>
+<label x="203.2" y="-10.16" size="1.4224" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV3" gate="1" pin="2"/>
+<wire x1="152.4" y1="-10.16" x2="157.48" y2="-10.16" width="0.1524" layer="91"/>
+<label x="157.48" y="-10.16" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -17958,14 +17958,6 @@ http://www.micrel.com&lt;p&gt;
 <pinref part="U1" gate="G$1" pin="PA15"/>
 <wire x1="259.08" y1="88.9" x2="266.7" y2="88.9" width="0.1524" layer="91"/>
 <label x="266.7" y="88.9" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="IC1" gate="G1" pin="BYP"/>
-<wire x1="96.52" y1="119.38" x2="91.44" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="119.38" x2="91.44" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -18034,12 +18026,6 @@ http://www.micrel.com&lt;p&gt;
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="198.12" y1="25.4" x2="210.82" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="25.4" x2="210.82" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="SV5" gate="1" pin="3"/>
-<pinref part="GND5" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="68.58" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="66.04" x2="185.42" y2="66.04" width="0.1524" layer="91"/>
@@ -18054,17 +18040,17 @@ http://www.micrel.com&lt;p&gt;
 <wire x1="109.22" y1="114.3" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="106.68" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
 <junction x="109.22" y="106.68"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="127" y1="116.84" x2="127" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="127" y1="106.68" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="P1" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="106.68" x2="81.28" y2="125.73" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="106.68" x2="91.44" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="106.68" x2="81.28" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="109.22" x2="91.44" y2="106.68" width="0.1524" layer="91"/>
 <junction x="91.44" y="106.68"/>
-<pinref part="GND7" gate="1" pin="GND"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="127" y1="114.3" x2="127" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
@@ -18092,6 +18078,20 @@ http://www.micrel.com&lt;p&gt;
 <wire x1="124.46" y1="53.34" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="114.3" y1="53.34" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SV5" gate="1" pin="4"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="198.12" y1="27.94" x2="210.82" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="27.94" x2="210.82" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="IC1" gate="G1" pin="BYP"/>
+<wire x1="96.52" y1="119.38" x2="91.44" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="119.38" x2="91.44" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

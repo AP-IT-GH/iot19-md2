@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14271,21 +14271,21 @@ http://www.micrel.com&lt;p&gt;
 <label x="266.7" y="83.82" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<wire x1="152.4" y1="22.86" x2="157.48" y2="22.86" width="0.1524" layer="91"/>
-<label x="157.48" y="22.86" size="1.4224" layer="95"/>
-<pinref part="SV2" gate="1" pin="5"/>
+<wire x1="152.4" y1="25.4" x2="157.48" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="SV2" gate="1" pin="6"/>
+<label x="157.48" y="25.4" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
-<wire x1="152.4" y1="25.4" x2="157.48" y2="25.4" width="0.1524" layer="91"/>
-<label x="157.48" y="25.4" size="1.4224" layer="95"/>
-<pinref part="SV2" gate="1" pin="6"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="PA16"/>
 <wire x1="259.08" y1="86.36" x2="266.7" y2="86.36" width="0.1524" layer="91"/>
 <label x="266.7" y="86.36" size="1.9304" layer="95"/>
+</segment>
+<segment>
+<wire x1="152.4" y1="27.94" x2="157.48" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="SV2" gate="1" pin="7"/>
+<label x="157.48" y="27.94" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -14295,9 +14295,9 @@ http://www.micrel.com&lt;p&gt;
 <label x="266.7" y="78.74" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<wire x1="152.4" y1="27.94" x2="157.48" y2="27.94" width="0.1524" layer="91"/>
-<label x="157.48" y="27.94" size="1.4224" layer="95"/>
-<pinref part="SV2" gate="1" pin="7"/>
+<pinref part="SV2" gate="1" pin="4"/>
+<wire x1="152.4" y1="20.32" x2="157.48" y2="20.32" width="0.1524" layer="91"/>
+<label x="157.48" y="20.32" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -14360,14 +14360,14 @@ http://www.micrel.com&lt;p&gt;
 </net>
 <net name="NSS" class="0">
 <segment>
-<pinref part="SV2" gate="1" pin="4"/>
-<wire x1="152.4" y1="20.32" x2="157.48" y2="20.32" width="0.1524" layer="91"/>
-<label x="157.48" y="20.32" size="1.4224" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="PA18"/>
 <wire x1="259.08" y1="81.28" x2="266.7" y2="81.28" width="0.1524" layer="91"/>
 <label x="266.7" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="152.4" y1="22.86" x2="157.48" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="SV2" gate="1" pin="5"/>
+<label x="157.48" y="22.86" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="RESET_LORA" class="0">
