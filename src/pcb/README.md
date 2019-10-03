@@ -2,7 +2,7 @@
 
 ## GPS module
 
-> 3 pins, TX, VDD and GND.
+> 4 pins, VDD, GND, TX and RX.
 
 ![Board](./img/GPS_Module_Board.png)
 
