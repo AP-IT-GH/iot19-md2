@@ -1,9 +1,9 @@
 # PCBs
 
-## GPS module
+## Humidity sensor
 
-> 3 pins, TX, VDD and GND.
+> 4 pins, VDD, GND, SCL en SDA
 
-![Board](./img/GPS_Module_Board.png)
+![Board](./img/Humidity_sensor_Board.png)
 
-![Scheme](./img/GPS_Module_schema.png)
+![Scheme](./img/Humidity_sensor_schema.png)
