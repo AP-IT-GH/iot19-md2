@@ -56,6 +56,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <board>
 <fusionsync huburn="a.YnVzaW5lc3M6aG90bWFpbDY1Mzg5" projecturn="a.YnVzaW5lc3M6aG90bWFpbDY1Mzg5I0QyMDE5MDkyODIyMDA1ODM3Ng" f3durn="urn:adsk.wipprod:dm.lineage:KzSlArEYRVO6wvjfa0oVZg" pcbguid="ebf4a580-fadc-4f0f-b7d8-5e078fd26f8d" lastpulledtime="" lastsyncedchangeguid="bdface93-1f0a-7969-1048-1f6c891c56d1"/>

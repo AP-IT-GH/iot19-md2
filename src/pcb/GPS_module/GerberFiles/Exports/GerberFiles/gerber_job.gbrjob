@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-10-03T14:19:14Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "GPS_Module"
+        },
+        "Owner": "zaza zattoni <zaza_zattoni@hotmail.com>",
+        "Size": {
+            "X": 23.8,
+            "Y": 25.39
+        }
+    }
+}
