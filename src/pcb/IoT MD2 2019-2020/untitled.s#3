@@ -10337,8 +10337,8 @@ http://www.micrel.com&lt;p&gt;
 <attribute name="NAME" x="11.43" y="-9.525" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="11.43" y="-25.4" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND8" gate="1" x="15.24" y="-27.94" smashed="yes">
-<attribute name="VALUE" x="12.7" y="-30.48" size="1.778" layer="96"/>
+<instance part="GND8" gate="1" x="22.86" y="-27.94" smashed="yes">
+<attribute name="VALUE" x="20.32" y="-30.48" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -10436,9 +10436,9 @@ http://www.micrel.com&lt;p&gt;
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="15.24" y1="-25.4" x2="15.24" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="JP5" gate="A" pin="4"/>
-<wire x1="15.24" y1="-20.32" x2="7.62" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-25.4" x2="22.86" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="A" pin="3"/>
+<wire x1="22.86" y1="-17.78" x2="7.62" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDD" class="0">
@@ -10477,9 +10477,9 @@ http://www.micrel.com&lt;p&gt;
 <label x="43.18" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="A" pin="3"/>
-<wire x1="7.62" y1="-17.78" x2="15.24" y2="-17.78" width="0.1524" layer="91"/>
-<label x="15.24" y="-17.78" size="1.778" layer="95"/>
+<pinref part="JP5" gate="A" pin="4"/>
+<wire x1="7.62" y1="-20.32" x2="15.24" y2="-20.32" width="0.1524" layer="91"/>
+<label x="15.24" y="-20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -10565,12 +10565,22 @@ http://www.micrel.com&lt;p&gt;
 <wire x1="7.62" y1="-15.24" x2="15.24" y2="-15.24" width="0.1524" layer="91"/>
 <label x="15.24" y="-15.24" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PA09"/>
+<wire x1="58.42" y1="40.64" x2="50.8" y2="40.64" width="0.1524" layer="91"/>
+<label x="50.8" y="40.64" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="RX" class="0">
 <segment>
 <pinref part="JP5" gate="A" pin="1"/>
 <wire x1="7.62" y1="-12.7" x2="15.24" y2="-12.7" width="0.1524" layer="91"/>
 <label x="15.24" y="-12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PA08"/>
+<wire x1="58.42" y1="43.18" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
+<label x="50.8" y="43.18" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
