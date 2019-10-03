@@ -4,6 +4,6 @@
 
 > 4 pins, VDD, GND, SCL en SDA
 
-![Board](./img/Humidity_sensor_Board.png)
+![Board](./img/Humidity_sensor_Board.PNG)
 
-![Scheme](./img/Humidity_sensor_schema.png)
+![Scheme](./img/Humidity_sensor_schema.PNG)
