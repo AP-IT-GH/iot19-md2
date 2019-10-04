@@ -69,10 +69,7 @@ De verschillende boxen zullen als nodes werken en samen in een transportmiddel g
 |                          | Sleep current                     |       | 0.6µA      | 1µA   |
 |                          | Supply current (I²C)              |       | 0.65mA     | 1mA   |
 | IMU 9DOF v2.0            | Werkspanning                      | 2.4V  |            | 3.6V  |
-| USB3140-30-0230-1-C      | Voltage rating                    |       | 30V (AC)   |       |
-|                          | Current rating                    | 1.0A  |            | 1.8A  |
-|                          | Temperatuur range                 | -30°C |            | +85°C |
-| TPS73533DRVT             | Werkspanning                      | 2.7V  |            | 6.5V  |
+| MIC5219-3.3YM5-TR            | Werkspanning                      | 2.5V  |            | 12V  |
 |                          | Uitgangspanning                   |       | 3.3V       |       |
 |                          | Stroomverbruik                    | 0     |            | 500mA |
 |                          | Temperatuur range                 | -40°C |            | 125°C |
