@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2019-10-03T14:19:14Z",
+        "CreationDate": "2019-10-04T11:10:17Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -15,10 +15,10 @@
         "Name": {
             "ProjectId": "GPS_Module"
         },
-        "Owner": "zaza zattoni <zaza_zattoni@hotmail.com>",
+        "Owner": "Imad El-Azzouzi <imad.el-azzouzi@student.ap.be>",
         "Size": {
             "X": 23.8,
-            "Y": 25.39
+            "Y": 25.38635
         }
     }
 }

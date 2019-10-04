@@ -3,7 +3,7 @@
 <eagle version="9.5.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -59,11 +59,17 @@
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <board>
+<fusionsync huburn="a.YnVzaW5lc3M6aG90bWFpbDY1Mzg5" projecturn="a.YnVzaW5lc3M6aG90bWFpbDY1Mzg5I0QyMDE5MDkyODIyMDA1ODM3Ng" f3durn="urn:adsk.wipprod:dm.lineage:svLPsV9RS2u_rmbosFshIg" pcbguid="6507b553-2b27-457c-9f5c-4fa8c74f7b8c" lastpulledtime="" lastsyncedchangeguid="78f34180-aae0-3ad1-317f-4908479c897f"/>
 <plain>
-<wire x1="0" y1="59.69" x2="18.72" y2="59.69" width="0" layer="20"/>
-<wire x1="18.72" y1="59.69" x2="18.72" y2="80" width="0" layer="20"/>
-<wire x1="18.72" y1="80" x2="0" y2="80" width="0" layer="20"/>
-<wire x1="0" y1="80" x2="0" y2="59.69" width="0" layer="20"/>
+<wire x1="17.45" y1="64.44" x2="17.45" y2="78.73" width="0" layer="20"/>
+<wire x1="17.45" y1="78.73" x2="6.34" y2="78.73" width="0" layer="20"/>
+<wire x1="6.34" y1="78.73" x2="0" y2="72.39" width="0" layer="20"/>
+<wire x1="0" y1="72.39" x2="0" y2="64.77" width="0" layer="20"/>
+<wire x1="0" y1="64.77" x2="3.809996875" y2="60.960003125" width="0" layer="20"/>
+<wire x1="3.809996875" y1="60.960003125" x2="13.970003125" y2="60.960003125" width="0" layer="20"/>
+<wire x1="13.970003125" y1="60.960003125" x2="17.45" y2="64.44" width="0" layer="20"/>
+<dimension x1="0" y1="80" x2="0" y2="59.69" x3="-1.27" y3="69.845" textsize="1.778" layer="1"/>
+<dimension x1="0" y1="80" x2="18.72" y2="80" x3="9.36" y3="81.28" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -1256,7 +1262,7 @@ W = angled&lt;p&gt;
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -1285,7 +1291,7 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="6mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
+<param name="mdCopperDimension" value="0mil"/>
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
@@ -1540,6 +1546,15 @@ design rules under a new name.</description>
 <wire x1="7.62" y1="77.15" x2="8.89" y2="77.15" width="0.3048" layer="1"/>
 <wire x1="6.9088" y1="71.6788" x2="6.9088" y2="76.4388" width="0.3048" layer="1"/>
 <wire x1="9.07" y1="71.12" x2="6.35" y2="71.12" width="0.3048" layer="1"/>
+<polygon width="0.1524" layer="1">
+<vertex x="0" y="72.39"/>
+<vertex x="6.35" y="78.74"/>
+<vertex x="17.78" y="78.74"/>
+<vertex x="17.78" y="64.77"/>
+<vertex x="13.97" y="60.96"/>
+<vertex x="3.81" y="60.96"/>
+<vertex x="0" y="64.77"/>
+</polygon>
 </signal>
 <signal name="VCORE">
 <contactref element="C1" pad="1"/>
@@ -1562,6 +1577,11 @@ design rules under a new name.</description>
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
