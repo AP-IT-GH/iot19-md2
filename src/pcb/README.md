@@ -1,6 +1,7 @@
 # PCBs
 
 ## MCU module
+![3d](./img/mcu_module_3d.png)
 
 ![Board](./img/mcu_module_brd.png)
 
@@ -8,7 +9,7 @@
 
 ## GPS module
 
-> 3 pins, TX, VDD and GND.
+![3d](./img/gps_module_3d.png)
 
 ![Board](./img/gps_module_brd.png)
 
