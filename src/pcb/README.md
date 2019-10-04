@@ -19,6 +19,6 @@
 
 ![3d](./img/humidity_sensor.png)
 
-![Board](./img/Humidity_sensor_Board.png)
+![Board](./img/Humidity_sensor_Board.PNG)
 
 ![Scheme](./img/GPS_Module_schema.png)
