@@ -15,3 +15,5 @@ Here you can manually add pins as macros through (E.g. PA04):
 ```
 #define PA04 GPIO(GPIO_PORTA, 4)
 ```
+
+In the file **main.c** is where you write all you code.
