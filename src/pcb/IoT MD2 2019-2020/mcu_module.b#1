@@ -77,6 +77,8 @@
 <wire x1="77.45" y1="13.97" x2="77.45" y2="58.09" width="0" layer="20"/>
 <wire x1="77.45" y1="58.09" x2="30.48" y2="58.09" width="0" layer="20"/>
 <wire x1="30.48" y1="58.09" x2="30.48" y2="13.97" width="0" layer="20"/>
+<dimension x1="30.48" y1="58.09" x2="30.48" y2="13.97" x3="25.4" y3="36.03" textsize="1.778" layer="1"/>
+<dimension x1="30.48" y1="58.09" x2="77.45" y2="58.09" x3="53.965" y3="63.5" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -1648,7 +1650,7 @@ Source: 008-0260-0_E.pdf</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default *">
+<designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -1677,7 +1679,7 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="6mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="0mil"/>
+<param name="mdCopperDimension" value="40mil"/>
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
@@ -2034,10 +2036,10 @@ design rules under a new name.</description>
 <wire x1="69.85" y1="20.32" x2="69.85" y2="20.5893125" width="0.3048" layer="1"/>
 <wire x1="57.15" y1="40.64" x2="59.69" y2="38.1" width="0.3048" layer="1"/>
 <polygon width="0.3048" layer="1">
-<vertex x="30.48" y="58.42"/>
-<vertex x="30.48" y="13.97"/>
-<vertex x="77.47" y="13.97"/>
-<vertex x="77.47" y="58.42"/>
+<vertex x="29.21" y="59.69"/>
+<vertex x="29.21" y="12.7"/>
+<vertex x="78.74" y="12.7"/>
+<vertex x="78.74" y="59.69"/>
 </polygon>
 <wire x1="46.12" y1="37.2" x2="46.12" y2="40.24" width="0.3048" layer="1"/>
 <wire x1="45.4" y1="40.96" x2="45.4" y2="43.18" width="0.3048" layer="1"/>
@@ -2064,6 +2066,7 @@ design rules under a new name.</description>
 <wire x1="67.31" y1="38.1" x2="68.58" y2="39.37" width="0.3048" layer="1"/>
 <wire x1="72.39" y1="21.59" x2="72.39" y2="29.21" width="0.3048" layer="1"/>
 <wire x1="72.39" y1="29.21" x2="69.85" y2="31.75" width="0.3048" layer="1"/>
+<wire x1="45.4" y1="43.18" x2="40.64" y2="44.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD">
 <contactref element="JP1" pad="1"/>

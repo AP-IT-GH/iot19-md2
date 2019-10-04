@@ -1,4 +1,4 @@
-Partlist exported from C:/Users/cools/code/iot19-md2/src/pcb/IoT MD2 2019-2020/mcu_module.sch at 3/10/2019 16:19
+Partlist exported from C:/Users/cools/code/iot19-md2/src/pcb/IoT MD2 2019-2020/mcu_module.sch at 4/10/2019 12:31
 
 Qty Value           Device          Package               Parts         Description                                                                 AVAILABILITY DESCRIPTION                                                                 MF        MP              MPN      OC_FARNELL OC_NEWARK PACKAGE           POPULARITY PRICE SPICEPREFIX
 1                   10-XX           B3F-10XX              S1            OMRON SWITCH                                                                                                                                                                                   B3F-1000 176432     36M3542                     72                          
