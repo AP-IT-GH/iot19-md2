@@ -11,14 +11,14 @@
 
 ![3d](./img/gps_module.png)
 
-![Board](./img/Humidity_sensor_Board.PNG)
+![Board](./img/GPS_Module_Board.png)
 
-![Scheme](./img/Humidity_sensor_schema.PNG)
+![Scheme](./img/GPS_Module_schema.png)
 
 ## Humidity sensor
 
 ![3d](./img/humidity_sensor.png)
 
-![Board](./img/Humidity_sensor_Board.PNG)
+![Board](./img/Humidity_sensor_Board.png)
 
 ![Scheme](./img/GPS_Module_schema.png)
