@@ -21,4 +21,4 @@
 
 ![Board](./img/Humidity_sensor_Board.PNG)
 
-![Scheme](./img/Humidity_sensor_schema.png)
+![Scheme](./img/Humidity_sensor_schema.PNG)
