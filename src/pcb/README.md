@@ -9,7 +9,7 @@
 
 ## GPS module
 
-![3d](./img/gps_module.png)
+![3d](./img/gps_module_3d.png)
 
 ![Board](./img/GPS_Module_Board.png)
 
@@ -17,7 +17,7 @@
 
 ## Humidity sensor
 
-![3d](./img/humidity_sensor.png)
+![3d](./img/humidity_module_3d.png)
 
 ![Board](./img/Humidity_sensor_Board.PNG)
 
