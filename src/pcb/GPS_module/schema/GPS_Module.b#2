@@ -1283,7 +1283,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -1312,7 +1312,7 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="6mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
+<param name="mdCopperDimension" value="0mil"/>
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
@@ -1558,13 +1558,6 @@ design rules under a new name.</description>
 <vertex x="3.81" y="10.16"/>
 <vertex x="0" y="13.97"/>
 </polygon>
-<wire x1="13.97" y1="25.72" x2="13.97" y2="32.7" width="0" layer="19" extent="1-1"/>
-<wire x1="18.4" y1="20.58" x2="18.4" y2="22.18" width="0" layer="19" extent="1-1"/>
-<wire x1="18.4" y1="16.58" x2="18.4" y2="20.58" width="0" layer="19" extent="1-1"/>
-<wire x1="18.4" y1="14.98" x2="18.4" y2="16.58" width="0" layer="19" extent="1-1"/>
-<wire x1="18.4" y1="14.18" x2="18.4" y2="14.98" width="0" layer="19" extent="1-1"/>
-<wire x1="7" y1="16.58" x2="7" y2="22.18" width="0" layer="19" extent="1-1"/>
-<wire x1="7" y1="13.38" x2="7" y2="16.58" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD">
 <contactref element="SV1" pad="4"/>

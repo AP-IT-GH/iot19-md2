@@ -59,14 +59,15 @@
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6aG90bWFpbDY1Mzg5" projecturn="a.YnVzaW5lc3M6aG90bWFpbDY1Mzg5I0QyMDE5MDkyODIyMDA1ODM3Ng" f3durn="urn:adsk.wipprod:dm.lineage:KzSlArEYRVO6wvjfa0oVZg" pcbguid="ebf4a580-fadc-4f0f-b7d8-5e078fd26f8d" lastpulledtime="" lastsyncedchangeguid="bdface93-1f0a-7969-1048-1f6c891c56d1"/>
+<fusionsync huburn="a.YnVzaW5lc3M6aG90bWFpbDY1Mzg5" projecturn="a.YnVzaW5lc3M6aG90bWFpbDY1Mzg5I0QyMDE5MDkyODIyMDA1ODM3Ng" f3durn="urn:adsk.wipprod:dm.lineage:KzSlArEYRVO6wvjfa0oVZg" pcbguid="ebf4a580-fadc-4f0f-b7d8-5e078fd26f8d" lastpulledtime="" lastsyncedchangeguid="33841908-6723-2d42-ed1a-ce92a6612f6a"/>
 <plain>
-<wire x1="23.8" y1="10.16" x2="23.8" y2="35.55" width="0" layer="20"/>
-<wire x1="23.8" y1="35.55" x2="0" y2="35.539840625" width="0" layer="20"/>
-<wire x1="0" y1="35.539840625" x2="0" y2="10.16" width="0" layer="20"/>
-<wire x1="0" y1="10.16" x2="23.8" y2="10.16" width="0" layer="20"/>
-<dimension x1="0" y1="35.539840625" x2="23.8" y2="35.55" x3="11.899453125" y3="36.82531875" textsize="1.778" layer="1"/>
-<dimension x1="0" y1="35.539840625" x2="0" y2="10.16" x3="-1.27" y3="22.84991875" textsize="1.778" layer="1"/>
+<wire x1="3.81" y1="10.16" x2="20.32" y2="10.16" width="0" layer="20"/>
+<wire x1="20.32" y1="10.16" x2="23.8" y2="13.64" width="0" layer="20"/>
+<wire x1="23.8" y1="13.64" x2="23.8" y2="27.00203125" width="0" layer="20"/>
+<wire x1="23.8" y1="27.00203125" x2="15.25203125" y2="35.54635" width="0" layer="20"/>
+<wire x1="15.25203125" y1="35.54635" x2="0" y2="35.539840625" width="0" layer="20"/>
+<wire x1="0" y1="35.539840625" x2="0" y2="13.97" width="0" layer="20"/>
+<wire x1="0" y1="13.97" x2="3.81" y2="10.16" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="SL876Q5A001T001000">
@@ -1550,9 +1551,21 @@ design rules under a new name.</description>
 <wire x1="7" y1="25.42" x2="7.3" y2="25.72" width="0.3048" layer="1"/>
 <polygon width="0.1524" layer="1">
 <vertex x="0" y="35.56"/>
-<vertex x="24.13" y="35.56"/>
-<vertex x="24.13" y="10.16"/>
-<vertex x="0" y="10.16"/>
+<vertex x="13.97" y="35.56"/>
+<vertex x="24.13" y="25.4"/>
+<vertex x="24.13" y="13.97"/>
+<vertex x="20.32" y="10.16"/>
+<vertex x="3.81" y="10.16"/>
+<vertex x="0" y="13.97"/>
+</polygon>
+<polygon width="0.1524" layer="1">
+<vertex x="0" y="35.56"/>
+<vertex x="15.24" y="35.56"/>
+<vertex x="24.13" y="26.67"/>
+<vertex x="24.13" y="13.97"/>
+<vertex x="20.32" y="10.16"/>
+<vertex x="3.81" y="10.16"/>
+<vertex x="0" y="13.97"/>
 </polygon>
 </signal>
 <signal name="VDD">
