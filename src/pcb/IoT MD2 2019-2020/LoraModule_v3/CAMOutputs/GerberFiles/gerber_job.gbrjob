@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2019-10-07T09:29:24Z",
+        "CreationDate": "2019-10-11T11:56:08Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -13,12 +13,12 @@
         "BoardThickness": 1.57,
         "LayerNumber": 2,
         "Name": {
-            "ProjectId": "mcu_module"
+            "ProjectId": "lora_module"
         },
         "Owner": "Jarno Cools <jarno.cools@student.ap.be>",
         "Size": {
-            "X": 44.43,
-            "Y": 47.93
+            "X": 27.92,
+            "Y": 31.42
         }
     }
 }
