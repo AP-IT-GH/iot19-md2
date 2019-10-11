@@ -480,8 +480,8 @@ W = angled&lt;p&gt;
 <attribute name="NAME" x="10.1437" y="47.0049" size="1.7799" layer="95"/>
 <attribute name="VALUE" x="10.135" y="15.2108" size="1.78091875" layer="96"/>
 </instance>
-<instance part="GND1" gate="1" x="5.08" y="63.5" smashed="yes">
-<attribute name="VALUE" x="2.54" y="60.96" size="1.778" layer="96"/>
+<instance part="GND1" gate="1" x="45.72" y="66.04" smashed="yes">
+<attribute name="VALUE" x="43.18" y="63.5" size="1.778" layer="96"/>
 </instance>
 <instance part="GND2" gate="1" x="48.26" y="12.7" smashed="yes">
 <attribute name="VALUE" x="45.72" y="10.16" size="1.778" layer="96"/>
@@ -504,101 +504,107 @@ W = angled&lt;p&gt;
 <nets>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="LORAMODULE" gate="G$1" pin="MOSI"/>
-<wire x1="43.18" y1="30.48" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
-<label x="50.8" y="30.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<label x="38.1" y="76.2" size="1.778" layer="95"/>
-<pinref part="SV1" gate="G$1" pin="4"/>
-<wire x1="35.56" y1="76.2" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="RESET_LORA" class="0">
-<segment>
-<pinref part="LORAMODULE" gate="G$1" pin="RESET"/>
-<wire x1="7.62" y1="35.56" x2="0" y2="35.56" width="0.1524" layer="91"/>
-<label x="0" y="35.56" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<label x="38.1" y="68.58" size="1.778" layer="95"/>
-<pinref part="SV1" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="68.58" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="DIO2" class="0">
-<segment>
-<pinref part="LORAMODULE" gate="G$1" pin="DIO2"/>
-<wire x1="7.62" y1="20.32" x2="0" y2="20.32" width="0.1524" layer="91"/>
-<label x="0" y="20.32" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
 <label x="7.62" y="78.74" size="1.778" layer="95" rot="R180"/>
 <pinref part="SV2" gate="G$1" pin="5"/>
 <wire x1="10.16" y1="78.74" x2="7.62" y2="78.74" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="DIO1" class="0">
 <segment>
-<pinref part="LORAMODULE" gate="G$1" pin="DIO1"/>
-<wire x1="7.62" y1="22.86" x2="0" y2="22.86" width="0.1524" layer="91"/>
-<label x="0" y="22.86" size="1.778" layer="95" rot="R180"/>
+<pinref part="LORAMODULE" gate="G$1" pin="MOSI"/>
+<wire x1="43.18" y1="30.48" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
+<label x="50.8" y="30.48" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="RESET_LORA" class="0">
 <segment>
 <label x="7.62" y="76.2" size="1.778" layer="95" rot="R180"/>
 <pinref part="SV2" gate="G$1" pin="4"/>
 <wire x1="10.16" y1="76.2" x2="7.62" y2="76.2" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="SCK" class="0">
 <segment>
-<pinref part="LORAMODULE" gate="G$1" pin="SCK"/>
-<wire x1="7.62" y1="40.64" x2="0" y2="40.64" width="0.1524" layer="91"/>
-<label x="0" y="40.64" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<label x="38.1" y="73.66" size="1.778" layer="95"/>
-<pinref part="SV1" gate="G$1" pin="3"/>
-<wire x1="35.56" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="LORAMODULE" gate="G$1" pin="RESET"/>
+<wire x1="7.62" y1="35.56" x2="0" y2="35.56" width="0.1524" layer="91"/>
+<label x="0" y="35.56" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="NSS" class="0">
+<net name="DIO2" class="0">
 <segment>
-<pinref part="LORAMODULE" gate="G$1" pin="NSS"/>
-<wire x1="7.62" y1="38.1" x2="0" y2="38.1" width="0.1524" layer="91"/>
-<label x="0" y="38.1" size="1.778" layer="95" rot="R180"/>
+<label x="7.62" y="73.66" size="1.778" layer="95" rot="R180"/>
+<pinref part="SV2" gate="G$1" pin="3"/>
+<wire x1="10.16" y1="73.66" x2="7.62" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="G$1" pin="2"/>
-<wire x1="35.56" y1="71.12" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
-<label x="38.1" y="71.12" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="MISO" class="0">
-<segment>
-<pinref part="LORAMODULE" gate="G$1" pin="MISO"/>
-<wire x1="7.62" y1="43.18" x2="0" y2="43.18" width="0.1524" layer="91"/>
-<label x="0" y="43.18" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<label x="38.1" y="78.74" size="1.778" layer="95"/>
-<pinref part="SV1" gate="G$1" pin="5"/>
-<wire x1="35.56" y1="78.74" x2="38.1" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="LORAMODULE" gate="G$1" pin="DIO2"/>
+<wire x1="7.62" y1="20.32" x2="0" y2="20.32" width="0.1524" layer="91"/>
+<label x="0" y="20.32" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="VDD" class="0">
-<segment>
-<pinref part="LORAMODULE" gate="G$1" pin="3_3V"/>
-<wire x1="43.18" y1="43.18" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
-<label x="50.8" y="43.18" size="1.778" layer="95"/>
-</segment>
+<net name="DIO1" class="0">
 <segment>
 <label x="7.62" y="71.12" size="1.778" layer="95" rot="R180"/>
 <pinref part="SV2" gate="G$1" pin="2"/>
 <wire x1="10.16" y1="71.12" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="LORAMODULE" gate="G$1" pin="DIO1"/>
+<wire x1="7.62" y1="22.86" x2="0" y2="22.86" width="0.1524" layer="91"/>
+<label x="0" y="22.86" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="SCK" class="0">
+<segment>
+<label x="38.1" y="78.74" size="1.778" layer="95"/>
+<pinref part="SV1" gate="G$1" pin="5"/>
+<wire x1="35.56" y1="78.74" x2="38.1" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LORAMODULE" gate="G$1" pin="SCK"/>
+<wire x1="7.62" y1="40.64" x2="0" y2="40.64" width="0.1524" layer="91"/>
+<label x="0" y="40.64" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="NSS" class="0">
+<segment>
+<label x="38.1" y="76.2" size="1.778" layer="95"/>
+<pinref part="SV1" gate="G$1" pin="4"/>
+<wire x1="35.56" y1="76.2" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LORAMODULE" gate="G$1" pin="NSS"/>
+<wire x1="7.62" y1="38.1" x2="0" y2="38.1" width="0.1524" layer="91"/>
+<label x="0" y="38.1" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="MISO" class="0">
+<segment>
+<label x="38.1" y="73.66" size="1.778" layer="95"/>
+<pinref part="SV1" gate="G$1" pin="3"/>
+<wire x1="35.56" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LORAMODULE" gate="G$1" pin="MISO"/>
+<wire x1="7.62" y1="43.18" x2="0" y2="43.18" width="0.1524" layer="91"/>
+<label x="0" y="43.18" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="VDD" class="0">
+<segment>
+<label x="38.1" y="68.58" size="1.778" layer="95"/>
+<pinref part="SV1" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="68.58" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LORAMODULE" gate="G$1" pin="3_3V"/>
+<wire x1="43.18" y1="43.18" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
+<label x="50.8" y="43.18" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GND" class="0">
+<segment>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="45.72" y1="68.58" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="71.12" x2="35.56" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="G$1" pin="2"/>
+</segment>
 <segment>
 <pinref part="LORAMODULE" gate="G$1" pin="GND@2"/>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -610,23 +616,17 @@ W = angled&lt;p&gt;
 <wire x1="68.58" y1="20.32" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
 <junction x="48.26" y="20.32"/>
 </segment>
-<segment>
-<pinref part="SV2" gate="G$1" pin="1"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="10.16" y1="68.58" x2="5.08" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="68.58" x2="5.08" y2="66.04" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="DIO0" class="0">
+<segment>
+<label x="7.62" y="68.58" size="1.778" layer="95" rot="R180"/>
+<pinref part="SV2" gate="G$1" pin="1"/>
+<wire x1="10.16" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
+</segment>
 <segment>
 <pinref part="LORAMODULE" gate="G$1" pin="DIO0"/>
 <wire x1="7.62" y1="25.4" x2="0" y2="25.4" width="0.1524" layer="91"/>
 <label x="0" y="25.4" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<label x="7.62" y="73.66" size="1.778" layer="95" rot="R180"/>
-<pinref part="SV2" gate="G$1" pin="3"/>
-<wire x1="10.16" y1="73.66" x2="7.62" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
