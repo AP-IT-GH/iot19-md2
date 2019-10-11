@@ -157,14 +157,14 @@
 <board>
 <fusionsync huburn="a.YnVzaW5lc3M6c3R1ZGVudDEwMzky" projecturn="a.YnVzaW5lc3M6c3R1ZGVudDEwMzkyI0QyMDE5MTAxMTIyNTQ4NzIwNg" f3durn="urn:adsk.wipprod:dm.lineage:vhBnidx7SjGjpV0SQGuD_A" pcbguid="f4d15e17-44d4-4413-9f01-98a20f87a574" lastpulledtime="" lastsyncedchangeguid="8afc6175-b04b-5490-7635-74abbac27077"/>
 <plain>
-<wire x1="10.16" y1="-3.81" x2="55.86" y2="-3.81" width="0" layer="20"/>
-<wire x1="55.86" y1="-3.81" x2="55.86" y2="55.55" width="0" layer="20"/>
+<wire x1="10.16" y1="-5.08" x2="55.86" y2="-5.08" width="0" layer="20"/>
+<wire x1="55.86" y1="-5.08" x2="55.86" y2="55.55" width="0" layer="20"/>
 <wire x1="55.86" y1="55.55" x2="10.16" y2="55.55" width="0" layer="20"/>
-<wire x1="10.16" y1="55.55" x2="10.16" y2="-3.81" width="0" layer="20"/>
-<hole x="54.61" y="-2.54" drill="0.762"/>
-<hole x="11.43" y="-2.54" drill="0.762"/>
-<hole x="11.43" y="54.102" drill="0.762"/>
-<hole x="54.61" y="54.102" drill="0.762"/>
+<wire x1="10.16" y1="55.55" x2="10.16" y2="-5.08" width="0" layer="20"/>
+<hole x="53.34" y="53.34" drill="3"/>
+<hole x="12.7" y="53.34" drill="3"/>
+<hole x="12.7" y="-2.54" drill="3"/>
+<hole x="53.34" y="-2.54" drill="3"/>
 </plain>
 <libraries>
 <library name="pinhead" urn="urn:adsk.eagle:library:325">
@@ -2138,9 +2138,8 @@ design rules under a new name.</description>
 <wire x1="25.83335" y1="24.8372" x2="22.4748" y2="24.8372" width="0.3048" layer="1"/>
 <polygon width="0.3048" layer="1">
 <vertex x="10.16" y="55.88"/>
-<vertex x="10.16" y="-3.81"/>
-<vertex x="55.88" y="-3.81"/>
-<vertex x="55.88" y="54.61"/>
+<vertex x="10.16" y="-5.08"/>
+<vertex x="55.88" y="-5.08"/>
 <vertex x="55.88" y="55.88"/>
 </polygon>
 </signal>
