@@ -68,8 +68,6 @@
 <wire x1="0" y1="64.77" x2="3.809996875" y2="60.960003125" width="0" layer="20"/>
 <wire x1="3.809996875" y1="60.960003125" x2="13.970003125" y2="60.960003125" width="0" layer="20"/>
 <wire x1="13.970003125" y1="60.960003125" x2="17.45" y2="64.44" width="0" layer="20"/>
-<dimension x1="0" y1="80" x2="0" y2="59.69" x3="-1.27" y3="69.845" textsize="1.778" layer="1"/>
-<dimension x1="0" y1="80" x2="18.72" y2="80" x3="9.36" y3="81.28" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
