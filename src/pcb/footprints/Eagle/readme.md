@@ -15,3 +15,7 @@ Library for the GPS module
 ## HIH6030-021-001
 
 Library for the Humidity sensor
+
+## U.FL-R-SMT_01_.lbr
+
+Library for the U.FL (Male U.FL connector)
