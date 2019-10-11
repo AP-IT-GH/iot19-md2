@@ -1,4 +1,4 @@
-# 1. Electrical Scheme
+# 1. MCU Module PCB
 
 ## ATSAMD21
 
@@ -24,21 +24,69 @@ _Load capacitors calculation_
 > ([Datasheet ATSAMD21](./datasheets/Atmel-42181-SAM-D21_Datasheet.pdf) p. 1015, 38.7.1)  
 > Program the MCU via SWD connection. 10 pin connector
 
-## TPS73533
+> PA30 - SWDCLK  
+> PA31 - SWDIO  
+> RESET - RESET
 
-The voltage regulator of this project. Input Voltage between 2.7V and 6.5V. Fixed Outputs of 1.2V to 4.3V. Because TPS735**33** is used the fixed output is 3.3V.
+## MIC5219-3.3YM5-TR
 
-Schematic used for the Fixed-Voltage version. ([Datasheet TPS735](./datasheets/tps735.pdf) p. 13, Figure 15)
+The voltage regulator of this project. Because MIC5219-**3.3** is used the fixed output is 3.3V.
+
+Schematic used for the Fixed-Voltage version. ([Datasheet MIC5219](./datasheets/mic5219-3_3.pdf) p. 12, Figure 6)
 
 ### Connections to the IC
 
 > ([Datasheet TPS735](./datasheets/tps735.pdf) p. 4, 5. Pin configuration)  
 > Given all the connections for the pins, minimum and maximum values for capacitors.
 
+### Reset circuit
+
+The reset circuit has it's purpose to reset the MCU when the pin is triggered low. 2 header pins are added so if needed an externall reset controller could be added.
+
+### Connections to the modules
+
+All the sensor modules are given power through the MCU board every module has 2 extra pins for the GND and VDD(3.3V) pins.
+
+#### LoRa Module pins
+
+The connection between the MCU and the LoRa is SPI. Therefor the typical SPI pins are used MISO, MOSI, SCK and NSS. The reset pin from the LoRa module is connected with an DIO pin from the MCU so the MCU can reset the LoRa module.
+
+> PA15 - RESET LoRa  
+> PA16 - MOSI  
+> PA17 - SCK  
+> PA18 - NSS  
+> PA19 - MISO
+
+#### GPS Module pins
+
+The connection used for the GPS module is a simple serial connection (TX,RX).
+
+> PA08 - RX  
+> PA09 - TX
+
+#### Humidity/Temp sensor pins
+
+I2C is used between MCU and humidity sensor.
+
+> PA22 - SCL  
+> PA23 - SDA
+
+#### 9DoF sensor pins
+
+I2C is used between MCU and 9DoF.
+
+> PA22 - SCL  
+> PA23 - SDA
+
 # 2. GPS Module PCB
 
 > ([Datasheet SE876Q5-A](./datasheets/Telit_SE876Q5-A_Datasheet.pdf))  
 > ([gps_module_sch.png](../src/pcb/img/gps_module_sch.png))
+
+### Power supply
+
+> ([User Guide SE876Q5-A](./datasheets/Telit_SE876Q5-A_User_Guide.pdf) p. 34, 8.4.3 )  
+> Capacitors are recommended with a minimum value of 10uF in parallel with a 0.1uF ceramic capacitor.
 
 ## Voltage divider
 
@@ -51,6 +99,9 @@ The voltage retrieved from the supply on the MCU's PCB is 3.3V. The maximum volt
 Vin = 3.3V  
 R2 = 120 Ohm and R1 = 100 Ohm
 
+Vout = 1.8V
+
 ## SE876Q5-A
 
 For this project is the serial port of the MCU used. So the TX from the GPS is connected to the RX from the MCU.
+The TX from the MCU will be used for sending commands to the GPS.

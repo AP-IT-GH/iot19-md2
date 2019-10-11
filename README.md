@@ -2,11 +2,11 @@
 
 ## Groepsleden
 
-Jarno Cools - Project Manager   
-Imad El-Azzouzi -  
-Oussama Es-Salhi -  
-Cristian Baba -
+Jarno Cools - Project Manager, Documentating and all-round  
+Imad El-Azzouzi - PCB designer  
+Oussama Es-Salhi - Back-end Programmer / Systems integrator  
+Cristian Baba - 
 
 ## Documentatie
 
-Leg hier de link naar de nuttige documentatie
+[Medical Delivery Analyse](/doc/analyse.md)
