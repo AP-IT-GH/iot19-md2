@@ -15,3 +15,7 @@ Library for the crystal.
 ## S2B-PH-SM4-TB.lbr
 
 Library for the input cable from the lithium battery.
+
+## RFM95W-868S2.lbr
+
+Library for the LoRa module.
