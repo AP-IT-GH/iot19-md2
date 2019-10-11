@@ -16,6 +16,11 @@ float previousGyro = 0; // previous gyro state
 float rotation = 0;
 float rotationCorrection = 1.11;
 
+float tau=0.075;
+float a=0.0;
+
+float acceleratieZ =0;
+
 #define PRINT_CALCULATED
 //#define PRINT_RAW
 #define PRINT_SPEED 250 // 250 ms between prints
@@ -47,8 +52,8 @@ init9Dof();
 }
 
 void loop() {
-updateGyro();
-//printAccel();
+//updateGyro();
+printAccel();
 }
 void printAccel()
 {
@@ -63,64 +68,68 @@ void printAccel()
   float accelY = imu.calcAccel(imu.ay);
   float accelZ = imu.calcAccel(imu.az);
   
+ // total acceleration
+ float acceltot = sqrt(pow(accelX,2)+pow(accelY,2)+pow(accelZ,2));
+ 
+ float accfilterdX = accelX/acceltot;
+ float accfilterdY = accelY/acceltot;
+float accfilterdZ = accelY/acceltot; 
+
     if ((lastPrint + PRINT_SPEED) < millis())
   {
   // Now we can use the ax, ay, and az variables as we please.
-  Serial.print("A: ");
-  Serial.print(accelX);
+  Serial.print("X: ");
+  Serial.print(accfilterdX);
+  Serial.print("Y: ");
   Serial.print(", ");
-  Serial.print(accelY);
+  Serial.print(accfilterdY);
+   Serial.print("Z: ");
   Serial.print(", ");
-  Serial.println(accelZ);
+  Serial.println(accfilterdZ);
   Serial.println();
-    
-    lastPrint = millis(); // Update lastPrint time
-  }
-  // Now we can use the ax, ay, and az variables as we please.
-  Serial.print("A: ");
-  Serial.print(accelX);
-  Serial.print(", ");
-  Serial.print(accelY);
-  Serial.print(", ");
-  Serial.println(accelZ);
 
-  /*if ((abs(accelX)||(abs(accelY)||(abs(accelZ) >= 1.60))))
-  {
-    Serial.print("product is broken");
-  }*/
+  
+  }
+
   delay (500);
 }
 
 void updateGyro() {
+  
+
+
+
   // Update the sensor values whenever new data is available
   if ( imu.gyroAvailable() )
   {
     // update gx, gy, and gz variables with the most current data.
     imu.readGyro();
   }
-  if ((lastPrint + PRINT_SPEED) < millis())
-  {
-  Serial.print(imu.calcGyro(imu.gx), 2);
-  Serial.print(", ");
-  Serial.print(imu.calcGyro(imu.gy), 2);
-  Serial.print(", ");
-  Serial.print(imu.calcGyro(imu.gz), 2);
-  Serial.println(" deg/s");
-  
-    Serial.println();
-    
-    lastPrint = millis(); // Update lastPrint time
-  }
-/*
+   if ( imu.accelAvailable() ){
+  imu.readAccel();
+   }
+  float accelX = imu.calcAccel(imu.ax);
+  float accelY = imu.calcAccel(imu.ay);
+  float accelZ = imu.calcAccel(imu.az);
+
+   
+   //to do add Y AND X BASE TO control value
+   //Accelerometer for better values
+  float roll = atan2(accelY , accelZ) * 57.3; 
+
+
+  // Serial.print("roll :  ");
+  // Serial.println(roll);
+
+  //complementaire filter
   float f_gz = imu.calcGyro(imu.gz);
-  float d_t = (f_gz - previousGyro) / (millis() - lastGyro);
-  if (abs(f_gz) > 2.25) {
-    
-      Serial.print("Rotation: ");
-      Serial.println(rotation);
-      Serial.println();
-     rotation += f_gz * (millis() - lastGyro) / 1000 * rotationCorrection;
-  }
-  previousGyro = f_gz;
-  lastGyro = millis();*/
-}
+  float dtC = float(millis())/1000.0;
+  a=tau/(tau+dtC);
+  rotation = a* (rotation + f_gz * dtC) + (1-a) * (roll);
+       Serial.print("rotation :  ");
+       Serial.println(abs(rotation));
+
+   if ((abs(rotation) >= 102.0)){
+       Serial.println("Box has fallen over");
+   }
+   }
