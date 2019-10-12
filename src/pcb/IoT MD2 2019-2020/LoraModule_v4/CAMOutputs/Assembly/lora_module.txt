@@ -1,4 +1,4 @@
-Partlist exported from C:/Users/cools/code/iot19-md2/src/pcb/IoT MD2 2019-2020/lora_module.sch at 12/10/2019 10:56
+Partlist exported from C:/Users/cools/code/iot19-md2/src/pcb/IoT MD2 2019-2020/lora_module.sch at 12/10/2019 11:00
 
 Qty Value            Device           Package              Parts      Description                                                       AVAILABILITY DESCRIPTION                                                         MF     MP               MPN OC_FARNELL OC_NEWARK PACKAGE                      POPULARITY PRICE SPICEPREFIX
 2                    FE05-1           FE05-1               SV1, SV2   FEMALE HEADER                                                                                                                                                                  unknown    unknown                                7                           

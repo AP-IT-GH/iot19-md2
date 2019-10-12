@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2019-10-12T08:56:21Z",
+        "CreationDate": "2019-10-12T09:00:31Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -17,8 +17,8 @@
         },
         "Owner": "Jarno Cools <jarno.cools@student.ap.be>",
         "Size": {
-            "X": 27.92,
-            "Y": 32.69
+            "X": 25.38,
+            "Y": 31.42
         }
     }
 }
