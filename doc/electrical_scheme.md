@@ -51,10 +51,13 @@ All the sensor modules are given power through the MCU board every module has 2 
 
 The connection between the MCU and the LoRa is SPI. Therefor the typical SPI pins are used MISO, MOSI, SCK and NSS. The reset pin from the LoRa module is connected with an DIO pin from the MCU so the MCU can reset the LoRa module.
 
+> PA12 - DIO0
+> PA13 - DIO1
+> PA14 - DIO2
 > PA15 - RESET LoRa  
-> PA16 - MOSI  
+> PA16 - NSS
 > PA17 - SCK  
-> PA18 - NSS  
+> PA18 - MOSI  
 > PA19 - MISO
 
 #### GPS Module pins
@@ -78,7 +81,7 @@ I2C is used between MCU and 9DoF.
 > PA22 - SCL  
 > PA23 - SDA
 
-# 2. GPS Module PCB
+# GPS Module PCB
 
 > ([Datasheet SE876Q5-A](./datasheets/Telit_SE876Q5-A_Datasheet.pdf))  
 > ([gps_module_sch.png](../src/pcb/img/gps_module_sch.png))
@@ -105,3 +108,23 @@ Vout = 1.8V
 
 For this project is the serial port of the MCU used. So the TX from the GPS is connected to the RX from the MCU.
 The TX from the MCU will be used for sending commands to the GPS.
+
+# Lora Module RFM95W
+
+## Antenna
+
+An external antenna is required to transmit to and receive from the LoRa Gateway, an insulated copper wire is used with a length of 86mm.
+
+The antenna length (L) is calculated as follow:
+
+    c = λ x f
+    L = ¼ x λ
+    c = speed of light = 299792458 m/s
+    λ = wavelength (m)
+    f = frequency = 868000000 Hz (This frequency applies to Europe)
+    L = antenna length (m)
+
+    299792458 = λ x 868000000
+    λ = 0.34538 m
+    λ = 345.38 mm
+    L = ¼ x λ = 86 mm (This antenna applies for Europe)
