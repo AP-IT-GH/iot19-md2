@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-10-11T08:56:57Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "GPS_Module"
+        },
+        "Owner": "Imad El-Azzouzi <imad.el-azzouzi@student.ap.be>",
+        "Size": {
+            "X": 23.8,
+            "Y": 25.389997
+        }
+    }
+}
