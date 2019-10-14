@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-10-12T09:15:11Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "mcu_module"
+        },
+        "Owner": "Jarno Cools <jarno.cools@student.ap.be>",
+        "Size": {
+            "X": 45.7,
+            "Y": 60.63
+        }
+    }
+}

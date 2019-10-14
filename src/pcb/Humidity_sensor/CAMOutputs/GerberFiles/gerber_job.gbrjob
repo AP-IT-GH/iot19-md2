@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-10-11T09:44:10Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "humidity_sensor"
+        },
+        "Owner": "Imad El-Azzouzi <imad.el-azzouzi@student.ap.be>",
+        "Size": {
+            "X": 17.45,
+            "Y": 17.769997
+        }
+    }
+}
