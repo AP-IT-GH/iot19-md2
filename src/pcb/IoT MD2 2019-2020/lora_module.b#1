@@ -72,7 +72,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6c3R1ZGVudDEwMzky" projecturn="a.YnVzaW5lc3M6c3R1ZGVudDEwMzkyI0QyMDE5MTAxMTIyNTQ4NzIwNg" f3durn="urn:adsk.wipprod:dm.lineage:o5PwCKtQTq-g7Tc5t2Tl6A" pcbguid="f2edb4a1-dce4-4dac-8719-28d8a49f27ce" lastpulledtime="" lastsyncedchangeguid="d5f30512-5e39-3294-0eee-e2fcb6a6c227"/>
+<fusionsync huburn="a.YnVzaW5lc3M6c3R1ZGVudDEwMzky" projecturn="a.YnVzaW5lc3M6c3R1ZGVudDEwMzkyI0QyMDE5MTAxMTIyNTQ4NzIwNg" f3durn="urn:adsk.wipprod:dm.lineage:o5PwCKtQTq-g7Tc5t2Tl6A" pcbguid="f2edb4a1-dce4-4dac-8719-28d8a49f27ce" lastpulledtime="" lastsyncedchangeguid="c10cce32-c4fd-c831-0186-31674836a32d"/>
 <plain>
 <wire x1="1.27" y1="38.1" x2="26.65" y2="38.1" width="0" layer="20"/>
 <wire x1="26.65" y1="38.1" x2="26.65" y2="69.52" width="0" layer="20"/>
