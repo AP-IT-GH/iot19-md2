@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2019-10-11T08:56:57Z",
+        "CreationDate": "2019-10-18T07:40:32Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -18,7 +18,7 @@
         "Owner": "Imad El-Azzouzi <imad.el-azzouzi@student.ap.be>",
         "Size": {
             "X": 23.8,
-            "Y": 25.389997
+            "Y": 27.929997
         }
     }
 }

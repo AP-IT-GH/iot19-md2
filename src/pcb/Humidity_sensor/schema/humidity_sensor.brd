@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -61,13 +61,14 @@
 <board>
 <fusionsync huburn="a.YnVzaW5lc3M6c3R1ZGVudDk3MjU" projecturn="a.YnVzaW5lc3M6c3R1ZGVudDk3MjUjRDIwMTkxMDA0MjIyNzk2ODA2" f3durn="urn:adsk.wipprod:dm.lineage:UIVqwKJnQp60m9CcjEivng" pcbguid="37e22aa0-a2bb-4ea8-995d-bf2bfafcd302" lastpulledtime="" lastsyncedchangeguid="5d00073d-4eff-7592-cb1e-6a147588d151"/>
 <plain>
-<wire x1="17.45" y1="64.44" x2="17.45" y2="78.73" width="0" layer="20"/>
-<wire x1="17.45" y1="78.73" x2="6.34" y2="78.73" width="0" layer="20"/>
-<wire x1="6.34" y1="78.73" x2="0" y2="72.39" width="0" layer="20"/>
-<wire x1="0" y1="72.39" x2="0" y2="64.77" width="0" layer="20"/>
-<wire x1="0" y1="64.77" x2="3.809996875" y2="60.960003125" width="0" layer="20"/>
-<wire x1="3.809996875" y1="60.960003125" x2="13.970003125" y2="60.960003125" width="0" layer="20"/>
-<wire x1="13.970003125" y1="60.960003125" x2="17.45" y2="64.44" width="0" layer="20"/>
+<wire x1="-1.27" y1="80" x2="-1.27" y2="59.690003125" width="0" layer="20"/>
+<wire x1="-1.27" y1="59.690003125" x2="19.99" y2="59.690003125" width="0" layer="20"/>
+<wire x1="19.99" y1="59.690003125" x2="19.99" y2="80" width="0" layer="20"/>
+<wire x1="19.99" y1="80" x2="-1.27" y2="80" width="0" layer="20"/>
+<hole x="1.27" y="77.47" drill="3"/>
+<hole x="17.78" y="62.23" drill="3"/>
+<hole x="17.78" y="77.47" drill="3"/>
+<hole x="1.27" y="62.23" drill="3"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -1498,9 +1499,9 @@ design rules under a new name.</description>
 <wire x1="5.08" y1="73.66" x2="2.54" y2="73.66" width="0.3048" layer="1"/>
 <wire x1="2.54" y1="73.66" x2="1.27" y2="72.39" width="0.3048" layer="1"/>
 <wire x1="13.97" y1="75.25" x2="13.97" y2="72.39" width="0.3048" layer="1"/>
-<wire x1="1.27" y1="72.39" x2="1.27" y2="64.77" width="0.3048" layer="1"/>
-<wire x1="1.27" y1="64.77" x2="3.81" y2="62.23" width="0.3048" layer="1"/>
-<wire x1="3.81" y1="62.23" x2="7.3" y2="62.23" width="0.3048" layer="1"/>
+<wire x1="1.27" y1="72.39" x2="1.27" y2="66.04" width="0.3048" layer="1"/>
+<wire x1="1.27" y1="66.04" x2="5.08" y2="62.23" width="0.3048" layer="1"/>
+<wire x1="5.08" y1="62.23" x2="7.3" y2="62.23" width="0.3048" layer="1"/>
 <wire x1="7.3" y1="62.23" x2="8.89" y2="63.82" width="0.3048" layer="1"/>
 </signal>
 <signal name="SCL">
@@ -1511,11 +1512,11 @@ design rules under a new name.</description>
 <wire x1="6.35" y1="69.85" x2="9.07" y2="69.85" width="0.3048" layer="1"/>
 <wire x1="8.89" y1="65.72" x2="9.21" y2="66.04" width="0.3048" layer="1"/>
 <wire x1="8.89" y1="65.72" x2="6.67" y2="63.5" width="0.3048" layer="1"/>
-<wire x1="3.81" y1="63.5" x2="2.54" y2="64.77" width="0.3048" layer="1"/>
-<wire x1="2.54" y1="64.77" x2="2.54" y2="67.31" width="0.3048" layer="1"/>
+<wire x1="5.08" y1="63.5" x2="2.54" y2="66.04" width="0.3048" layer="1"/>
+<wire x1="2.54" y1="66.04" x2="2.54" y2="67.31" width="0.3048" layer="1"/>
 <wire x1="2.54" y1="67.31" x2="3.81" y2="68.58" width="0.3048" layer="1"/>
 <wire x1="3.81" y1="68.58" x2="5.08" y2="68.58" width="0.3048" layer="1"/>
-<wire x1="6.67" y1="63.5" x2="3.81" y2="63.5" width="0.3048" layer="1"/>
+<wire x1="6.67" y1="63.5" x2="5.08" y2="63.5" width="0.3048" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="SV1" pad="1"/>
@@ -1545,13 +1546,10 @@ design rules under a new name.</description>
 <wire x1="6.9088" y1="71.6788" x2="6.9088" y2="76.4388" width="0.3048" layer="1"/>
 <wire x1="9.07" y1="71.12" x2="6.35" y2="71.12" width="0.3048" layer="1"/>
 <polygon width="0.1524" layer="1">
-<vertex x="0" y="72.39"/>
-<vertex x="6.35" y="78.74"/>
-<vertex x="17.78" y="78.74"/>
-<vertex x="17.78" y="64.77"/>
-<vertex x="13.97" y="60.96"/>
-<vertex x="3.81" y="60.96"/>
-<vertex x="0" y="64.77"/>
+<vertex x="-1.27" y="59.69"/>
+<vertex x="-1.27" y="80.01"/>
+<vertex x="20.32" y="80.01"/>
+<vertex x="20.32" y="59.69"/>
 </polygon>
 </signal>
 <signal name="VCORE">

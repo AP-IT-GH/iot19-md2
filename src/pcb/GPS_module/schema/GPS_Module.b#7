@@ -1547,15 +1547,21 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="20.32" y="26.67" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="17.78" y="27.94" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="J2" library="U.FL-R-SMT_01_" package="HRS_U.FL-R-SMT(01)" value="U.FL-R-SMT(01)" x="3.81" y="6.35" smashed="yes">
-<attribute name="AVAILABILITY" value="Unavailable" x="3.81" y="6.35" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value=" U.FL Series 6 Ghz 50 Ohm Ultra-small SMT Coaxial Cable Receptacle " x="3.81" y="6.35" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Hirose" x="3.81" y="6.35" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="U.FL-R-SMT_01_" x="3.81" y="6.35" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="1.002759375" y="7.954140625" size="1.27143125" layer="25"/>
-<attribute name="PACKAGE" value="None" x="3.81" y="6.35" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="3.81" y="6.35" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="0.602959375" y="2.54165" size="1.272709375" layer="27"/>
+<element name="J2" library="U.FL-R-SMT_01_" package="HRS_U.FL-R-SMT(01)" value="U.FL-R-SMT(01)" x="20.32" y="31.75" smashed="yes">
+<attribute name="AVAILABILITY" value="Unavailable" x="20.32" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" U.FL Series 6 Ghz 50 Ohm Ultra-small SMT Coaxial Cable Receptacle " x="20.32" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Hirose" x="20.32" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="U.FL-R-SMT_01_" x="20.32" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="17.512759375" y="33.354140625" size="1.27143125" layer="25"/>
+<attribute name="PACKAGE" value="None" x="20.32" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="20.32" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="17.112959375" y="27.94165" size="1.272709375" layer="27"/>
+</element>
+<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1µF" x="11.43" y="29.21" smashed="yes" rot="R270">
+<attribute name="NAME" x="12.7" y="30.48" size="1.27" layer="25" rot="R270"/>
+<attribute name="POPULARITY" value="88" x="11.43" y="29.21" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="11.43" y="29.21" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="8.89" y="30.48" size="1.27" layer="27" rot="R270"/>
 </element>
 </elements>
 <signals>
@@ -1587,7 +1593,6 @@ design rules under a new name.</description>
 <wire x1="6.35" y1="29.21" x2="6.35" y2="26.67" width="0.3048" layer="1"/>
 <wire x1="6.35" y1="26.67" x2="7.3" y2="25.72" width="0.3048" layer="1"/>
 <wire x1="7.3" y1="25.72" x2="8.89" y2="25.72" width="0.3048" layer="1"/>
-<wire x1="8.89" y1="25.72" x2="13.97" y2="25.72" width="0.3048" layer="1"/>
 <wire x1="7" y1="25.42" x2="7" y2="22.18" width="0.3048" layer="1"/>
 <wire x1="7" y1="25.42" x2="7.3" y2="25.72" width="0.3048" layer="1"/>
 <polygon width="0.1524" layer="1">
@@ -1600,8 +1605,16 @@ design rules under a new name.</description>
 </polygon>
 <contactref element="J2" pad="2"/>
 <contactref element="J2" pad="1"/>
-<wire x1="2.335" y1="6.35" x2="5.285" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="7" y1="13.38" x2="5.285" y2="6.35" width="0" layer="19" extent="1-1"/>
+<wire x1="18.845" y1="31.75" x2="17.78" y2="31.75" width="0.3048" layer="1"/>
+<wire x1="17.78" y1="31.75" x2="16.51" y2="33.02" width="0.3048" layer="1"/>
+<wire x1="16.51" y1="33.02" x2="14.29" y2="33.02" width="0.3048" layer="1"/>
+<wire x1="14.29" y1="33.02" x2="13.97" y2="32.7" width="0.3048" layer="1"/>
+<contactref element="C4" pad="2"/>
+<wire x1="8.89" y1="25.72" x2="10.48" y2="25.72" width="0.3048" layer="1"/>
+<wire x1="10.48" y1="25.72" x2="11.43" y2="26.67" width="0.3048" layer="1"/>
+<wire x1="11.43" y1="26.67" x2="11.43" y2="28.26" width="0.3048" layer="1"/>
+<wire x1="13.97" y1="25.72" x2="12.38" y2="25.72" width="0.3048" layer="1"/>
+<wire x1="12.38" y1="25.72" x2="11.43" y2="26.67" width="0.3048" layer="1"/>
 </signal>
 <signal name="VDD">
 <contactref element="SV1" pad="4"/>
@@ -1616,7 +1629,6 @@ design rules under a new name.</description>
 <contactref element="R2" pad="2"/>
 <contactref element="C1" pad="1"/>
 <contactref element="C2" pad="1"/>
-<wire x1="8.89" y1="30.8" x2="13.97" y2="30.8" width="0.3048" layer="1"/>
 <wire x1="8.89" y1="27.62" x2="8.89" y2="30.8" width="0.3048" layer="1"/>
 <wire x1="13.97" y1="30.8" x2="13.97" y2="27.62" width="0.3048" layer="1"/>
 <wire x1="6.8048" y1="17.9848" x2="7" y2="18.18" width="0.3048" layer="1"/>
@@ -1625,6 +1637,11 @@ design rules under a new name.</description>
 <wire x1="16.51" y1="26.67" x2="16.51" y2="19.05" width="0.3048" layer="1"/>
 <wire x1="16.51" y1="19.05" x2="15.64" y2="18.18" width="0.3048" layer="1"/>
 <wire x1="15.64" y1="18.18" x2="7" y2="18.18" width="0.3048" layer="1"/>
+<contactref element="C4" pad="1"/>
+<wire x1="11.43" y1="30.16" x2="10.79" y2="30.8" width="0.3048" layer="1"/>
+<wire x1="10.79" y1="30.8" x2="8.89" y2="30.8" width="0.3048" layer="1"/>
+<wire x1="11.43" y1="30.16" x2="12.07" y2="30.8" width="0.3048" layer="1"/>
+<wire x1="12.07" y1="30.8" x2="13.97" y2="30.8" width="0.3048" layer="1"/>
 </signal>
 <signal name="RX">
 <contactref element="U1" pad="15"/>
@@ -1647,7 +1664,7 @@ design rules under a new name.</description>
 <signal name="EX_ANT">
 <contactref element="C3" pad="1"/>
 <contactref element="J2" pad="3"/>
-<wire x1="3.81" y1="4.8" x2="20.32" y2="27.62" width="0" layer="19" extent="1-1"/>
+<wire x1="20.32" y1="30.2" x2="20.32" y2="27.62" width="0.3048" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
