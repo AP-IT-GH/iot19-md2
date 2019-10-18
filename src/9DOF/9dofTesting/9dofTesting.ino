@@ -9,17 +9,10 @@ LSM9DS1 imu;
 #define LSM9DS1_M  0x1E // Would be 0x1C if SDO_M is LOW
 #define LSM9DS1_AG  0x6B // Would be 0x6A if SDO_AG is LOW
 
-static unsigned long lastGyro = 0;  // Keep track of gyro time
-float previousGyro = 0; // previous gyro state
-
 
 float rotation = 0;
-float rotationCorrection = 1.11;
-
 float tau=0.075;
 float a=0.0;
-
-float acceleratieZ =0;
 
 #define PRINT_CALCULATED
 //#define PRINT_RAW
@@ -52,10 +45,11 @@ init9Dof();
 }
 
 void loop() {
-//updateGyro();
-printAccel();
+//ReadGforce();
+ReadRotation();
+NotFacingTop(rotation,102.0);
 }
-void printAccel()
+void ReadGforce()
 {
  
   // To read from the accelerometer, you must first call the
@@ -69,15 +63,15 @@ void printAccel()
   float accelZ = imu.calcAccel(imu.az);
   
  // total acceleration
- float acceltot = sqrt(pow(accelX,2)+pow(accelY,2)+pow(accelZ,2));
+  float acceltot = sqrt(pow(accelX,2)+pow(accelY,2)+pow(accelZ,2));
  
- float accfilterdX = accelX/acceltot;
- float accfilterdY = accelY/acceltot;
-float accfilterdZ = accelY/acceltot; 
+  float accfilterdX = accelX/acceltot;
+  float accfilterdY = accelY/acceltot;
+  float accfilterdZ = accelY/acceltot; 
 
     if ((lastPrint + PRINT_SPEED) < millis())
   {
-  // Now we can use the ax, ay, and az variables as we please.
+    
   Serial.print("X: ");
   Serial.print(accfilterdX);
   Serial.print("Y: ");
@@ -93,8 +87,7 @@ float accfilterdZ = accelY/acceltot;
 
   delay (500);
 }
-
-void updateGyro() {
+void ReadRotation() {
   
 
 
@@ -119,7 +112,7 @@ void updateGyro() {
 
 
   // Serial.print("roll :  ");
-  // Serial.println(roll);
+ //  Serial.println(roll);
 
   //complementaire filter
   float f_gz = imu.calcGyro(imu.gz);
@@ -128,8 +121,11 @@ void updateGyro() {
   rotation = a* (rotation + f_gz * dtC) + (1-a) * (roll);
        Serial.print("rotation :  ");
        Serial.println(abs(rotation));
+   }
 
-   if ((abs(rotation) >= 102.0)){
-       Serial.println("Box has fallen over");
-   }
-   }
+bool NotFacingTop(float degreesRotation, float degreesFactingTop){
+  //Filter 
+  
+  if ((abs(degreesRotation) >= degreesFactingTop)) return true;
+  else return false;
+  }  
