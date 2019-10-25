@@ -1,0 +1,776 @@
+10:35:16.341 -> Latitude= 51.229910 Longitude= 4.415292
+10:35:16.376 ->  Sattelites= 0
+10:35:16.476 -> Latitude= 51.229910 Longitude= 4.415292
+10:35:16.511 ->  Sattelites= 13
+10:35:17.357 -> Latitude= 51.229908 Longitude= 4.415302
+10:35:17.390 ->  Sattelites= 13
+10:35:17.456 -> Latitude= 51.229908 Longitude= 4.415302
+10:35:17.490 ->  Sattelites= 13
+10:35:18.334 -> Latitude= 51.229909 Longitude= 4.415304
+10:35:18.402 ->  Sattelites= 13
+10:35:18.469 -> Latitude= 51.229909 Longitude= 4.415304
+10:35:18.503 ->  Sattelites= 13
+10:35:19.351 -> Latitude= 51.229908 Longitude= 4.415309
+10:35:19.384 ->  Sattelites= 13
+10:35:19.451 -> Latitude= 51.229908 Longitude= 4.415309
+10:35:19.484 ->  Sattelites= 13
+10:35:20.328 -> Latitude= 51.229907 Longitude= 4.415312
+10:35:20.395 ->  Sattelites= 13
+10:35:20.465 -> Latitude= 51.229907 Longitude= 4.415312
+10:35:20.498 ->  Sattelites= 12
+10:35:21.340 -> Latitude= 51.229907 Longitude= 4.415311
+10:35:21.374 ->  Sattelites= 12
+10:35:21.444 -> Latitude= 51.229907 Longitude= 4.415311
+10:35:21.512 ->  Sattelites= 12
+10:35:22.360 -> Latitude= 51.229908 Longitude= 4.415309
+10:35:22.394 ->  Sattelites= 12
+10:35:22.460 -> Latitude= 51.229908 Longitude= 4.415309
+10:35:22.495 ->  Sattelites= 13
+10:35:23.358 -> Latitude= 51.229909 Longitude= 4.415306
+10:35:23.393 ->  Sattelites= 13
+10:35:23.462 -> Latitude= 51.229909 Longitude= 4.415306
+10:35:23.497 ->  Sattelites= 13
+10:35:24.364 -> Latitude= 51.229910 Longitude= 4.415307
+10:35:24.399 ->  Sattelites= 13
+10:35:24.469 -> Latitude= 51.229910 Longitude= 4.415307
+10:35:24.503 ->  Sattelites= 13
+10:35:25.333 -> Latitude= 51.229911 Longitude= 4.415307
+10:35:25.402 ->  Sattelites= 13
+10:35:25.472 -> Latitude= 51.229911 Longitude= 4.415307
+10:35:25.506 ->  Sattelites= 13
+10:35:26.340 -> Latitude= 51.229911 Longitude= 4.415308
+10:35:26.375 ->  Sattelites= 13
+10:35:26.444 -> Latitude= 51.229911 Longitude= 4.415308
+10:35:26.513 ->  Sattelites= 13
+10:35:27.346 -> Latitude= 51.229912 Longitude= 4.415304
+10:35:27.381 ->  Sattelites= 13
+10:35:27.450 -> Latitude= 51.229912 Longitude= 4.415304
+10:35:27.485 ->  Sattelites= 13
+10:35:28.355 -> Latitude= 51.229914 Longitude= 4.415297
+10:35:28.390 ->  Sattelites= 13
+10:35:28.460 -> Latitude= 51.229914 Longitude= 4.415297
+10:35:28.495 ->  Sattelites= 13
+10:35:29.331 -> Latitude= 51.229914 Longitude= 4.415299
+10:35:29.400 ->  Sattelites= 13
+10:35:29.470 -> Latitude= 51.229914 Longitude= 4.415299
+10:35:29.505 ->  Sattelites= 13
+10:35:30.341 -> Latitude= 51.229913 Longitude= 4.415295
+10:35:30.376 ->  Sattelites= 13
+10:35:30.446 -> Latitude= 51.229913 Longitude= 4.415295
+10:35:30.515 ->  Sattelites= 13
+10:35:31.351 -> Latitude= 51.229913 Longitude= 4.415293
+10:35:31.386 ->  Sattelites= 13
+10:35:31.456 -> Latitude= 51.229913 Longitude= 4.415293
+10:35:31.491 ->  Sattelites= 13
+10:35:32.327 -> Latitude= 51.229914 Longitude= 4.415294
+10:35:32.396 ->  Sattelites= 13
+10:35:32.466 -> Latitude= 51.229914 Longitude= 4.415294
+10:35:32.501 ->  Sattelites= 12
+10:35:33.338 -> Latitude= 51.229914 Longitude= 4.415298
+10:35:33.407 ->  Sattelites= 12
+10:35:33.477 -> Latitude= 51.229914 Longitude= 4.415298
+10:35:33.511 ->  Sattelites= 13
+10:35:34.346 -> Latitude= 51.229915 Longitude= 4.415295
+10:35:34.380 ->  Sattelites= 13
+10:35:34.449 -> Latitude= 51.229915 Longitude= 4.415295
+10:35:34.519 ->  Sattelites= 12
+10:35:35.340 -> Latitude= 51.229915 Longitude= 4.415290
+10:35:35.374 ->  Sattelites= 12
+10:35:35.442 -> Latitude= 51.229915 Longitude= 4.415290
+10:35:35.510 ->  Sattelites= 13
+10:35:36.354 -> Latitude= 51.229915 Longitude= 4.415289
+10:35:36.388 ->  Sattelites= 13
+10:35:36.455 -> Latitude= 51.229915 Longitude= 4.415289
+10:35:36.488 ->  Sattelites= 13
+10:35:37.333 -> Latitude= 51.229916 Longitude= 4.415288
+10:35:37.400 ->  Sattelites= 13
+10:35:37.468 -> Latitude= 51.229916 Longitude= 4.415288
+10:35:37.502 ->  Sattelites= 13
+10:35:38.347 -> Latitude= 51.229917 Longitude= 4.415288
+10:35:38.380 ->  Sattelites= 13
+10:35:38.448 -> Latitude= 51.229917 Longitude= 4.415288
+10:35:38.515 ->  Sattelites= 13
+10:35:39.361 -> Latitude= 51.229918 Longitude= 4.415288
+10:35:39.394 ->  Sattelites= 13
+10:35:39.461 -> Latitude= 51.229918 Longitude= 4.415288
+10:35:39.494 ->  Sattelites= 13
+10:35:40.337 -> Latitude= 51.229919 Longitude= 4.415287
+10:35:40.405 ->  Sattelites= 13
+10:35:40.473 -> Latitude= 51.229919 Longitude= 4.415287
+10:35:40.507 ->  Sattelites= 13
+10:35:41.349 -> Latitude= 51.229921 Longitude= 4.415287
+10:35:41.383 ->  Sattelites= 13
+10:35:41.451 -> Latitude= 51.229921 Longitude= 4.415287
+10:35:41.486 ->  Sattelites= 13
+10:35:42.334 -> Latitude= 51.229921 Longitude= 4.415289
+10:35:42.401 ->  Sattelites= 13
+10:35:42.468 -> Latitude= 51.229921 Longitude= 4.415289
+10:35:42.501 ->  Sattelites= 13
+10:35:43.346 -> Latitude= 51.229922 Longitude= 4.415291
+10:35:43.381 ->  Sattelites= 13
+10:35:43.447 -> Latitude= 51.229922 Longitude= 4.415291
+10:35:43.482 ->  Sattelites= 12
+10:35:44.355 -> Latitude= 51.229921 Longitude= 4.415291
+10:35:44.388 ->  Sattelites= 12
+10:35:44.457 -> Latitude= 51.229921 Longitude= 4.415291
+10:35:44.491 ->  Sattelites= 13
+10:35:45.341 -> Latitude= 51.229921 Longitude= 4.415289
+10:35:45.374 ->  Sattelites= 13
+10:35:45.441 -> Latitude= 51.229921 Longitude= 4.415289
+10:35:45.508 ->  Sattelites= 12
+10:35:46.352 -> Latitude= 51.229921 Longitude= 4.415283
+10:35:46.386 ->  Sattelites= 12
+10:35:46.452 -> Latitude= 51.229921 Longitude= 4.415283
+10:35:46.486 ->  Sattelites= 13
+10:35:47.331 -> Latitude= 51.229921 Longitude= 4.415279
+10:35:47.398 ->  Sattelites= 13
+10:35:47.464 -> Latitude= 51.229921 Longitude= 4.415279
+10:35:47.498 ->  Sattelites= 13
+10:35:48.346 -> Latitude= 51.229921 Longitude= 4.415273
+10:35:48.380 ->  Sattelites= 13
+10:35:48.448 -> Latitude= 51.229921 Longitude= 4.415273
+10:35:48.517 ->  Sattelites= 13
+10:35:49.364 -> Latitude= 51.229921 Longitude= 4.415266
+10:35:49.399 ->  Sattelites= 13
+10:35:49.466 -> Latitude= 51.229921 Longitude= 4.415266
+10:35:49.501 ->  Sattelites= 13
+10:35:50.347 -> Latitude= 51.229920 Longitude= 4.415262
+10:35:50.381 ->  Sattelites= 13
+10:35:50.449 -> Latitude= 51.229920 Longitude= 4.415262
+10:35:50.516 ->  Sattelites= 13
+10:35:51.335 -> Latitude= 51.229919 Longitude= 4.415260
+10:35:51.404 ->  Sattelites= 13
+10:35:51.474 -> Latitude= 51.229919 Longitude= 4.415260
+10:35:51.507 ->  Sattelites= 13
+10:35:52.338 -> Latitude= 51.229918 Longitude= 4.415261
+10:35:52.371 ->  Sattelites= 13
+10:35:52.473 -> Latitude= 51.229918 Longitude= 4.415261
+10:35:52.508 ->  Sattelites= 13
+10:35:53.357 -> Latitude= 51.229918 Longitude= 4.415263
+10:35:53.390 ->  Sattelites= 13
+10:35:53.458 -> Latitude= 51.229918 Longitude= 4.415263
+10:35:53.492 ->  Sattelites= 13
+10:35:54.337 -> Latitude= 51.229919 Longitude= 4.415271
+10:35:54.404 ->  Sattelites= 13
+10:35:54.471 -> Latitude= 51.229919 Longitude= 4.415271
+10:35:54.505 ->  Sattelites= 13
+10:35:55.335 -> Latitude= 51.229919 Longitude= 4.415272
+10:35:55.369 ->  Sattelites= 13
+10:35:55.439 -> Latitude= 51.229919 Longitude= 4.415272
+10:35:55.508 ->  Sattelites= 12
+10:35:56.360 -> Latitude= 51.229918 Longitude= 4.415272
+10:35:56.393 ->  Sattelites= 12
+10:35:56.461 -> Latitude= 51.229918 Longitude= 4.415272
+10:35:56.494 ->  Sattelites= 13
+10:35:57.337 -> Latitude= 51.229919 Longitude= 4.415272
+10:35:57.405 ->  Sattelites= 13
+10:35:57.474 -> Latitude= 51.229919 Longitude= 4.415272
+10:35:57.509 ->  Sattelites= 12
+10:35:58.350 -> Latitude= 51.229919 Longitude= 4.415273
+10:35:58.383 ->  Sattelites= 12
+10:35:58.451 -> Latitude= 51.229919 Longitude= 4.415273
+10:35:58.518 ->  Sattelites= 13
+10:35:59.354 -> Latitude= 51.229918 Longitude= 4.415273
+10:35:59.388 ->  Sattelites= 13
+10:35:59.456 -> Latitude= 51.229918 Longitude= 4.415273
+10:35:59.490 ->  Sattelites= 12
+10:36:00.338 -> Latitude= 51.229918 Longitude= 4.415273
+10:36:00.371 ->  Sattelites= 12
+10:36:00.474 -> Latitude= 51.229918 Longitude= 4.415273
+10:36:00.507 ->  Sattelites= 13
+10:36:01.354 -> Latitude= 51.229917 Longitude= 4.415271
+10:36:01.389 ->  Sattelites= 13
+10:36:01.459 -> Latitude= 51.229917 Longitude= 4.415271
+10:36:01.494 ->  Sattelites= 13
+10:36:02.345 -> Latitude= 51.229917 Longitude= 4.415270
+10:36:02.380 ->  Sattelites= 13
+10:36:02.447 -> Latitude= 51.229917 Longitude= 4.415270
+10:36:02.517 ->  Sattelites= 13
+10:36:03.333 -> Latitude= 51.229917 Longitude= 4.415269
+10:36:03.401 ->  Sattelites= 13
+10:36:03.468 -> Latitude= 51.229917 Longitude= 4.415269
+10:36:03.501 ->  Sattelites= 12
+10:36:04.344 -> Latitude= 51.229917 Longitude= 4.415268
+10:36:04.377 ->  Sattelites= 12
+10:36:04.446 -> Latitude= 51.229917 Longitude= 4.415268
+10:36:04.514 ->  Sattelites= 13
+10:36:05.328 -> Latitude= 51.229917 Longitude= 4.415266
+10:36:05.397 ->  Sattelites= 13
+10:36:05.464 -> Latitude= 51.229917 Longitude= 4.415266
+10:36:05.499 ->  Sattelites= 12
+10:36:06.348 -> Latitude= 51.229917 Longitude= 4.415257
+10:36:06.382 ->  Sattelites= 12
+10:36:06.449 -> Latitude= 51.229917 Longitude= 4.415257
+10:36:06.516 ->  Sattelites= 13
+10:36:07.326 -> Latitude= 51.229918 Longitude= 4.415257
+10:36:07.394 ->  Sattelites= 13
+10:36:07.462 -> Latitude= 51.229918 Longitude= 4.415257
+10:36:07.496 ->  Sattelites= 12
+10:36:08.358 -> Latitude= 51.229918 Longitude= 4.415256
+10:36:08.392 ->  Sattelites= 12
+10:36:08.460 -> Latitude= 51.229918 Longitude= 4.415256
+10:36:08.494 ->  Sattelites= 13
+10:36:09.339 -> Latitude= 51.229919 Longitude= 4.415256
+10:36:09.373 ->  Sattelites= 13
+10:36:09.440 -> Latitude= 51.229919 Longitude= 4.415256
+10:36:09.507 ->  Sattelites= 12
+10:36:10.365 -> Latitude= 51.229920 Longitude= 4.415254
+10:36:10.399 ->  Sattelites= 12
+10:36:10.466 -> Latitude= 51.229920 Longitude= 4.415254
+10:36:10.499 ->  Sattelites= 13
+10:36:11.348 -> Latitude= 51.229921 Longitude= 4.415247
+10:36:11.382 ->  Sattelites= 13
+10:36:11.450 -> Latitude= 51.229921 Longitude= 4.415247
+10:36:11.483 ->  Sattelites= 12
+10:36:12.334 -> Latitude= 51.229922 Longitude= 4.415239
+10:36:12.403 ->  Sattelites= 12
+10:36:12.473 -> Latitude= 51.229922 Longitude= 4.415239
+10:36:12.506 ->  Sattelites= 13
+10:36:13.354 -> Latitude= 51.229923 Longitude= 4.415238
+10:36:13.387 ->  Sattelites= 13
+10:36:13.456 -> Latitude= 51.229923 Longitude= 4.415238
+10:36:13.490 ->  Sattelites= 12
+10:36:14.339 -> Latitude= 51.229925 Longitude= 4.415238
+10:36:14.372 ->  Sattelites= 12
+10:36:14.474 -> Latitude= 51.229925 Longitude= 4.415238
+10:36:14.508 ->  Sattelites= 13
+10:36:15.337 -> Latitude= 51.229926 Longitude= 4.415235
+10:36:15.371 ->  Sattelites= 13
+10:36:15.439 -> Latitude= 51.229926 Longitude= 4.415235
+10:36:15.506 ->  Sattelites= 12
+10:36:16.350 -> Latitude= 51.229927 Longitude= 4.415233
+10:36:16.385 ->  Sattelites= 12
+10:36:16.452 -> Latitude= 51.229927 Longitude= 4.415233
+10:36:16.486 ->  Sattelites= 13
+10:36:17.334 -> Latitude= 51.229929 Longitude= 4.415227
+10:36:17.367 ->  Sattelites= 13
+10:36:17.468 -> Latitude= 51.229929 Longitude= 4.415227
+10:36:17.502 ->  Sattelites= 13
+10:36:18.348 -> Latitude= 51.229931 Longitude= 4.415226
+10:36:18.382 ->  Sattelites= 13
+10:36:18.451 -> Latitude= 51.229931 Longitude= 4.415226
+10:36:18.484 ->  Sattelites= 13
+10:36:19.329 -> Latitude= 51.229933 Longitude= 4.415222
+10:36:19.396 ->  Sattelites= 13
+10:36:19.463 -> Latitude= 51.229933 Longitude= 4.415222
+10:36:19.496 ->  Sattelites= 12
+10:36:20.343 -> Latitude= 51.229936 Longitude= 4.415225
+10:36:20.376 ->  Sattelites= 12
+10:36:20.444 -> Latitude= 51.229936 Longitude= 4.415225
+10:36:20.511 ->  Sattelites= 13
+10:36:21.326 -> Latitude= 51.229939 Longitude= 4.415222
+10:36:21.395 ->  Sattelites= 13
+10:36:21.465 -> Latitude= 51.229939 Longitude= 4.415222
+10:36:21.499 ->  Sattelites= 13
+10:36:22.348 -> Latitude= 51.229940 Longitude= 4.415221
+10:36:22.381 ->  Sattelites= 13
+10:36:22.447 -> Latitude= 51.229940 Longitude= 4.415221
+10:36:22.515 ->  Sattelites= 13
+10:36:23.325 -> Latitude= 51.229942 Longitude= 4.415220
+10:36:23.393 ->  Sattelites= 13
+10:36:23.460 -> Latitude= 51.229942 Longitude= 4.415220
+10:36:23.493 ->  Sattelites= 13
+10:36:24.335 -> Latitude= 51.229944 Longitude= 4.415222
+10:36:24.403 ->  Sattelites= 13
+10:36:24.470 -> Latitude= 51.229944 Longitude= 4.415222
+10:36:24.505 ->  Sattelites= 13
+10:36:25.353 -> Latitude= 51.229946 Longitude= 4.415226
+10:36:25.386 ->  Sattelites= 13
+10:36:25.454 -> Latitude= 51.229946 Longitude= 4.415226
+10:36:25.487 ->  Sattelites= 13
+10:36:26.329 -> Latitude= 51.229947 Longitude= 4.415225
+10:36:26.395 ->  Sattelites= 13
+10:36:26.462 -> Latitude= 51.229947 Longitude= 4.415225
+10:36:26.495 ->  Sattelites= 12
+10:36:27.346 -> Latitude= 51.229948 Longitude= 4.415221
+10:36:27.379 ->  Sattelites= 12
+10:36:27.447 -> Latitude= 51.229948 Longitude= 4.415221
+10:36:27.514 ->  Sattelites= 13
+10:36:28.361 -> Latitude= 51.229947 Longitude= 4.415218
+10:36:28.394 ->  Sattelites= 13
+10:36:28.462 -> Latitude= 51.229947 Longitude= 4.415218
+10:36:28.530 ->  Sattelites= 14
+10:36:29.343 -> Latitude= 51.229949 Longitude= 4.415214
+10:36:29.376 ->  Sattelites= 14
+10:36:29.477 -> Latitude= 51.229949 Longitude= 4.415214
+10:36:29.512 ->  Sattelites= 14
+10:36:30.355 -> Latitude= 51.229953 Longitude= 4.415210
+10:36:30.389 ->  Sattelites= 14
+10:36:30.457 -> Latitude= 51.229953 Longitude= 4.415210
+10:36:30.490 ->  Sattelites= 13
+10:36:31.335 -> Latitude= 51.229955 Longitude= 4.415206
+10:36:31.403 ->  Sattelites= 13
+10:36:31.473 -> Latitude= 51.229955 Longitude= 4.415206
+10:36:31.508 ->  Sattelites= 14
+10:36:32.352 -> Latitude= 51.229957 Longitude= 4.415202
+10:36:32.386 ->  Sattelites= 14
+10:36:32.455 -> Latitude= 51.229957 Longitude= 4.415202
+10:36:32.488 ->  Sattelites= 14
+10:36:33.332 -> Latitude= 51.229959 Longitude= 4.415201
+10:36:33.399 ->  Sattelites= 14
+10:36:33.467 -> Latitude= 51.229959 Longitude= 4.415201
+10:36:33.501 ->  Sattelites= 14
+10:36:34.352 -> Latitude= 51.229961 Longitude= 4.415200
+10:36:34.386 ->  Sattelites= 14
+10:36:34.454 -> Latitude= 51.229961 Longitude= 4.415200
+10:36:34.521 ->  Sattelites= 14
+10:36:35.341 -> Latitude= 51.229962 Longitude= 4.415198
+10:36:35.375 ->  Sattelites= 14
+10:36:35.444 -> Latitude= 51.229962 Longitude= 4.415198
+10:36:35.512 ->  Sattelites= 13
+10:36:36.361 -> Latitude= 51.229962 Longitude= 4.415197
+10:36:36.394 ->  Sattelites= 13
+10:36:36.461 -> Latitude= 51.229962 Longitude= 4.415197
+10:36:36.495 ->  Sattelites= 14
+10:36:37.343 -> Latitude= 51.229963 Longitude= 4.415199
+10:36:37.376 ->  Sattelites= 14
+10:36:37.445 -> Latitude= 51.229963 Longitude= 4.415199
+10:36:37.513 ->  Sattelites= 14
+10:36:38.353 -> Latitude= 51.229963 Longitude= 4.415199
+10:36:38.388 ->  Sattelites= 14
+10:36:38.457 -> Latitude= 51.229963 Longitude= 4.415199
+10:36:38.490 ->  Sattelites= 14
+10:36:39.334 -> Latitude= 51.229962 Longitude= 4.415199
+10:36:39.402 ->  Sattelites= 14
+10:36:39.470 -> Latitude= 51.229962 Longitude= 4.415199
+10:36:39.503 ->  Sattelites= 13
+10:36:40.348 -> Latitude= 51.229962 Longitude= 4.415200
+10:36:40.382 ->  Sattelites= 13
+10:36:40.449 -> Latitude= 51.229962 Longitude= 4.415200
+10:36:40.516 ->  Sattelites= 14
+10:36:41.328 -> Latitude= 51.229963 Longitude= 4.415201
+10:36:41.396 ->  Sattelites= 14
+10:36:41.464 -> Latitude= 51.229963 Longitude= 4.415201
+10:36:41.499 ->  Sattelites= 13
+10:36:42.351 -> Latitude= 51.229962 Longitude= 4.415201
+10:36:42.384 ->  Sattelites= 13
+10:36:42.450 -> Latitude= 51.229962 Longitude= 4.415201
+10:36:42.483 ->  Sattelites= 14
+10:36:43.360 -> Latitude= 51.229958 Longitude= 4.415198
+10:36:43.394 ->  Sattelites= 14
+10:36:43.461 -> Latitude= 51.229958 Longitude= 4.415198
+10:36:43.495 ->  Sattelites= 14
+10:36:44.340 -> Latitude= 51.229956 Longitude= 4.415193
+10:36:44.375 ->  Sattelites= 14
+10:36:44.442 -> Latitude= 51.229956 Longitude= 4.415193
+10:36:44.509 ->  Sattelites= 14
+10:36:45.353 -> Latitude= 51.229951 Longitude= 4.415193
+10:36:45.386 ->  Sattelites= 14
+10:36:45.453 -> Latitude= 51.229951 Longitude= 4.415193
+10:36:45.519 ->  Sattelites= 14
+10:36:46.359 -> Latitude= 51.229953 Longitude= 4.415188
+10:36:46.394 ->  Sattelites= 14
+10:36:46.462 -> Latitude= 51.229953 Longitude= 4.415188
+10:36:46.495 ->  Sattelites= 14
+10:36:47.336 -> Latitude= 51.229952 Longitude= 4.415184
+10:36:47.369 ->  Sattelites= 14
+10:36:47.470 -> Latitude= 51.229952 Longitude= 4.415184
+10:36:47.504 ->  Sattelites= 13
+10:36:48.350 -> Latitude= 51.229950 Longitude= 4.415178
+10:36:48.384 ->  Sattelites= 13
+10:36:48.451 -> Latitude= 51.229950 Longitude= 4.415178
+10:36:48.484 ->  Sattelites= 14
+10:36:49.363 -> Latitude= 51.229950 Longitude= 4.415182
+10:36:49.397 ->  Sattelites= 14
+10:36:49.466 -> Latitude= 51.229950 Longitude= 4.415182
+10:36:49.499 ->  Sattelites= 14
+10:36:50.339 -> Latitude= 51.229949 Longitude= 4.415177
+10:36:50.406 ->  Sattelites= 14
+10:36:50.474 -> Latitude= 51.229949 Longitude= 4.415177
+10:36:50.507 ->  Sattelites= 14
+10:36:51.352 -> Latitude= 51.229948 Longitude= 4.415171
+10:36:51.385 ->  Sattelites= 14
+10:36:51.454 -> Latitude= 51.229948 Longitude= 4.415171
+10:36:51.489 ->  Sattelites= 14
+10:36:52.336 -> Latitude= 51.229949 Longitude= 4.415165
+10:36:52.403 ->  Sattelites= 14
+10:36:52.469 -> Latitude= 51.229949 Longitude= 4.415165
+10:36:52.503 ->  Sattelites= 14
+10:36:53.344 -> Latitude= 51.229948 Longitude= 4.415161
+10:36:53.377 ->  Sattelites= 14
+10:36:53.444 -> Latitude= 51.229948 Longitude= 4.415161
+10:36:53.512 ->  Sattelites= 14
+10:36:54.360 -> Latitude= 51.229949 Longitude= 4.415159
+10:36:54.393 ->  Sattelites= 14
+10:36:54.462 -> Latitude= 51.229949 Longitude= 4.415159
+10:36:54.496 ->  Sattelites= 14
+10:36:55.339 -> Latitude= 51.229949 Longitude= 4.415158
+10:36:55.406 ->  Sattelites= 14
+10:36:55.474 -> Latitude= 51.229949 Longitude= 4.415158
+10:36:55.507 ->  Sattelites= 14
+10:36:56.348 -> Latitude= 51.229947 Longitude= 4.415161
+10:36:56.381 ->  Sattelites= 14
+10:36:56.447 -> Latitude= 51.229947 Longitude= 4.415161
+10:36:56.514 ->  Sattelites= 14
+10:36:57.359 -> Latitude= 51.229948 Longitude= 4.415162
+10:36:57.392 ->  Sattelites= 14
+10:36:57.459 -> Latitude= 51.229948 Longitude= 4.415162
+10:36:57.526 ->  Sattelites= 14
+10:36:58.342 -> Latitude= 51.229948 Longitude= 4.415161
+10:36:58.409 ->  Sattelites= 14
+10:36:58.476 -> Latitude= 51.229948 Longitude= 4.415161
+10:36:58.509 ->  Sattelites= 14
+10:36:59.349 -> Latitude= 51.229948 Longitude= 4.415161
+10:36:59.384 ->  Sattelites= 14
+10:36:59.450 -> Latitude= 51.229948 Longitude= 4.415161
+10:36:59.517 ->  Sattelites= 14
+10:37:00.366 -> Latitude= 51.229948 Longitude= 4.415161
+10:37:00.400 ->  Sattelites= 14
+10:37:00.467 -> Latitude= 51.229948 Longitude= 4.415161
+10:37:00.501 ->  Sattelites= 14
+10:37:01.343 -> Latitude= 51.229948 Longitude= 4.415163
+10:37:01.377 ->  Sattelites= 14
+10:37:01.446 -> Latitude= 51.229948 Longitude= 4.415163
+10:37:01.515 ->  Sattelites= 14
+10:37:02.329 -> Latitude= 51.229947 Longitude= 4.415169
+10:37:02.398 ->  Sattelites= 14
+10:37:02.467 -> Latitude= 51.229947 Longitude= 4.415169
+10:37:02.500 ->  Sattelites= 14
+10:37:03.343 -> Latitude= 51.229946 Longitude= 4.415171
+10:37:03.410 ->  Sattelites= 14
+10:37:03.478 -> Latitude= 51.229946 Longitude= 4.415171
+10:37:03.513 ->  Sattelites= 14
+10:37:04.353 -> Latitude= 51.229946 Longitude= 4.415170
+10:37:04.387 ->  Sattelites= 14
+10:37:04.454 -> Latitude= 51.229946 Longitude= 4.415170
+10:37:04.522 ->  Sattelites= 14
+10:37:05.334 -> Latitude= 51.229947 Longitude= 4.415172
+10:37:05.401 ->  Sattelites= 14
+10:37:05.468 -> Latitude= 51.229947 Longitude= 4.415172
+10:37:05.502 ->  Sattelites= 14
+10:37:06.348 -> Latitude= 51.229949 Longitude= 4.415178
+10:37:06.382 ->  Sattelites= 14
+10:37:06.448 -> Latitude= 51.229949 Longitude= 4.415178
+10:37:06.516 ->  Sattelites= 13
+10:37:07.361 -> Latitude= 51.229950 Longitude= 4.415187
+10:37:07.396 ->  Sattelites= 13
+10:37:07.462 -> Latitude= 51.229950 Longitude= 4.415187
+10:37:07.496 ->  Sattelites= 13
+10:37:08.344 -> Latitude= 51.229949 Longitude= 4.415194
+10:37:08.378 ->  Sattelites= 13
+10:37:08.446 -> Latitude= 51.229949 Longitude= 4.415194
+10:37:08.513 ->  Sattelites= 14
+10:37:09.355 -> Latitude= 51.229951 Longitude= 4.415201
+10:37:09.388 ->  Sattelites= 14
+10:37:09.456 -> Latitude= 51.229951 Longitude= 4.415201
+10:37:09.489 ->  Sattelites= 14
+10:37:10.339 -> Latitude= 51.229950 Longitude= 4.415211
+10:37:10.407 ->  Sattelites= 14
+10:37:10.475 -> Latitude= 51.229950 Longitude= 4.415211
+10:37:10.508 ->  Sattelites= 14
+10:37:11.350 -> Latitude= 51.229951 Longitude= 4.415216
+10:37:11.385 ->  Sattelites= 14
+10:37:11.454 -> Latitude= 51.229951 Longitude= 4.415216
+10:37:11.489 ->  Sattelites= 14
+10:37:12.340 -> Latitude= 51.229950 Longitude= 4.415224
+10:37:12.406 ->  Sattelites= 14
+10:37:12.472 -> Latitude= 51.229950 Longitude= 4.415224
+10:37:12.506 ->  Sattelites= 14
+10:37:13.353 -> Latitude= 51.229950 Longitude= 4.415230
+10:37:13.388 ->  Sattelites= 14
+10:37:13.456 -> Latitude= 51.229950 Longitude= 4.415230
+10:37:13.490 ->  Sattelites= 14
+10:37:14.336 -> Latitude= 51.229948 Longitude= 4.415235
+10:37:14.404 ->  Sattelites= 14
+10:37:14.471 -> Latitude= 51.229948 Longitude= 4.415235
+10:37:14.504 ->  Sattelites= 13
+10:37:15.348 -> Latitude= 51.229948 Longitude= 4.415239
+10:37:15.381 ->  Sattelites= 13
+10:37:15.450 -> Latitude= 51.229948 Longitude= 4.415239
+10:37:15.518 ->  Sattelites= 14
+10:37:16.362 -> Latitude= 51.229949 Longitude= 4.415244
+10:37:16.397 ->  Sattelites= 14
+10:37:16.465 -> Latitude= 51.229949 Longitude= 4.415244
+10:37:16.498 ->  Sattelites= 14
+10:37:17.341 -> Latitude= 51.229948 Longitude= 4.415250
+10:37:17.374 ->  Sattelites= 14
+10:37:17.476 -> Latitude= 51.229948 Longitude= 4.415250
+10:37:17.509 ->  Sattelites= 14
+10:37:18.353 -> Latitude= 51.229948 Longitude= 4.415254
+10:37:18.386 ->  Sattelites= 14
+10:37:18.453 -> Latitude= 51.229948 Longitude= 4.415254
+10:37:18.486 ->  Sattelites= 13
+10:37:19.333 -> Latitude= 51.229948 Longitude= 4.415255
+10:37:19.401 ->  Sattelites= 13
+10:37:19.470 -> Latitude= 51.229948 Longitude= 4.415255
+10:37:19.505 ->  Sattelites= 14
+10:37:20.350 -> Latitude= 51.229948 Longitude= 4.415256
+10:37:20.384 ->  Sattelites= 14
+10:37:20.451 -> Latitude= 51.229948 Longitude= 4.415256
+10:37:20.519 ->  Sattelites= 13
+10:37:21.362 -> Latitude= 51.229949 Longitude= 4.415255
+10:37:21.397 ->  Sattelites= 13
+10:37:21.466 -> Latitude= 51.229949 Longitude= 4.415255
+10:37:21.501 ->  Sattelites= 14
+10:37:22.348 -> Latitude= 51.229949 Longitude= 4.415256
+10:37:22.381 ->  Sattelites= 14
+10:37:22.449 -> Latitude= 51.229949 Longitude= 4.415256
+10:37:22.516 ->  Sattelites= 14
+10:37:23.356 -> Latitude= 51.229951 Longitude= 4.415261
+10:37:23.391 ->  Sattelites= 14
+10:37:23.459 -> Latitude= 51.229951 Longitude= 4.415261
+10:37:23.493 ->  Sattelites= 14
+10:37:24.335 -> Latitude= 51.229951 Longitude= 4.415259
+10:37:24.403 ->  Sattelites= 14
+10:37:24.472 -> Latitude= 51.229951 Longitude= 4.415259
+10:37:24.505 ->  Sattelites= 14
+10:37:25.354 -> Latitude= 51.229952 Longitude= 4.415259
+10:37:25.388 ->  Sattelites= 14
+10:37:25.457 -> Latitude= 51.229952 Longitude= 4.415259
+10:37:25.491 ->  Sattelites= 14
+10:37:26.339 -> Latitude= 51.229953 Longitude= 4.415260
+10:37:26.406 ->  Sattelites= 14
+10:37:26.474 -> Latitude= 51.229953 Longitude= 4.415260
+10:37:26.507 ->  Sattelites= 14
+10:37:27.351 -> Latitude= 51.229953 Longitude= 4.415254
+10:37:27.386 ->  Sattelites= 14
+10:37:27.454 -> Latitude= 51.229953 Longitude= 4.415254
+10:37:27.487 ->  Sattelites= 14
+10:37:28.364 -> Latitude= 51.229952 Longitude= 4.415252
+10:37:28.397 ->  Sattelites= 14
+10:37:28.465 -> Latitude= 51.229952 Longitude= 4.415252
+10:37:28.498 ->  Sattelites= 14
+10:37:29.345 -> Latitude= 51.229953 Longitude= 4.415249
+10:37:29.379 ->  Sattelites= 14
+10:37:29.446 -> Latitude= 51.229953 Longitude= 4.415249
+10:37:29.513 ->  Sattelites= 13
+10:37:30.354 -> Latitude= 51.229954 Longitude= 4.415247
+10:37:30.387 ->  Sattelites= 13
+10:37:30.455 -> Latitude= 51.229954 Longitude= 4.415247
+10:37:30.488 ->  Sattelites= 13
+10:37:31.334 -> Latitude= 51.229953 Longitude= 4.415241
+10:37:31.403 ->  Sattelites= 13
+10:37:31.472 -> Latitude= 51.229953 Longitude= 4.415241
+10:37:31.507 ->  Sattelites= 14
+10:37:32.359 -> Latitude= 51.229953 Longitude= 4.415240
+10:37:32.392 ->  Sattelites= 14
+10:37:32.460 -> Latitude= 51.229953 Longitude= 4.415240
+10:37:32.493 ->  Sattelites= 14
+10:37:33.338 -> Latitude= 51.229953 Longitude= 4.415236
+10:37:33.372 ->  Sattelites= 14
+10:37:33.439 -> Latitude= 51.229953 Longitude= 4.415236
+10:37:33.505 ->  Sattelites= 13
+10:37:34.349 -> Latitude= 51.229950 Longitude= 4.415237
+10:37:34.383 ->  Sattelites= 13
+10:37:34.451 -> Latitude= 51.229950 Longitude= 4.415237
+10:37:34.519 ->  Sattelites= 14
+10:37:35.363 -> Latitude= 51.229949 Longitude= 4.415236
+10:37:35.396 ->  Sattelites= 14
+10:37:35.464 -> Latitude= 51.229949 Longitude= 4.415236
+10:37:35.499 ->  Sattelites= 14
+10:37:36.340 -> Latitude= 51.229948 Longitude= 4.415235
+10:37:36.373 ->  Sattelites= 14
+10:37:36.475 -> Latitude= 51.229948 Longitude= 4.415235
+10:37:36.508 ->  Sattelites= 14
+10:37:37.354 -> Latitude= 51.229946 Longitude= 4.415224
+10:37:37.387 ->  Sattelites= 14
+10:37:37.456 -> Latitude= 51.229946 Longitude= 4.415224
+10:37:37.490 ->  Sattelites= 14
+10:37:38.369 -> Latitude= 51.229929 Longitude= 4.415225
+10:37:38.403 ->  Sattelites= 14
+10:37:38.470 -> Latitude= 51.229929 Longitude= 4.415225
+10:37:38.503 ->  Sattelites= 14
+10:37:39.345 -> Latitude= 51.229925 Longitude= 4.415235
+10:37:39.378 ->  Sattelites= 14
+10:37:39.446 -> Latitude= 51.229925 Longitude= 4.415235
+10:37:39.513 ->  Sattelites= 14
+10:37:40.353 -> Latitude= 51.229917 Longitude= 4.415276
+10:37:40.386 ->  Sattelites= 14
+10:37:40.487 -> Latitude= 51.229917 Longitude= 4.415276
+10:37:40.521 ->  Sattelites= 13
+10:37:41.333 -> Latitude= 51.229907 Longitude= 4.415295
+10:37:41.401 ->  Sattelites= 13
+10:37:41.471 -> Latitude= 51.229907 Longitude= 4.415295
+10:37:41.506 ->  Sattelites= 13
+10:37:42.355 -> Latitude= 51.229893 Longitude= 4.415321
+10:37:42.389 ->  Sattelites= 13
+10:37:42.456 -> Latitude= 51.229893 Longitude= 4.415321
+10:37:42.524 ->  Sattelites= 13
+10:37:43.369 -> Latitude= 51.229883 Longitude= 4.415358
+10:37:43.402 ->  Sattelites= 13
+10:37:43.469 -> Latitude= 51.229883 Longitude= 4.415358
+10:37:43.504 ->  Sattelites= 13
+10:37:44.349 -> Latitude= 51.229876 Longitude= 4.415407
+10:37:44.382 ->  Sattelites= 13
+10:37:44.482 -> Latitude= 51.229876 Longitude= 4.415407
+10:37:44.515 ->  Sattelites= 12
+10:37:45.358 -> Latitude= 51.229871 Longitude= 4.415456
+10:37:45.391 ->  Sattelites= 12
+10:37:45.459 -> Latitude= 51.229871 Longitude= 4.415456
+10:37:45.527 ->  Sattelites= 13
+10:37:46.338 -> Latitude= 51.229865 Longitude= 4.415495
+10:37:46.405 ->  Sattelites= 13
+10:37:46.471 -> Latitude= 51.229865 Longitude= 4.415495
+10:37:46.505 ->  Sattelites= 13
+10:37:47.347 -> Latitude= 51.229861 Longitude= 4.415529
+10:37:47.381 ->  Sattelites= 13
+10:37:47.483 -> Latitude= 51.229861 Longitude= 4.415529
+10:37:47.517 ->  Sattelites= 13
+10:37:48.361 -> Latitude= 51.229861 Longitude= 4.415565
+10:37:48.394 ->  Sattelites= 13
+10:37:48.462 -> Latitude= 51.229861 Longitude= 4.415565
+10:37:48.495 ->  Sattelites= 12
+10:37:49.342 -> Latitude= 51.229864 Longitude= 4.415598
+10:37:49.375 ->  Sattelites= 12
+10:37:49.476 -> Latitude= 51.229864 Longitude= 4.415598
+10:37:49.511 ->  Sattelites= 12
+10:37:50.358 -> Latitude= 51.229860 Longitude= 4.415629
+10:37:50.391 ->  Sattelites= 12
+10:37:50.459 -> Latitude= 51.229860 Longitude= 4.415629
+10:37:50.492 ->  Sattelites= 12
+10:37:51.333 -> Latitude= 51.229854 Longitude= 4.415652
+10:37:51.401 ->  Sattelites= 12
+10:37:51.469 -> Latitude= 51.229854 Longitude= 4.415652
+10:37:51.504 ->  Sattelites= 12
+10:37:52.353 -> Latitude= 51.229850 Longitude= 4.415672
+10:37:52.387 ->  Sattelites= 12
+10:37:52.455 -> Latitude= 51.229850 Longitude= 4.415672
+10:37:52.523 ->  Sattelites= 12
+10:37:53.332 -> Latitude= 51.229850 Longitude= 4.415694
+10:37:53.400 ->  Sattelites= 12
+10:37:53.466 -> Latitude= 51.229850 Longitude= 4.415694
+10:37:53.500 ->  Sattelites= 12
+10:37:54.343 -> Latitude= 51.229849 Longitude= 4.415707
+10:37:54.376 ->  Sattelites= 12
+10:37:54.443 -> Latitude= 51.229849 Longitude= 4.415707
+10:37:54.510 ->  Sattelites= 12
+10:37:55.353 -> Latitude= 51.229845 Longitude= 4.415724
+10:37:55.387 ->  Sattelites= 12
+10:37:55.455 -> Latitude= 51.229845 Longitude= 4.415724
+10:37:55.489 ->  Sattelites= 12
+10:37:56.331 -> Latitude= 51.229840 Longitude= 4.415736
+10:37:56.397 ->  Sattelites= 12
+10:37:56.465 -> Latitude= 51.229840 Longitude= 4.415736
+10:37:56.499 ->  Sattelites= 12
+10:37:57.341 -> Latitude= 51.229829 Longitude= 4.415747
+10:37:57.407 ->  Sattelites= 12
+10:37:57.475 -> Latitude= 51.229829 Longitude= 4.415747
+10:37:57.508 ->  Sattelites= 12
+10:37:58.351 -> Latitude= 51.229828 Longitude= 4.415771
+10:37:58.385 ->  Sattelites= 12
+10:37:58.486 -> Latitude= 51.229828 Longitude= 4.415771
+10:37:58.519 ->  Sattelites= 12
+10:37:59.364 -> Latitude= 51.229832 Longitude= 4.415812
+10:37:59.397 ->  Sattelites= 12
+10:37:59.465 -> Latitude= 51.229832 Longitude= 4.415812
+10:37:59.498 ->  Sattelites= 13
+10:38:00.345 -> Latitude= 51.229837 Longitude= 4.415845
+10:38:00.379 ->  Sattelites= 13
+10:38:00.480 -> Latitude= 51.229837 Longitude= 4.415845
+10:38:00.515 ->  Sattelites= 12
+10:38:01.327 -> Latitude= 51.229839 Longitude= 4.415873
+10:38:01.395 ->  Sattelites= 12
+10:38:01.463 -> Latitude= 51.229839 Longitude= 4.415873
+10:38:01.496 ->  Sattelites= 12
+10:38:02.350 -> Latitude= 51.229841 Longitude= 4.415900
+10:38:02.384 ->  Sattelites= 12
+10:38:02.451 -> Latitude= 51.229841 Longitude= 4.415900
+10:38:02.519 ->  Sattelites= 13
+10:38:03.333 -> Latitude= 51.229843 Longitude= 4.415928
+10:38:03.399 ->  Sattelites= 13
+10:38:03.468 -> Latitude= 51.229843 Longitude= 4.415928
+10:38:03.501 ->  Sattelites= 12
+10:38:04.345 -> Latitude= 51.229843 Longitude= 4.415953
+10:38:04.378 ->  Sattelites= 12
+10:38:04.480 -> Latitude= 51.229843 Longitude= 4.415953
+10:38:04.515 ->  Sattelites= 13
+10:38:05.362 -> Latitude= 51.229845 Longitude= 4.415979
+10:38:05.396 ->  Sattelites= 13
+10:38:05.463 -> Latitude= 51.229845 Longitude= 4.415979
+10:38:05.498 ->  Sattelites= 13
+10:38:06.341 -> Latitude= 51.229847 Longitude= 4.416004
+10:38:06.374 ->  Sattelites= 13
+10:38:06.476 -> Latitude= 51.229847 Longitude= 4.416004
+10:38:06.510 ->  Sattelites= 12
+10:38:07.352 -> Latitude= 51.229849 Longitude= 4.416028
+10:38:07.385 ->  Sattelites= 12
+10:38:07.452 -> Latitude= 51.229849 Longitude= 4.416028
+10:38:07.520 ->  Sattelites= 12
+10:38:08.365 -> Latitude= 51.229853 Longitude= 4.416050
+10:38:08.398 ->  Sattelites= 12
+10:38:08.466 -> Latitude= 51.229853 Longitude= 4.416050
+10:38:08.499 ->  Sattelites= 13
+10:38:09.345 -> Latitude= 51.229858 Longitude= 4.416069
+10:38:09.380 ->  Sattelites= 13
+10:38:09.481 -> Latitude= 51.229858 Longitude= 4.416069
+10:38:09.515 ->  Sattelites= 12
+10:38:10.364 -> Latitude= 51.229860 Longitude= 4.416090
+10:38:10.398 ->  Sattelites= 12
+10:38:10.466 -> Latitude= 51.229860 Longitude= 4.416090
+10:38:10.500 ->  Sattelites= 12
+10:38:11.343 -> Latitude= 51.229867 Longitude= 4.416114
+10:38:11.377 ->  Sattelites= 12
+10:38:11.481 -> Latitude= 51.229867 Longitude= 4.416114
+10:38:11.515 ->  Sattelites= 13
+10:38:12.330 -> Latitude= 51.229869 Longitude= 4.416134
+10:38:12.399 ->  Sattelites= 13
+10:38:12.465 -> Latitude= 51.229869 Longitude= 4.416134
+10:38:12.499 ->  Sattelites= 13
+10:38:13.342 -> Latitude= 51.229871 Longitude= 4.416149
+10:38:13.376 ->  Sattelites= 13
+10:38:13.443 -> Latitude= 51.229871 Longitude= 4.416149
+10:38:13.510 ->  Sattelites= 12
+10:38:14.356 -> Latitude= 51.229869 Longitude= 4.416160
+10:38:14.390 ->  Sattelites= 12
+10:38:14.457 -> Latitude= 51.229869 Longitude= 4.416160
+10:38:14.491 ->  Sattelites= 12
+10:38:15.336 -> Latitude= 51.229864 Longitude= 4.416166
+10:38:15.403 ->  Sattelites= 12
+10:38:15.472 -> Latitude= 51.229864 Longitude= 4.416166
+10:38:15.505 ->  Sattelites= 12
+10:38:16.346 -> Latitude= 51.229862 Longitude= 4.416164
+10:38:16.379 ->  Sattelites= 12
+10:38:16.446 -> Latitude= 51.229862 Longitude= 4.416164
+10:38:16.480 ->  Sattelites= 12
+10:38:17.356 -> Latitude= 51.229851 Longitude= 4.416170
+10:38:17.390 ->  Sattelites= 12
+10:38:17.457 -> Latitude= 51.229851 Longitude= 4.416170
+10:38:17.491 ->  Sattelites= 11
+10:38:18.344 -> Latitude= 51.229826 Longitude= 4.416173
+10:38:18.377 ->  Sattelites= 11
+10:38:18.478 -> Latitude= 51.229826 Longitude= 4.416173
+10:38:18.511 ->  Sattelites= 11
+10:38:19.356 -> Latitude= 51.229810 Longitude= 4.416170
+10:38:19.390 ->  Sattelites= 11
+10:38:19.458 -> Latitude= 51.229810 Longitude= 4.416170
+10:38:19.491 ->  Sattelites= 11
+10:38:20.337 -> Latitude= 51.229785 Longitude= 4.416167
+10:38:20.370 ->  Sattelites= 11
+10:38:20.472 -> Latitude= 51.229785 Longitude= 4.416167
+10:38:20.505 ->  Sattelites= 11
+10:38:21.347 -> Latitude= 51.229756 Longitude= 4.416157
+10:38:21.382 ->  Sattelites= 11
+10:38:21.452 -> Latitude= 51.229756 Longitude= 4.416157
+10:38:21.521 ->  Sattelites= 11
+10:38:22.336 -> Latitude= 51.229723 Longitude= 4.416156
+10:38:22.371 ->  Sattelites= 11
+10:38:22.472 -> Latitude= 51.229723 Longitude= 4.416156
+10:38:22.505 ->  Sattelites= 12
+10:38:23.347 -> Latitude= 51.229691 Longitude= 4.416163
+10:38:23.381 ->  Sattelites= 12
+10:38:23.449 -> Latitude= 51.229691 Longitude= 4.416163
+10:38:23.516 ->  Sattelites= 10
+10:38:24.327 -> Latitude= 51.229664 Longitude= 4.416149
+10:38:24.394 ->  Sattelites= 10
+10:38:24.463 -> Latitude= 51.229664 Longitude= 4.416149
+10:38:24.496 ->  Sattelites= 5
+10:38:25.344 -> Latitude= 51.229635 Longitude= 4.416154
+10:38:25.377 ->  Sattelites= 5
+10:38:25.445 -> Latitude= 51.229635 Longitude= 4.416154
+10:38:25.511 ->  Sattelites= 5
+10:38:26.326 -> Latitude= 51.229614 Longitude= 4.416143
+10:38:26.359 ->  Sattelites= 5
+10:38:26.462 -> Latitude= 51.229614 Longitude= 4.416143
+10:38:26.496 ->  Sattelites= 5
+10:38:27.346 -> Latitude= 51.229589 Longitude= 4.416128
+10:38:27.380 ->  Sattelites= 5
+10:38:27.448 -> Latitude= 51.229589 Longitude= 4.416128
+10:38:27.482 ->  Sattelites= 4
+10:38:29.341 -> Latitude= 51.229502 Longitude= 4.416157
+10:38:29.375 ->  Sattelites= 0
+10:38:29.477 -> Latitude= 51.229502 Longitude= 4.416157
+10:38:29.511 ->  Sattelites= 4
+10:38:30.322 -> Latitude= 51.229442 Longitude= 4.416169
+10:38:30.389 ->  Sattelites= 4
+10:38:30.458 -> Latitude= 51.229442 Longitude= 4.416169
+10:38:30.491 ->  Sattelites= 3
