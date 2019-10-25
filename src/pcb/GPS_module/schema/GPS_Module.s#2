@@ -8157,66 +8157,83 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="U.FL-R-SMT-1_10_">
+<library name="U.FL-R-SMT_01_">
 <packages>
-<package name="HRS_U.FL-R-SMT-1(10)">
-<circle x="0" y="0" radius="1" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="0.3" width="0" layer="51"/>
-<wire x1="-2.25" y1="1.55" x2="2.25" y2="1.55" width="0.05" layer="39"/>
-<wire x1="2.25" y1="1.55" x2="2.25" y2="-2.3" width="0.05" layer="39"/>
-<wire x1="2.25" y1="-2.3" x2="-2.25" y2="-2.3" width="0.05" layer="39"/>
-<wire x1="-2.25" y1="-2.3" x2="-2.25" y2="1.55" width="0.05" layer="39"/>
-<text x="-2.60418125" y="1.80288125" size="1.01763125" layer="25">&gt;NAME</text>
-<text x="-2.6061" y="-3.60845" size="1.01838125" layer="27">&gt;VALUE</text>
-<wire x1="-1.3" y1="1.3" x2="1.3" y2="1.3" width="0.127" layer="51"/>
+<package name="HRS_U.FL-R-SMT(01)">
+<wire x1="-1.3" y1="-1.3" x2="-1.3" y2="-0.87" width="0.127" layer="51"/>
+<wire x1="-1.3" y1="-0.87" x2="-1.3" y2="1.3" width="0.127" layer="51"/>
 <wire x1="1.3" y1="1.3" x2="1.3" y2="-1.3" width="0.127" layer="51"/>
-<wire x1="1.3" y1="-1.3" x2="-1.3" y2="-1.3" width="0.127" layer="51"/>
-<wire x1="-1.3" y1="-1.3" x2="-1.3" y2="1.3" width="0.127" layer="51"/>
-<wire x1="-1.3" y1="1.3" x2="1.3" y2="1.3" width="0.127" layer="21"/>
-<rectangle x1="-0.950159375" y1="-1.00016875" x2="0.95" y2="1.1" layer="41"/>
-<wire x1="-1.3" y1="-1.3" x2="-0.67" y2="-1.3" width="0.127" layer="21"/>
-<wire x1="1.3" y1="-1.3" x2="0.67" y2="-1.3" width="0.127" layer="21"/>
-<smd name="2" x="0" y="-1.525" dx="1" dy="1.05" layer="1"/>
-<smd name="1" x="-1.475" y="0" dx="1.05" dy="2.2" layer="1"/>
-<smd name="3" x="1.475" y="0" dx="1.05" dy="2.2" layer="1"/>
+<circle x="0.01" y="0.01" radius="0.3324125" width="0.127" layer="51"/>
+<circle x="0" y="0.01" radius="0.551540625" width="0.127" layer="51"/>
+<wire x1="1.38" y1="0.87" x2="1.57" y2="0.87" width="0.127" layer="51"/>
+<wire x1="1.57" y1="0.87" x2="1.57" y2="-0.87" width="0.127" layer="51"/>
+<wire x1="1.57" y1="-0.87" x2="1.34" y2="-0.87" width="0.127" layer="51"/>
+<wire x1="1.34" y1="-0.9" x2="1.34" y2="-0.91" width="0.127" layer="52"/>
+<wire x1="-1.57" y1="0.87" x2="-1.57" y2="-0.87" width="0.127" layer="51"/>
+<wire x1="-1.57" y1="0.87" x2="-1.33" y2="0.87" width="0.127" layer="51"/>
+<wire x1="-1.33" y1="0.87" x2="-1.33" y2="0.88" width="0.127" layer="51"/>
+<wire x1="-2.3" y1="1.6" x2="-2.3" y2="-2.4" width="0.05" layer="39"/>
+<wire x1="-2.3" y1="-2.4" x2="2.3" y2="-2.4" width="0.05" layer="39"/>
+<wire x1="2.3" y1="-2.4" x2="2.3" y2="1.6" width="0.05" layer="39"/>
+<wire x1="2.3" y1="1.6" x2="-2.3" y2="1.6" width="0.05" layer="39"/>
+<text x="-2.807240625" y="1.604140625" size="1.27143125" layer="25">&gt;NAME</text>
+<text x="-3.207040625" y="-3.80835" size="1.272709375" layer="27">&gt;VALUE</text>
+<wire x1="-1.3" y1="-1.3" x2="1.3" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="-1.3" y1="1.3" x2="1.3" y2="1.3" width="0.127" layer="51"/>
+<wire x1="1.3" y1="1.3" x2="-1.3" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-1.57" y1="-0.87" x2="-1.3" y2="-0.87" width="0.127" layer="51"/>
+<rectangle x1="-0.9030625" y1="-0.96326875" x2="0.9" y2="1.15" layer="41"/>
+<smd name="1" x="-1.475" y="0" dx="1.1" dy="2.25" layer="1"/>
+<smd name="2" x="1.475" y="0" dx="1.1" dy="2.25" layer="1"/>
+<smd name="3" x="0" y="-1.55" dx="1.05" dy="1.1" layer="1"/>
 </package>
 </packages>
 <symbols>
-<symbol name="U.FL-R-SMT-1(10)">
-<wire x1="-1.397" y1="3.175" x2="0" y2="3.175" width="0.254" layer="94"/>
-<wire x1="0" y1="3.175" x2="1.397" y2="3.175" width="0.254" layer="94"/>
-<wire x1="1.397" y1="3.175" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.397" y2="3.175" width="0.254" layer="94"/>
-<wire x1="0" y1="3.175" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="-3.302" x2="0.762" y2="-3.302" width="0.254" layer="94"/>
-<wire x1="-0.127" y1="-4.064" x2="0.254" y2="-4.064" width="0.254" layer="94"/>
-<text x="-2.54058125" y="5.086940625" size="1.27303125" layer="95">&gt;NAME</text>
-<text x="-2.66773125" y="-7.63458125" size="1.27435" layer="96">&gt;VALUE</text>
-<pin name="GND" x="-2.54" y="-2.54" visible="off" length="short" direction="pas"/>
-<pin name="SIG" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<symbol name="U.FL-R-SMT(01)">
+<circle x="0" y="2.54" radius="1.016" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.524" x2="0" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0" y1="1.524" x2="1.016" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0" y1="1.524" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<circle x="0" y="-2.54" radius="0.254" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<text x="-3.81856875" y="4.07313125" size="1.27285" layer="95">&gt;NAME</text>
+<text x="-4.32781875" y="-5.6007" size="1.27288125" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="-2.54" x2="0" y2="-3.302" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.302" x2="-0.762" y2="-3.302" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.302" x2="0.762" y2="-3.302" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-3.302" x2="-1.27" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.302" x2="-0.508" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.302" x2="0.254" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="2.6" y1="3.4" x2="2.6" y2="1.7" width="0.254" layer="94"/>
+<wire x1="2.6" y1="1.7" x2="4.3" y2="2.5" width="0.254" layer="94"/>
+<wire x1="4.3" y1="2.5" x2="2.7" y2="3.4" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.7" y1="-1.7" x2="2.7" y2="-3.4" width="0.254" layer="94"/>
+<wire x1="2.7" y1="-3.4" x2="4.4" y2="-2.6" width="0.254" layer="94"/>
+<wire x1="4.4" y1="-2.6" x2="2.8" y2="-1.7" width="0.254" layer="94"/>
+<pin name="SIG" x="-10.16" y="2.54" length="short" direction="pas"/>
+<pin name="GND" x="-10.16" y="-2.54" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="U.FL-R-SMT-1(10)" prefix="J">
-<description>U.FL Series 6 Ghz 50 Ohm Ultra-small SMT Coaxial Cable Receptacle</description>
+<deviceset name="U.FL-R-SMT(01)" prefix="J">
+<description>&lt;b&gt;U.FL Series 6 Ghz 50 Ohm Ultra-small SMT Coaxial Cable Receptacle&lt;/b&gt;</description>
 <gates>
-<gate name="G$1" symbol="U.FL-R-SMT-1(10)" x="0" y="0"/>
+<gate name="G$1" symbol="U.FL-R-SMT(01)" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="HRS_U.FL-R-SMT-1(10)">
+<device name="" package="HRS_U.FL-R-SMT(01)">
 <connects>
-<connect gate="G$1" pin="GND" pad="1 3"/>
-<connect gate="G$1" pin="SIG" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1 2"/>
+<connect gate="G$1" pin="SIG" pad="3"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="AVAILABILITY" value="Unavailable"/>
 <attribute name="DESCRIPTION" value=" U.FL Series 6 Ghz 50 Ohm Ultra-small SMT Coaxial Cable Receptacle "/>
 <attribute name="MF" value="Hirose"/>
-<attribute name="MP" value="U.FL-R-SMT-1_10_"/>
+<attribute name="MP" value="U.FL-R-SMT_01_"/>
 <attribute name="PACKAGE" value="None"/>
 <attribute name="PRICE" value="None"/>
 </technology>
@@ -8246,8 +8263,9 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="J1" library="U.FL-R-SMT-1_10_" deviceset="U.FL-R-SMT-1(10)" device=""/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="27pF"/>
+<part name="J2" library="U.FL-R-SMT_01_" deviceset="U.FL-R-SMT(01)" device=""/>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1µF"/>
 </parts>
 <sheets>
 <sheet>
@@ -8290,13 +8308,17 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND2" gate="1" x="-116.84" y="-63.5" smashed="yes">
 <attribute name="VALUE" x="-119.38" y="-66.04" size="1.778" layer="96"/>
 </instance>
-<instance part="J1" gate="G$1" x="-93.98" y="-15.24" smashed="yes">
-<attribute name="NAME" x="-96.52058125" y="-10.153059375" size="1.27303125" layer="95"/>
-<attribute name="VALUE" x="-99.18773125" y="-22.87458125" size="1.27435" layer="96"/>
-</instance>
 <instance part="C3" gate="G$1" x="-96.52" y="-45.72" smashed="yes">
 <attribute name="NAME" x="-94.996" y="-45.339" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-94.996" y="-50.419" size="1.778" layer="96"/>
+</instance>
+<instance part="J2" gate="G$1" x="-88.9" y="-17.78" smashed="yes">
+<attribute name="NAME" x="-92.71856875" y="-13.70686875" size="1.27285" layer="95"/>
+<attribute name="VALUE" x="-93.22781875" y="-23.3807" size="1.27288125" layer="96"/>
+</instance>
+<instance part="C4" gate="G$1" x="15.24" y="-30.48" smashed="yes">
+<attribute name="NAME" x="16.764" y="-30.099" size="1.778" layer="95"/>
+<attribute name="VALUE" x="16.764" y="-35.179" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8350,6 +8372,10 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-5.08" y="-17.78" size="1.016" layer="95" rot="R90" xref="yes"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="-27.94" x2="15.24" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-22.86" x2="5.08" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="5.08" y="-22.86"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -8391,11 +8417,15 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="-35.56" x2="15.24" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-45.72" x2="5.08" y2="-45.72" width="0.1524" layer="91"/>
+<junction x="5.08" y="-45.72"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="GND"/>
-<wire x1="-96.52" y1="-17.78" x2="-101.6" y2="-17.78" width="0.1524" layer="91"/>
-<label x="-101.6" y="-17.78" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<wire x1="-99.06" y1="-20.32" x2="-104.14" y2="-20.32" width="0.1524" layer="91"/>
+<label x="-104.14" y="-20.32" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="IN_ANT" class="0">
@@ -8417,9 +8447,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-96.52" y="-35.56" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="SIG"/>
-<wire x1="-96.52" y1="-15.24" x2="-101.6" y2="-15.24" width="0.1524" layer="91"/>
-<label x="-101.6" y="-15.24" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<wire x1="-99.06" y1="-15.24" x2="-104.14" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-104.14" y="-15.24" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="SIG"/>
 </segment>
 </net>
 </nets>
