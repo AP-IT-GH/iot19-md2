@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-10-12T09:00:31Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "lora_module"
+        },
+        "Owner": "Jarno Cools <jarno.cools@student.ap.be>",
+        "Size": {
+            "X": 25.38,
+            "Y": 31.42
+        }
+    }
+}
