@@ -3,7 +3,7 @@
 <eagle version="9.5.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -59,12 +59,16 @@
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6c3R1ZGVudDk3MjU" projecturn="a.YnVzaW5lc3M6c3R1ZGVudDk3MjUjRDIwMTkxMDA0MjIyNzk2ODA2" f3durn="urn:adsk.wipprod:dm.lineage:NpaNXs29SPKqhJ0U-8d7cw" pcbguid="de09cc18-a3d4-48f8-913a-f04e929a34a4" lastpulledtime="" lastsyncedchangeguid="45d9a472-997a-c3df-27ff-b88bcedcdcec"/>
+<fusionsync huburn="a.YnVzaW5lc3M6c3R1ZGVudDk3MjU" projecturn="a.YnVzaW5lc3M6c3R1ZGVudDk3MjUjRDIwMTkxMDA0MjIyNzk2ODA2" f3durn="urn:adsk.wipprod:dm.lineage:NpaNXs29SPKqhJ0U-8d7cw" pcbguid="de09cc18-a3d4-48f8-913a-f04e929a34a4" lastpulledtime="" lastsyncedchangeguid="ae47f3d3-d591-f2fe-bc63-d4625d2e3dec"/>
 <plain>
-<wire x1="0" y1="35.539840625" x2="0" y2="11.43" width="0" layer="20"/>
+<wire x1="0" y1="39.349840625" x2="0" y2="11.43" width="0" layer="20"/>
 <wire x1="0" y1="11.43" x2="23.8" y2="11.43" width="0" layer="20"/>
-<wire x1="23.8" y1="11.43" x2="23.8" y2="35.549996875" width="0" layer="20"/>
-<wire x1="23.8" y1="35.549996875" x2="0" y2="35.539840625" width="0" layer="20"/>
+<wire x1="23.8" y1="11.43" x2="23.8" y2="39.359996875" width="0" layer="20"/>
+<wire x1="23.8" y1="39.359996875" x2="0" y2="39.349840625" width="0" layer="20"/>
+<hole x="2.54" y="13.97" drill="3"/>
+<hole x="21.59" y="13.97" drill="3"/>
+<hole x="2.54" y="36.83" drill="3"/>
+<hole x="21.59" y="36.83" drill="3"/>
 </plain>
 <libraries>
 <library name="SL876Q5A001T001000">
@@ -1594,8 +1598,8 @@ design rules under a new name.</description>
 <wire x1="7" y1="25.42" x2="7" y2="22.18" width="0.3048" layer="1"/>
 <wire x1="7" y1="25.42" x2="7.3" y2="25.72" width="0.3048" layer="1"/>
 <polygon width="0.1524" layer="1">
-<vertex x="0" y="35.56"/>
-<vertex x="24.13" y="35.56"/>
+<vertex x="0" y="39.37"/>
+<vertex x="24.13" y="39.37"/>
 <vertex x="24.13" y="11.43"/>
 <vertex x="0" y="11.43"/>
 </polygon>

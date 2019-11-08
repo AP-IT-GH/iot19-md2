@@ -59,7 +59,7 @@
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6c3R1ZGVudDk3MjU" projecturn="a.YnVzaW5lc3M6c3R1ZGVudDk3MjUjRDIwMTkxMDA0MjIyNzk2ODA2" f3durn="urn:adsk.wipprod:dm.lineage:NpaNXs29SPKqhJ0U-8d7cw" pcbguid="de09cc18-a3d4-48f8-913a-f04e929a34a4" lastpulledtime="" lastsyncedchangeguid="ae47f3d3-d591-f2fe-bc63-d4625d2e3dec"/>
+<fusionsync huburn="a.YnVzaW5lc3M6c3R1ZGVudDk3MjU" projecturn="a.YnVzaW5lc3M6c3R1ZGVudDk3MjUjRDIwMTkxMDA0MjIyNzk2ODA2" f3durn="urn:adsk.wipprod:dm.lineage:NpaNXs29SPKqhJ0U-8d7cw" pcbguid="de09cc18-a3d4-48f8-913a-f04e929a34a4" lastpulledtime="" lastsyncedchangeguid="64bdb6c9-7da9-aed6-b1db-a17abb065cc3"/>
 <plain>
 <wire x1="0" y1="39.349840625" x2="0" y2="11.43" width="0" layer="20"/>
 <wire x1="0" y1="11.43" x2="23.8" y2="11.43" width="0" layer="20"/>
