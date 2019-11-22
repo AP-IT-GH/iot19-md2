@@ -6,13 +6,16 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {MatButtonModule, MatCardModule } from "@angular/material"
+import {MatToolbarModule, MatInputModule, MatButtonModule, MatCardModule, MatFormFieldModule } from "@angular/material"
 import { MatIconModule } from '@angular/material/icon';
+import { AddComponent } from './pages/add/add.component';
+import { Ng5SliderModule } from 'ng5-slider';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,11 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatToolbarModule,
+    Ng5SliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
