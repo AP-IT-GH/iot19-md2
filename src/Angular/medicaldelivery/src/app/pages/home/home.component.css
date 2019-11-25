@@ -24,11 +24,13 @@ mat-card-title{
 
 .add{
     max-width: 200px;
+    margin: auto;
 }
 
 .example-card {
     width: 200px;
     height: 200px;
+    margin: auto;
 }
 
 .addbutton{
