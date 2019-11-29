@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { latLng, tileLayer } from 'leaflet';
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-map',
+  templateUrl: './map.component.html',
+  styleUrls: ['./map.component.css']
 })
-export class AppComponent {
-  title = 'medicaldelivery';
+
+export class MapComponent implements OnInit {
+
   options = {
     layers: [
       tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -17,5 +18,8 @@ export class AppComponent {
     center: latLng([ 46.879966, -121.726909 ])
   };
 
+
+
+  ngOnInit() {}
 
 }
