@@ -23,8 +23,7 @@ export class HomeComponent implements OnInit {
     this.boxSvc.GetAllDeliveries().valueChanges().subscribe(delivery => {
       this.deliveries = delivery;
 
-      console.log(this.deliveries);
-
+      console.table(this.deliveries);
     })
   }
 

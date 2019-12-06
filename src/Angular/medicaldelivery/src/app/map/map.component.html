@@ -1,0 +1,27 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image">
+            <mat-icon class="icon">map</mat-icon>
+        </div>
+        <mat-card-title>Map</mat-card-title>
+    </mat-card-header>
+    <mat-card-content id="container">
+
+            <div style="
+            margin: 0px;
+            width: 90%;
+            height: 610px; 
+            border: 2px solid gray;
+            border-radius: 5px;
+            "
+            leaflet 
+            (leafletMapReady)="onMapReady($event)"
+            [leafletOptions]="options"
+            [leafletLayersControl]="layersControl">
+        </div>
+            
+        <div style="margin-left: 3%;">
+            <app-dashboard></app-dashboard>
+        </div>
+          </mat-card-content>
+</mat-card>

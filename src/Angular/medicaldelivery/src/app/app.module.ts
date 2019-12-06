@@ -8,8 +8,16 @@ import { HomeComponent } from './pages/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http'; 
 
-import { MatChipsModule, MatListModule, MatToolbarModule, MatInputModule, MatButtonModule, MatCardModule, MatFormFieldModule, MatExpansionModule } from "@angular/material"
-import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule,  
+         MatChipsModule, 
+         MatListModule, 
+         MatToolbarModule, 
+         MatInputModule, 
+         MatButtonModule, 
+         MatCardModule, 
+         MatFormFieldModule, 
+         MatExpansionModule,
+         MatIconModule } from "@angular/material"
 import { Ng5SliderModule } from 'ng5-slider';
 
 import {TextFieldModule} from '@angular/cdk/text-field';
@@ -19,15 +27,26 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment.prod';
 import { DeliveryComponent } from './pages/add/delivery/delivery.component';
 import { BoxComponent } from './pages/add/box/box.component';
+import { MapComponent } from './map/map.component';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { NotificationComponent } from './notification/notification.component';
+import { DialogComponent } from './dialog/dialog.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NgxGaugeModule } from 'ngx-gauge';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DeliveryComponent,
-    BoxComponent
+    BoxComponent,
+    MapComponent,
+    NotificationComponent,
+    DialogComponent,
+    DashboardComponent
   ],
   imports: [
+    
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -45,8 +64,17 @@ import { BoxComponent } from './pages/add/box/box.component';
     TextFieldModule,
     Ng5SliderModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    FormsModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatCardModule,
+    AppRoutingModule,
+    NgxGaugeModule,
+    LeafletModule.forRoot(),
+    BrowserAnimationsModule
   ],
+  entryComponents: [DialogComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
