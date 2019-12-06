@@ -9,14 +9,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DialogComponent } from './dialog/dialog.component';
 import { MatDialogModule, MatButtonModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
-
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NgxGaugeModule } from 'ngx-gauge';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
     NotificationComponent,
-    DialogComponent
+    DialogComponent,
+    DashboardComponent
   ],
   imports: [
     
@@ -26,6 +28,7 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     MatDialogModule,
     AppRoutingModule,
+    NgxGaugeModule,
     LeafletModule.forRoot(),
     BrowserAnimationsModule
   ],
