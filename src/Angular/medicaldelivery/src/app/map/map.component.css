@@ -1,12 +1,31 @@
-
 .map {
-    height: 100%;
-    padding: 0;
-  }
+  height: 100%;
+  padding: 0;
+}
   
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+}
+
+.example-card {
+  width: 90%;
+  height: 90%;
+  margin-top: 2%;
+  margin: 0 auto;
+}
+
+.example-header-image {
+  margin-right: -20px;
+}

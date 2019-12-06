@@ -13,27 +13,23 @@ export class DashboardComponent implements OnInit {
     '75.5': {color: 'red'}
   }
 
-// Temperature
+  // Temperature
   gaugeType = "arch";
   gaugeValueTemp = 80;
-  gaugeLabel = "Temerature";
+  gaugeLabel = "Temperature";
   gaugeAppendText = "°C";
 
-//Humidity
+  //Humidity
+  gaugeTypeHum = "arch";
+  gaugeValueHum = 80;
+  gaugeLabelHum = "Humidity";
+  gaugeAppendHum = "Rh %";
 
-gaugeTypeHum = "arch";
-gaugeValueHum = 80;
-gaugeLabelHum = "Humidity";
-gaugeAppendHum = "Rh %";
-// GForce
-gaugeTypeG = "arch";
-gaugeValueG = 1;
-gaugeLabelG = "G force";
-gaugeAppendTextG = "G";
-
-
-
-
+  // GForce
+  gaugeTypeG = "arch";
+  gaugeValueG = 1;
+  gaugeLabelG = "G force";
+  gaugeAppendTextG = "G";
 
   constructor() { }
 

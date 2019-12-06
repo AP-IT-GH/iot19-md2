@@ -1,17 +1,38 @@
-<ngx-gauge [type]="gaugeType" 
-           [value]="gaugeValueTemp" 
-           [label]="gaugeLabel"
-           [thresholds]="thresholdConfigTemp"
-           [append]="gaugeAppendText">
-</ngx-gauge>
+<div  style="display: flex;
+        flex-direction: column;
+        columns: 3;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        margin-top: 10%;">
+  <div style="display: block;">
+     <ngx-gauge 
+        [type]="gaugeType" 
+        [value]="gaugeValueTemp" 
+        [label]="gaugeLabel"
+        [thresholds]="thresholdConfigTemp"
+        [append]="gaugeAppendText"
+        >
+     </ngx-gauge>
+  </div>
+        
+  <div style="display: block;">
+     <ngx-gauge 
+        [type]="gaugeTypeHum" 
+        [value]="gaugeValueHum" 
+        [label]="gaugeLabelHum" 
+        [append]="gaugeAppendHum"
+      >
+    </ngx-gauge>
+  </div>
 
-<ngx-gauge [type]="gaugeTypeHum" 
-           [value]="gaugeValueHum" 
-           [label]="gaugeLabelHum" 
-           [append]="gaugeAppendHum">
-</ngx-gauge>
-<ngx-gauge [type]="gaugeTypeG" 
-           [value]="gaugeValueG" 
-           [label]="gaugeLabelG" 
-           [append]="gaugeAppendTextG">
-</ngx-gauge>
+  <div style="display: block;">
+    <ngx-gauge  
+        [type]="gaugeTypeG" 
+        [value]="gaugeValueG" 
+        [label]="gaugeLabelG" 
+        [append]="gaugeAppendTextG"
+        >
+    </ngx-gauge>
+  </div>
+</div>

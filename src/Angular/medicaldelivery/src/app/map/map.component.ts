@@ -10,7 +10,7 @@ export class MapComponent implements OnInit {
   onMapReady(map: Map) {
     map.fitBounds(this.route.getBounds(), {
       padding: point(24, 24),
-      maxZoom: 12,
+      maxZoom: 10,
       animate: true
     });
   }
@@ -25,8 +25,8 @@ export class MapComponent implements OnInit {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   });
 
-  // marker voor einde  aan te tonen
-  Deliveryend = marker([ -29.297858, 27.454434 ], {
+  // marker om het begin aan te tonen
+  deliveryStart = marker([ -29.142768, 26.262815 ], {
     icon: icon({
       iconSize: [ 25, 41 ],
       iconAnchor: [ 13, 41 ],
@@ -35,12 +35,12 @@ export class MapComponent implements OnInit {
     })
   });
 
-  // marker om het begin aan te tonen
-  deliveryStart = marker([ -29.142768, 26.262815 ], {
+  // marker voor einde  aan te tonen
+  Deliveryend = marker([ -29.297858, 27.454434 ], {
     icon: icon({
-      iconSize: [ 25, 41 ],
+      iconSize: [ 41, 41 ],
       iconAnchor: [ 13, 41 ],
-      iconUrl: 'leaflet/marker-icon.png',
+      iconUrl: 'assets/delivery-truck.png',
       shadowUrl: 'leaflet/marker-shadow.png'
     })
   });

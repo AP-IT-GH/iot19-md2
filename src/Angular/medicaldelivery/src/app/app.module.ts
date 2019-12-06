@@ -7,7 +7,7 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { NotificationComponent } from './notification/notification.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DialogComponent } from './dialog/dialog.component';
-import { MatDialogModule, MatButtonModule } from '@angular/material';
+import { MatIconModule, MatCardModule, MatDialogModule, MatButtonModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgxGaugeModule } from 'ngx-gauge';
@@ -27,6 +27,8 @@ import { NgxGaugeModule } from 'ngx-gauge';
     FormsModule,
     MatButtonModule,
     MatDialogModule,
+    MatCardModule,
+    MatIconModule,
     AppRoutingModule,
     NgxGaugeModule,
     LeafletModule.forRoot(),
