@@ -1,21 +1,51 @@
 <div class="toolbar" role="banner">
     <p class="title"> Medical Delivery</p>
 </div>
-
-<div class="content" role="main">
-
-    <div class="add">
-        <mat-card class="example-card">
-            <div class="card">
-            <mat-card-header>
-                    <mat-card-title>Add Transporter</mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                    <button routerLink="/add" mat-icon-button class="addbutton">
-                        <mat-icon class="icon">add_circle</mat-icon>
-                    </button>
-                </mat-card-content>
-            </div>
-        </mat-card>
+<div style="padding: 20px; margin: 0%;">
+    <mat-accordion style="padding: 1px; margin: 0 auto; margin-top: -50%;" *ngFor="let delivery of deliveries">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Transporter Info
+            </mat-panel-title>
+            <mat-panel-description>
+              Transporter: {{delivery.Transportername}}
+            </mat-panel-description>
+            <mat-panel-description>
+              Box: 
+              <mat-chip-list aria-label="Fish selection">
+                  <mat-chip *ngIf="boxSvc.IsAdded == 'true'" style="background-color: lightgreen; vertical-align: middle;">Added</mat-chip>
+                  <mat-chip *ngIf="boxSvc.IsAdded == 'false'" style="background-color: lightcoral; vertical-align: middle;">Not Added</mat-chip>
+                </mat-chip-list>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+    
+          <mat-list role="list">
+            <mat-list-item role="listitem">
+              <h4 mat-line>From</h4>
+              <p mat-line> {{delivery.BeginPoint}} </p>
+            </mat-list-item>
+            <mat-list-item role="listitem">
+              <h4 mat-line>To</h4>
+              <p mat-line> {{delivery.EndPoint}} </p>
+            </mat-list-item>
+          </mat-list>
+          <mat-list-item role="listitem" >
+            <h4 mat-line>Description</h4>
+            <p mat-line style="white-space: pre-wrap;"> {{delivery.Description}} </p>
+          </mat-list-item>
+    
+          <mat-chip-list>
+            <mat-chip routerLink="/addBox" color="primary" style="cursor: pointer;" selected>Add Box to Transporter</mat-chip>
+          </mat-chip-list>
+          
+        </mat-expansion-panel>
+      </mat-accordion>
+    
+    
+    <div class="content" role="main">  
+      <button routerLink="/delivery" mat-icon-button class="addbutton">
+        <mat-icon class="icon">add_circle</mat-icon>
+      </button>
     </div>
 </div>

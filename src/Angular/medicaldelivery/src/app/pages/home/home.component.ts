@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BoxService } from 'src/app/services/box.service';
+import { BoxService, IBox, IDelivery } from 'src/app/services/box.service';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +8,32 @@ import { BoxService } from 'src/app/services/box.service';
 })
 export class HomeComponent implements OnInit {
 
+  boxes: IBox[];
+  deliveries: IDelivery[];
 
   constructor(private boxSvc: BoxService) { }
 
+  
   ngOnInit() {
+    this.GetBoxes();
+    this.GetDeliveries();
+  }
 
+  GetDeliveries(){
+    this.boxSvc.GetAllDeliveries().valueChanges().subscribe(delivery => {
+      this.deliveries = delivery;
+
+      console.log(this.deliveries);
+
+    })
+  }
+
+  GetBoxes(){
+    this.boxSvc.GetAllBoxes().valueChanges().subscribe(box=> {
+      this.boxes = box;
+
+      console.table(this.boxes)
+    })
   }
 
 }

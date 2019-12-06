@@ -8,21 +8,24 @@ import { HomeComponent } from './pages/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http'; 
 
-import {MatToolbarModule, MatInputModule, MatButtonModule, MatCardModule, MatFormFieldModule } from "@angular/material"
+import { MatChipsModule, MatListModule, MatToolbarModule, MatInputModule, MatButtonModule, MatCardModule, MatFormFieldModule, MatExpansionModule } from "@angular/material"
 import { MatIconModule } from '@angular/material/icon';
-import { AddComponent } from './pages/add/add.component';
 import { Ng5SliderModule } from 'ng5-slider';
 
+import {TextFieldModule} from '@angular/cdk/text-field';
+
 import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { environment } from '../environments/environment';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { environment } from '../environments/environment.prod';
+import { DeliveryComponent } from './pages/add/delivery/delivery.component';
+import { BoxComponent } from './pages/add/box/box.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AddComponent
+    DeliveryComponent,
+    BoxComponent
   ],
   imports: [
     BrowserModule,
@@ -36,9 +39,12 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
     MatInputModule,
     MatFormFieldModule,
     MatToolbarModule,
+    MatExpansionModule,
+    MatChipsModule,
+    MatListModule,
+    TextFieldModule,
     Ng5SliderModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule,
     AngularFireDatabaseModule
   ],
   providers: [],

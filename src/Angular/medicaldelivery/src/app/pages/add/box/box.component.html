@@ -1,0 +1,22 @@
+<div class="example-container">
+  <div style="margin-top: 5%;">
+      <mat-toolbar class="temprange">Box Temperature range 
+          <ng5-slider style="margin-left: 5%;" [(value)]="box.TemperatureBoundary.MinValue" [(highValue)]="box.TemperatureBoundary.HighValue" [options]="TempOptions"> </ng5-slider>
+      </mat-toolbar>
+  </div>
+  
+  <p></p>
+  
+  <div>
+    <mat-toolbar class="temprange">Box Humidity range
+      <ng5-slider style="margin-left: 5%;" [(value)]="box.HumidityBoundary.MinValue" [(highValue)]="box.HumidityBoundary.HighValue" [options]="HumOptions"> </ng5-slider>
+    </mat-toolbar>
+  </div>
+    
+  <div class="" style="text-align: center;margin-top:3%;">
+    <button (click)="Add()" class="icon-btn add-btn">
+      <div class="add-icon"></div>
+      <div class="btn-txt">Add</div>
+    </button>
+  </div>
+</div>
