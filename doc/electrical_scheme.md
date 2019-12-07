@@ -54,11 +54,11 @@ The connection between the MCU and the LoRa is SPI. Therefor the typical SPI pin
 > PA12 - DIO0
 > PA13 - DIO1
 > PA14 - DIO2
-> PA15 - RESET LoRa  
-> PA16 - NSS
-> PA17 - SCK  
-> PA18 - MOSI  
-> PA19 - MISO
+> PA20 - RESET LoRa  
+> PA19 - NSS
+> PA18 - SCK  
+> PA17 - MOSI  
+> PA16 - MISO
 
 #### GPS Module pins
 
