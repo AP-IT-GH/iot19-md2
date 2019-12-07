@@ -1,15 +1,12 @@
 # Testrapport - Template
 #### Datum: 00-00-0000
+#### Code versie: code x.xx
+#### Test done by: Tester
  
-## MCU Board
+## Test sensor X (Do this for each sensor/MCU - Component you are testing)
 
-- [] Test wire connections.
-- [] Test output voltages.
-- [] Burn bootloader.
-- [] Test programming blink on the microcontroller
-- [] Test sending data over LoRaWAN network via working LoRa module.
-- [] Power consumption test/ Battery test
+Testplan checklist
 
-## Sensor
-- [] Test wire connections.
-- [] Test printing sensor value on serial monitor.
+
+## Besluit
+Schrijf hier je besluit van de testen
