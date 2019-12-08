@@ -3,6 +3,7 @@
 #### Datum: 06-12-2019
 #### Code versie: Eerste code met gewoon Wire library
 #### Test done by: Cristian Baba
+#### Tested with Microcontroller: Arduino NANO
 
 ## Test sensor 1
 
