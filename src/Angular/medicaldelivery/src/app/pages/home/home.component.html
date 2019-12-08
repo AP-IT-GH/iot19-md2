@@ -1,21 +1,25 @@
 <div class="toolbar" role="banner">
     <p class="title"> Medical Delivery</p>
 </div>
-<div style="padding: 20px; margin: 0%;">
-    <mat-accordion style="padding: 1px; margin: 0 auto; margin-top: -50%;" *ngFor="let delivery of deliveries">
+<div style="padding: 20px;">
+    <mat-accordion style="padding: 5px;" *ngFor="let delivery of deliveries">
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title>
-              Transporter Info
+              <mat-list>
+                  Transporter Info
+              </mat-list>
             </mat-panel-title>
             <mat-panel-description>
-              Transporter: {{delivery.Transportername}}
+              <mat-list>
+                Transporter: {{delivery.Transportername}}
+              </mat-list>
             </mat-panel-description>
             <mat-panel-description>
-              Box: 
               <mat-chip-list aria-label="Fish selection">
-                  <mat-chip *ngIf="boxSvc.IsAdded == 'true'" style="background-color: lightgreen; vertical-align: middle;">Added</mat-chip>
-                  <mat-chip *ngIf="boxSvc.IsAdded == 'false'" style="background-color: lightcoral; vertical-align: middle;">Not Added</mat-chip>
+                Box:
+                  <mat-chip *ngIf="delivery.boxes" style="background-color: lightgreen; vertical-align: middle;">Added</mat-chip>
+                  <mat-chip *ngIf="!delivery.boxes" style="background-color: lightcoral; vertical-align: middle;">Not Added</mat-chip>
                 </mat-chip-list>
             </mat-panel-description>
           </mat-expansion-panel-header>  
@@ -36,6 +40,36 @@
             </div>
           </mat-card>
 
+          <div class="example-card">
+            <mat-card style="height: 395px; overflow-y: scroll;">
+              <div class = "grid" >
+                <div class="item" >
+                  <mat-card style="width: 250px;">
+                    <mat-card-header style="text-align: left;">
+                      <mat-card-title> {{delivery.boxes}} </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content style="height: 5%">
+                      <p>
+                        <img src="assets/aid.png" style="display:block; margin:auto;" width="90px" height="90px" alt="">
+                      </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-raised-button color="primary" (click)="add(box)">Info</button>
+                      <button mat-raised-button color="warn" (click)="add(box)">Delete</button>
+                      <mat-chip-list style="float: right;">
+                          State:
+                            <mat-chip *ngIf="delivery.boxes" style="background-color: lightgreen; vertical-align: middle;">OK</mat-chip>
+                            <mat-chip *ngIf="!delivery.boxes" style="background-color: lightcoral; vertical-align: middle;">BAD</mat-chip>
+                          </mat-chip-list>
+                    </mat-card-actions>
+                  </mat-card>
+                </div>
+              </div> 
+            </mat-card>
+          </div>
+
+          <div></div>
+          
           <div>
             <app-map></app-map>
           </div>
@@ -46,7 +80,7 @@
           </mat-list-item>
     
           <mat-chip-list>
-            <mat-chip (click)="GoToSingleDelivery(delivery.id)" color="primary" style="cursor: pointer;" selected>Add Box to Transporter</mat-chip>
+            <mat-chip (click)="GoToSingleDelivery(delivery.Id)" color="primary" style="cursor: pointer;" selected>Add Box to Transporter</mat-chip>
           </mat-chip-list>
           
         </mat-expansion-panel>

@@ -17,6 +17,7 @@ import { MatDialogModule,
          MatCardModule, 
          MatFormFieldModule, 
          MatExpansionModule,
+         MatGridListModule,
          MatIconModule } from "@angular/material"
 import { Ng5SliderModule } from 'ng5-slider';
 
@@ -55,6 +56,7 @@ import { NgxGaugeModule } from 'ngx-gauge';
     MatButtonModule,
     MatCardModule,
     MatIconModule,
+    MatGridListModule,
     MatInputModule,
     MatFormFieldModule,
     MatToolbarModule,

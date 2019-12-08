@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { BoxService, IBox, IDelivery } from 'src/app/services/box.service';
+import { BoxService} from 'src/app/services/box.service';
 import { Router } from '@angular/router';
+import { IBox } from 'src/app/services/model/IBox';
+import { IDelivery } from 'src/app/services/model/IDelivery';
 
 @Component({
   selector: 'app-home',

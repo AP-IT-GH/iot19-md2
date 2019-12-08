@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { BoxService, IDelivery } from 'src/app/services/box.service'
+import { BoxService } from 'src/app/services/box.service'
+import { IDelivery } from 'src/app/services/model/IDelivery';
 
 @Component({
   selector: 'app-delivery',
@@ -10,11 +11,12 @@ import { BoxService, IDelivery } from 'src/app/services/box.service'
 export class DeliveryComponent implements OnInit {
 
   delivery: IDelivery = {
-    "id": null,
+    "Id": null,
     "Transportername": null,
     "BeginPoint": null,
     "EndPoint": null,
-    "Description": null
+    "Description": null,
+    "Boxes": null
   }
 
   constructor(public route: Router, public boxSvc: BoxService) { }
@@ -23,11 +25,12 @@ export class DeliveryComponent implements OnInit {
 
   Add(){    
     this.delivery = {
-      id: this.delivery.Transportername.replace(/\s+/g, '') + "_"+ this.delivery.BeginPoint  + "_"+ this.delivery.EndPoint,
+      Id: this.delivery.Transportername.replace(/\s+/g, '') + "_"+ this.delivery.BeginPoint  + "_"+ this.delivery.EndPoint,
       Transportername: this.delivery.Transportername,
       BeginPoint: this.delivery.BeginPoint,
       EndPoint: this.delivery.EndPoint,
-      Description: this.delivery.Description
+      Description: this.delivery.Description,
+      Boxes: null
     }
     
     this.boxSvc.AddDelivery(this.delivery);

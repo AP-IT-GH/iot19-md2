@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase, AngularFireObject, AngularFireList } from '@angular/fire/database'; 
 import * as firebase from 'firebase/app';
+import { IBox } from './model/IBox';
+import { IDelivery } from './model/IDelivery';
 
 @Injectable({
   providedIn: 'root'
@@ -34,37 +36,10 @@ export class BoxService {
   }
 
   AddDelivery(delivery: IDelivery){
-    this.db.object('/deliveries/' + delivery.id + '/').set(delivery)
+    this.db.object('/deliveries/' + delivery.Id + '/').set(delivery)
   }  
 
   AddBoxToDelivery(id: string, box: IBox){
-    this.db.object('/deliveries/' + id).update({boxes: box})
+    this.db.object('/deliveries/' + id).update({boxes: box.id})
   }
-}
-
-export interface ITemperatureBoundary{
-  MinValue: number;
-  HighValue: number;
-}
-
-export interface IHumidityBoundary{
-  MinValue: number;
-  HighValue: number;
-}
-
-export interface IDelivery{
-  id: string;
-  Transportername: string;
-  BeginPoint: string;
-  EndPoint: string;
-  Description: string;
-
-}
-
-export interface IBox{
-  createdByUid: string;
-  boxId: any;
-  Delivery: IDelivery;
-  TemperatureBoundary: ITemperatureBoundary;
-  HumidityBoundary: IHumidityBoundary;
 }

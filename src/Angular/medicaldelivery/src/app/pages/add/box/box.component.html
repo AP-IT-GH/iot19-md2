@@ -1,4 +1,18 @@
-<div *ngFor="let box of boxes">
-    <div> {{box.id}} </div>
-    <button (click)="add(box)">ADD</button>
+<div class = "grid" >
+    <div class="item" *ngFor="let box of boxes">
+        <mat-card >
+            <mat-card-header>
+                <mat-card-title> {{box.id}} </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>
+                    content: {{box.content}} <br>
+                    humidity_boundaries: Min: {{box.humidity_boundaries.min}}, Max: {{box.humidity_boundaries.max}} <br>
+                    temperature_boundaries: Min: {{box.temperature_boundaries.min}}, Max: {{box.temperature_boundaries.max}}
+                </p>
+            </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="add(box)">ADD</button>
+        </mat-card-actions>
+    </mat-card></div>
 </div>

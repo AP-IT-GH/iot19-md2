@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { IDelivery, IBox, BoxService } from 'src/app/services/box.service';
+import { BoxService } from 'src/app/services/box.service';
 import { Options } from 'ng5-slider';
 import { Router, ActivatedRoute } from '@angular/router';
 import * as firebase from 'firebase/app';
+import { IDelivery } from 'src/app/services/model/IDelivery';
+import { IBox } from 'src/app/services/model/IBox';
 
 @Component({
   selector: 'app-box',
@@ -23,7 +25,6 @@ export class BoxComponent implements OnInit {
       this.id = this.activatedRoute.snapshot.paramMap.get('id')
       this.boxSvc.GetDeliveryById(this.id).valueChanges().subscribe(del => {
         this.delivery = del
-        console.table(this.delivery)
       })
 
       this.boxSvc.GetAllBoxes().valueChanges().subscribe(box => {
