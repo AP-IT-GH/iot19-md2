@@ -1,0 +1,21 @@
+{
+  "name": "ttn_mqtt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "ttn": "^2.3.3",
+    "firebase-admin": "^8.8.0"
+  }
+}
