@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BoxService, IBox, IDelivery } from 'src/app/services/box.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,10 @@ export class HomeComponent implements OnInit {
   boxes: IBox[];
   deliveries: IDelivery[];
 
-  constructor(private boxSvc: BoxService) { }
+  constructor(
+    private boxSvc: BoxService,
+    private route: Router
+    ) { }
 
   
   ngOnInit() {
@@ -33,6 +37,10 @@ export class HomeComponent implements OnInit {
 
       console.table(this.boxes)
     })
+  }
+
+  GoToSingleDelivery(id: string) {
+    this.route.navigate(['/delivery/'+ id + '/addBox']);
   }
 
 }

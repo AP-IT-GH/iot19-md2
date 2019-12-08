@@ -9,8 +9,9 @@ import { MapComponent } from './map/map.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },  
   { path: 'home', component: HomeComponent },
-  { path: 'addBox', component: BoxComponent},
+  /* { path: 'addBox', component: BoxComponent}, */
   { path: 'delivery', component: DeliveryComponent },
+  { path: 'delivery/:id/addBox', component: BoxComponent },
   {path : 'map' , component: MapComponent}
 ];
 

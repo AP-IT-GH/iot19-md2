@@ -18,25 +18,35 @@
                   <mat-chip *ngIf="boxSvc.IsAdded == 'false'" style="background-color: lightcoral; vertical-align: middle;">Not Added</mat-chip>
                 </mat-chip-list>
             </mat-panel-description>
-          </mat-expansion-panel-header>
-    
-          <mat-list role="list">
-            <mat-list-item role="listitem">
-              <h4 mat-line>From</h4>
-              <p mat-line> {{delivery.BeginPoint}} </p>
-            </mat-list-item>
-            <mat-list-item role="listitem">
-              <h4 mat-line>To</h4>
-              <p mat-line> {{delivery.EndPoint}} </p>
-            </mat-list-item>
-          </mat-list>
+          </mat-expansion-panel-header>  
+
+          <mat-card style="height: 35px;">
+            <div class="divOuter">
+              <div class="div1">
+                <h4 mat-line>From</h4>
+                <p mat-line style="margin-top: -25px;"> {{delivery.BeginPoint}} </p>
+              </div>
+              <div class="div2">
+                <img src="assets/delivery-truck.png" width="50px" height="50px">
+              </div>
+              <div class="div3">
+                <h4 mat-line>To</h4>
+                <p mat-line style="margin-top: -25px;"> {{delivery.EndPoint}} </p>
+              </div>
+            </div>
+          </mat-card>
+
+          <div>
+            <app-map></app-map>
+          </div>
+
           <mat-list-item role="listitem" >
             <h4 mat-line>Description</h4>
             <p mat-line style="white-space: pre-wrap;"> {{delivery.Description}} </p>
           </mat-list-item>
     
           <mat-chip-list>
-            <mat-chip routerLink="/addBox" color="primary" style="cursor: pointer;" selected>Add Box to Transporter</mat-chip>
+            <mat-chip (click)="GoToSingleDelivery(delivery.id)" color="primary" style="cursor: pointer;" selected>Add Box to Transporter</mat-chip>
           </mat-chip-list>
           
         </mat-expansion-panel>

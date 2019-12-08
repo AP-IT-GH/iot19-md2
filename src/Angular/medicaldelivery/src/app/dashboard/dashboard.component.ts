@@ -13,6 +13,8 @@ export class DashboardComponent implements OnInit {
     '75.5': {color: 'red'}
   }
 
+  size = 100
+
   // Temperature
   gaugeType = "arch";
   gaugeValueTemp = 80;

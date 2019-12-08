@@ -23,17 +23,22 @@ export class BoxService {
     return this.Boxes
   }
 
-  AddBox(box: IBox){
-    this.db.object('/boxes/' + box.boxId).set(box);
-  }
-
   GetAllDeliveries(){
     this.Deliveries = this.db.list('/deliveries') as AngularFireList<IDelivery>
+    return this.Deliveries
+  }
+  
+  GetDeliveryById(id){
+    this.Deliveries = this.db.list('/deliveries/' + id) as AngularFireList<IDelivery>
     return this.Deliveries
   }
 
   AddDelivery(delivery: IDelivery){
     this.db.object('/deliveries/' + delivery.id + '/').set(delivery)
+  }  
+
+  AddBoxToDelivery(id: string, box: IBox){
+    this.db.object('/deliveries/' + id).update({boxes: box})
   }
 }
 
