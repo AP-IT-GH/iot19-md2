@@ -16,15 +16,17 @@
               </mat-list>
             </mat-panel-description>
             <mat-panel-description>
-              <mat-chip-list aria-label="Fish selection">
-                Box:
-                  <mat-chip *ngIf="delivery.boxes" style="background-color: lightgreen; vertical-align: middle;">Added</mat-chip>
-                  <mat-chip *ngIf="!delivery.boxes" style="background-color: lightcoral; vertical-align: middle;">Not Added</mat-chip>
-                </mat-chip-list>
+              <mat-list>
+                Box: 3 <img src="assets/aid.png" width="15px" height="15px" alt="">
+              </mat-list>
             </mat-panel-description>
           </mat-expansion-panel-header>  
 
           <mat-card style="height: 35px;">
+              <mat-chip-list style="float: right;">
+                  <mat-chip style="float: right;" (click)="GoToSingleDelivery(delivery.Id)" color="primary" style="cursor: pointer;" selected>Add Box to Transporter</mat-chip>
+              </mat-chip-list>
+
             <div class="divOuter">
               <div class="div1">
                 <h4 mat-line>From</h4>
@@ -41,31 +43,36 @@
           </mat-card>
 
           <div class="example-card">
-            <mat-card style="height: 395px; overflow-y: scroll;">
+            <mat-card style="height: 250px; overflow-y: scroll;">
               <div class = "grid" >
                 <div class="item" >
                   <mat-card style="width: 250px;">
-                    <mat-card-header style="text-align: left;">
-                      <mat-card-title> {{delivery.boxes}} </mat-card-title>
+                    <button style="float: right;" mat-raised-button color="primary">Info</button>
+                    <mat-card-header style="text-align: left; margin-right: 50px;">
+                      <mat-card-title> 
+                          <img src="assets/aid.png" width="30px" height="30px" alt="">
+                          {{delivery.boxes}}
+                      </mat-card-title>
                     </mat-card-header>
+
                     <mat-card-content style="height: 5%">
-                      <p>
-                        <img src="assets/aid.png" style="display:block; margin:auto;" width="90px" height="90px" alt="">
-                      </p>
+   
                     </mat-card-content>
-                    <mat-card-actions>
-                      <button mat-raised-button color="primary" (click)="add(box)">Info</button>
-                      <button mat-raised-button color="warn" (click)="add(box)">Delete</button>
-                      <mat-chip-list style="float: right;">
-                          State:
-                            <mat-chip *ngIf="delivery.boxes" style="background-color: lightgreen; vertical-align: middle;">OK</mat-chip>
-                            <mat-chip *ngIf="!delivery.boxes" style="background-color: lightcoral; vertical-align: middle;">BAD</mat-chip>
-                          </mat-chip-list>
-                    </mat-card-actions>
                   </mat-card>
                 </div>
               </div> 
             </mat-card>
+            
+              <mat-card style="height: 97px; margin-top: 2%;">
+                <mat-list-item role="listitem" style="margin-top: -20px;" >
+                  <mat-card-header>
+                    <mat-card-title>Description</mat-card-title>
+                    <mat-card-subtitle> {{delivery.Description}} </mat-card-subtitle>
+                  </mat-card-header>               
+                </mat-list-item>
+              </mat-card>
+              
+
           </div>
 
           <div></div>
@@ -73,15 +80,6 @@
           <div>
             <app-map></app-map>
           </div>
-
-          <mat-list-item role="listitem" >
-            <h4 mat-line>Description</h4>
-            <p mat-line style="white-space: pre-wrap;"> {{delivery.Description}} </p>
-          </mat-list-item>
-    
-          <mat-chip-list>
-            <mat-chip (click)="GoToSingleDelivery(delivery.Id)" color="primary" style="cursor: pointer;" selected>Add Box to Transporter</mat-chip>
-          </mat-chip-list>
           
         </mat-expansion-panel>
       </mat-accordion>

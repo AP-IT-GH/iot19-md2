@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardComponent implements OnInit {
 
   thresholdConfigTemp = {
-    '0': {color: 'green'},
+    '0': {color: '#00ff00'},
     '40': {color: 'orange'},
     '75.5': {color: 'red'}
   }
