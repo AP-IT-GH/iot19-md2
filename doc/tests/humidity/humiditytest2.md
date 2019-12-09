@@ -3,6 +3,7 @@
 #### Datum: 07-12-2019
 #### Code versie: Library van HIH61xx geimport en getest met de example sketch
 #### Test done by: Oussama Es-Salhi
+#### Tested with Microcontroller: Arduino NANO
 
 ## Test sensor 1
 

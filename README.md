@@ -5,7 +5,7 @@
 Jarno Cools - Project Manager, Documentating and all-round  
 Imad El-Azzouzi - PCB designer, Front-end Programmer and Professional Email Sender to Mr. Luyts         
 Oussama Es-Salhi - Back-end Programmer / Systems integrator  
-Cristian Baba - 
+Cristian Baba - Front-end programmer / system testing and programming
 
 ## Documentatie
 
