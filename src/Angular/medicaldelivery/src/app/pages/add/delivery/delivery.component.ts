@@ -16,7 +16,7 @@ export class DeliveryComponent implements OnInit {
     "BeginPoint": null,
     "EndPoint": null,
     "Description": null,
-    "Boxes": null
+    "boxes": null
   }
 
   constructor(public route: Router, public boxSvc: BoxService) { }
@@ -25,12 +25,12 @@ export class DeliveryComponent implements OnInit {
 
   Add(){    
     this.delivery = {
-      Id: this.delivery.Transportername.replace(/\s+/g, '') + "_"+ this.delivery.BeginPoint  + "_"+ this.delivery.EndPoint,
+      Id: this.delivery.Transportername.replace(/\s+/g, '') + "_"+ this.delivery.BeginPoint.replace(" ", '-')  + "_"+ this.delivery.EndPoint.replace(" ", '-'),
       Transportername: this.delivery.Transportername,
       BeginPoint: this.delivery.BeginPoint,
       EndPoint: this.delivery.EndPoint,
       Description: this.delivery.Description,
-      Boxes: null
+      boxes: null
     }
     
     this.boxSvc.AddDelivery(this.delivery);

@@ -1,93 +1,92 @@
 <div class="toolbar" role="banner">
     <p class="title"> Medical Delivery</p>
 </div>
-<div style="padding: 20px;">
-    <mat-accordion style="padding: 5px;" *ngFor="let delivery of deliveries">
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              <mat-list>
-                  Transporter Info
-              </mat-list>
-            </mat-panel-title>
-            <mat-panel-description>
-              <mat-list>
-                Transporter: {{delivery.Transportername}}
-              </mat-list>
-            </mat-panel-description>
-            <mat-panel-description>
-              <mat-list>
-                Box: 3 <img src="assets/aid.png" width="15px" height="15px" alt="">
-              </mat-list>
-            </mat-panel-description>
-          </mat-expansion-panel-header>  
+<div style="margin: 2%;">
+  <mat-accordion style="padding: 5px;" *ngFor="let delivery of deliveries">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <mat-list>
+            Transporter Info
+          </mat-list>
+        </mat-panel-title>
+        <mat-panel-description>
+          <mat-list>
+            Transporter: {{delivery.Transportername}}
+          </mat-list>
+        </mat-panel-description>
+        <mat-panel-description>
+          <mat-list>
+            Boxes: 4 <img src="assets/aid.png" width="15px" height="15px" alt="">
+          </mat-list>
+        </mat-panel-description>
+      </mat-expansion-panel-header>  
+      <mat-card style="height: 35px;">
+        <mat-chip-list style="float: right;">
+          <mat-chip style="float: right;" (click)="GoToSingleDelivery(delivery.Id)" color="primary" style="cursor: pointer;" selected>Add Box to Transporter</mat-chip>
+        </mat-chip-list>
+        <div class="divOuter">
+          <div class="div1">
+            <h4 mat-line>From</h4>
+            <p mat-line style="margin-top: -25px;"> {{delivery.BeginPoint}} </p>
+          </div>
+          <div class="div2">
+            <img src="assets/delivery-truck.png" width="50px" height="50px">
+          </div>
+          <div class="div3">
+            <h4 mat-line>To</h4>
+            <p mat-line style="margin-top: -25px;"> {{delivery.EndPoint}} </p>
+          </div>
+        </div>
+      </mat-card>
+      <div class="example-card">
 
-          <mat-card style="height: 35px;">
-              <mat-chip-list style="float: right;">
-                  <mat-chip style="float: right;" (click)="GoToSingleDelivery(delivery.Id)" color="primary" style="cursor: pointer;" selected>Add Box to Transporter</mat-chip>
-              </mat-chip-list>
+        <mat-card style="height: 200px; overflow-y: scroll;">
+          <mat-card-header>
+            <mat-card-title>
+              Boxes
+            </mat-card-title>
+          </mat-card-header>
 
-            <div class="divOuter">
-              <div class="div1">
-                <h4 mat-line>From</h4>
-                <p mat-line style="margin-top: -25px;"> {{delivery.BeginPoint}} </p>
-              </div>
-              <div class="div2">
-                <img src="assets/delivery-truck.png" width="50px" height="50px">
-              </div>
-              <div class="div3">
-                <h4 mat-line>To</h4>
-                <p mat-line style="margin-top: -25px;"> {{delivery.EndPoint}} </p>
-              </div>
-            </div>
-          </mat-card>
-
-          <div class="example-card">
-            <mat-card style="height: 250px; overflow-y: scroll;">
-              <div class = "grid" >
-                <div class="item" >
-                  <mat-card style="width: 250px;">
-                    <button style="float: right;" mat-raised-button color="primary">Info</button>
-                    <mat-card-header style="text-align: left; margin-right: 50px;">
-                      <mat-card-title> 
-                          <img src="assets/aid.png" width="30px" height="30px" alt="">
-                          {{delivery.boxes}}
-                      </mat-card-title>
-                    </mat-card-header>
-
-                    <mat-card-content style="height: 5%">
-   
-                    </mat-card-content>
-                  </mat-card>
-                </div>
-              </div> 
-            </mat-card>
-            
-              <mat-card style="height: 97px; margin-top: 3%;">
-                <mat-list-item role="listitem">
-                  <mat-card-header>
-                    <mat-card-title>Description</mat-card-title>
-                    <mat-card-subtitle> {{delivery.Description}} </mat-card-subtitle>
-                  </mat-card-header>               
-                </mat-list-item>
+          <div class="grid" >
+            <div class="item" *ngFor="let box of objectValues(delivery.boxes)">
+              <mat-card style="width: 230px; border: 2px solid;" [ngStyle]="{'border-color': box.state ? 'green' : 'red'}" >
+                <button style="float: right; margin-top: -7px;" mat-raised-button color="primary">Info</button>
+                <mat-card-header style="text-align: left; margin-right: 50px; margin: -15px; margin-top: 0px;">
+                  <mat-card-title style="margin-left: -30%;">
+                    <img src="assets/aid.png" style=" vertical-align:middle;"  width="25px" height="25px" alt="">
+                    {{box.id}}
+                  </mat-card-title>
+                </mat-card-header>
               </mat-card>
-              
+            </div>
+          </div> 
+        </mat-card>    
 
-          </div>
+        <mat-card style="
+          width: 95%;
+          height: 170%;
+          margin-top: 2%;">
+          <mat-list-item role="listitem">
+            <mat-card-header>
+              <mat-card-title>Description</mat-card-title>
+              <mat-card-subtitle> {{delivery.Description}} </mat-card-subtitle>
+            </mat-card-header>               
+          </mat-list-item>
+        </mat-card>
+        
+      </div>
+      
+      <app-map></app-map>  
 
-          <div></div>
-          
-          <div>
-            <app-map></app-map>
-          </div>
-          
-        </mat-expansion-panel>
-      </mat-accordion>
-    
-    
-    <div class="content" role="main">  
-      <button routerLink="/delivery" mat-icon-button class="addbutton">
-        <mat-icon class="icon">add_circle</mat-icon>
-      </button>
-    </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
+
+
+
+<div class="wrapper" role="main">  
+  <button routerLink="/delivery" mat-icon-button class="button">
+    <mat-icon class="icon">add_circle</mat-icon>
+  </button>
 </div>

@@ -7,29 +7,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  EndCap ="round"
+  
   thresholdConfigTemp = {
-    '0': {color: '#00ff00'},
-    '40': {color: 'orange'},
-    '75.5': {color: 'red'}
+    '-40': {color: '#00ff00'},
+    '30': {color: 'orange'},
+    '60': {color: 'red'}
+  }
+  
+  thresholdConfigHum = {
+    '0': {color: '#a1caff'},
+    '30': {color: '#61a4fa'},
+    '75': {color: '#0066e8'}
   }
 
-  size = 100
+  size = 120
 
   // Temperature
   gaugeType = "arch";
-  gaugeValueTemp = 80;
+  gaugeValueTemp = 25;
   gaugeLabel = "Temperature";
   gaugeAppendText = "°C";
 
   //Humidity
-  gaugeTypeHum = "arch";
-  gaugeValueHum = 80;
+  gaugeValueHum = 10;
   gaugeLabelHum = "Humidity";
   gaugeAppendHum = "Rh %";
 
   // GForce
-  gaugeTypeG = "arch";
-  gaugeValueG = 1;
+  gaugeValueG = 0.3;
   gaugeLabelG = "G force";
   gaugeAppendTextG = "G";
 

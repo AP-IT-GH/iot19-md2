@@ -14,22 +14,17 @@
     font-size: 30px;
 }
 
-.add{
-    max-width: 200px;
-    margin: auto;
+.wrapper {
 }
 
+.button {
+    margin:auto;
+    display:block;
+    margin-top: 5%;
+}
 .example-card {
     width: 100px;
     height: 100px;
-    margin: auto;
-}
-
-.addbutton{
-    width: 50px;
-    height: 70px;
-
-    display: block;
     margin: auto;
 }
 
@@ -66,12 +61,19 @@
     float:right;
 }
 
-.grid {
+::-webkit-scrollbar {
+    display: none;
+}
+
+.grid { 
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 3fr 3fr;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 3fr 3fr 3fr;
     grid-row-gap: 15px;
     grid-column-gap: 15px;
 
     width: 500px;
+    
+    transform: scale(0.8);
+    margin-left: -6%;
 }

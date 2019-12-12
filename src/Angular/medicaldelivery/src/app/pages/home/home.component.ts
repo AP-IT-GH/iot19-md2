@@ -14,10 +14,14 @@ export class HomeComponent implements OnInit {
   boxes: IBox[];
   deliveries: IDelivery[];
 
+  test: any 
+
+  hasNoBox: boolean = false
   constructor(
     private boxSvc: BoxService,
     private route: Router
-    ) { }
+    ) {
+    }
 
   
   ngOnInit() {
@@ -25,11 +29,20 @@ export class HomeComponent implements OnInit {
     this.GetDeliveries();
   }
 
+  objectValues(obj){
+    return Object.values(obj);
+  }
+
   GetDeliveries(){
     this.boxSvc.GetAllDeliveries().valueChanges().subscribe(delivery => {
       this.deliveries = delivery;
+      
+      console.log(this.deliveries)
 
-      console.table(this.deliveries);
+      delivery.filter(d => {
+        console.log(d.boxes)
+      })
+
     })
   }
 
@@ -37,11 +50,13 @@ export class HomeComponent implements OnInit {
     this.boxSvc.GetAllBoxes().valueChanges().subscribe(box=> {
       this.boxes = box;
 
-      console.table(this.boxes)
+      console.log(this.boxes)
     })
   }
 
   GoToSingleDelivery(id: string) {
+
+    this.deliveries
     this.route.navigate(['/delivery/'+ id + '/addBox']);
   }
 
