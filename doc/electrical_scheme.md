@@ -51,14 +51,14 @@ All the sensor modules are given power through the MCU board every module has 2 
 
 The connection between the MCU and the LoRa is SPI. Therefor the typical SPI pins are used MISO, MOSI, SCK and NSS. The reset pin from the LoRa module is connected with an DIO pin from the MCU so the MCU can reset the LoRa module.
 
-> PA12 - DIO0
-> PA13 - DIO1
-> PA14 - DIO2
-> PA20 - RESET LoRa  
-> PA19 - NSS
-> PA18 - SCK  
-> PA17 - MOSI  
-> PA16 - MISO
+> PA12 - DIO0       
+> PA13 - DIO1       
+> PA14 - DIO2           
+> PA20 - RESET LoRa         
+> PA19 - NSS        
+> PA17 - SCK  
+> PA16 - MOSI  
+> PA18 - MISO
 
 #### GPS Module pins
 
