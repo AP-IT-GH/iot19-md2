@@ -8,9 +8,9 @@
 ## Test sensor 1
 
 - [OK] Test wire connections
-    - [ok] VDD
-    - [ok] GND
-    - [ok] Specific sensor pins
+    - [OK] VDD
+    - [OK] GND
+    - [OK] Specific sensor pins
 - [NOK] Log data on micrcontroller  
     - [OK] Every 2 secondes
     - [NOK] Data should be printed as: NameSensor: xx.xx unit.
@@ -46,7 +46,7 @@ Bevindingen: Te koude temperatuur, humidity zou kunnen kloppen.
     - [OK] Data should be printed as: NameSensor: xx.xx unit.
     - [OK] Add screenshot of timestamp and data
 
-![Serial print test3](./img/test3.png)
+![Serial print test3](./img_test1/test3.png)
 
 ## Test sensor 4
 
