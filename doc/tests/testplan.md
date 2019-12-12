@@ -13,6 +13,7 @@
     - [] RX, TX
     - [] SDA, SCL
     - [] Reset
+    - [] Switch
 - [] Measure input supply voltages
 - [] Measure voltages between VDD's and GND's
 - [] Burn bootloader via [jp19-luwb burn bootloader doc](https://github.com/AP-Elektronica-ICT/jp19-luwb/blob/master/doc/AP%20Lokalisatie/Branden%20bootloader%20ATSAMD21G18/BootloaderBurningATSAMD21G18.md).
@@ -20,6 +21,16 @@
 - [] Program LoRa library on MCU and send hardcoded string to LoRaWAN network.
 
 ## LoRa Module
+- [] Test wire connections
+    - [] Atnenna
+    - [] DIO0
+    - [] DI01
+    - [] DI02
+    - [] VDD
+    - [] GND
+    - [] Reset
+- [] Connect LoRa module with MCU
+    - [] Send string over LoRaWAN network.
 
 ## Testplan Sensor
 
