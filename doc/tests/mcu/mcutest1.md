@@ -21,7 +21,7 @@
 - [OK] Measure voltages between VDD's and GND's
 - [OK] Burn bootloader via [jp19-luwb burn bootloader doc](https://github.com/AP-Elektronica-ICT/jp19-luwb/blob/master/doc/AP%20Lokalisatie/Branden%20bootloader%20ATSAMD21G18/BootloaderBurningATSAMD21G18.md).
 - [OK] Program blink led on MCU port PA12 [SWD Programming 2.1](../code/SWD_programming.md).
-- [] Program LoRa library on MCU and send hardcoded string to LoRaWAN network.
+- [OK] Program LoRa library on MCU and send hardcoded string to LoRaWAN network.
 
 *Swtich changes voltage to 0V to reset*
 
@@ -41,8 +41,8 @@
     - [OK] Switch
 - [OK] Measure input supply voltages
 - [OK] Measure voltages between VDD's and GND's
-- [] Burn bootloader via [jp19-luwb burn bootloader doc](https://github.com/AP-Elektronica-ICT/jp19-luwb/blob/master/doc/AP%20Lokalisatie/Branden%20bootloader%20ATSAMD21G18/BootloaderBurningATSAMD21G18.md).
-- [] Program blink led on MCU port PA12 [SWD Programming 2.1](../code/SWD_programming.md).
+- [OK] Burn bootloader via [jp19-luwb burn bootloader doc](https://github.com/AP-Elektronica-ICT/jp19-luwb/blob/master/doc/AP%20Lokalisatie/Branden%20bootloader%20ATSAMD21G18/BootloaderBurningATSAMD21G18.md).
+- [OK] Program blink led on MCU port PA12 [SWD Programming 2.1](../code/SWD_programming.md).
 - [] Program LoRa library on MCU and send hardcoded string to LoRaWAN network.
 
 ## Besluit
