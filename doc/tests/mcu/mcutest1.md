@@ -46,4 +46,4 @@
 - [] Program LoRa library on MCU and send hardcoded string to LoRaWAN network.
 
 ## Besluit
-Schrijf hier je besluit van de testen
+Switch does what it is designed for but doesn't reset the program. Alternative reset => Reset pins on mcu connect them with each other and disconnect from each other => program resets. 
