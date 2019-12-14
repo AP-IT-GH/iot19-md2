@@ -6,7 +6,7 @@ Via deze [template](testrapport.md) worden alle test geschreven vervolgens moete
 
 ## MCU tests
 - [Test1](mcu/mcutest1.md) : Testing in progress
-l
+
 ### SPI tests
 - [Test1](mcu/spitest1.md) : NOK
 - [Test2](mcu/spitest2.md) : OK
