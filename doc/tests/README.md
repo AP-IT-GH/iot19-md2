@@ -9,10 +9,12 @@ Via deze [template](testrapport.md) worden alle test geschreven vervolgens moete
 
 ### SPI tests
 - [Test1](mcu/spitest1.md) : NOK
+- [Test2](mcu/spitest2.md) : OK
 
 ## LoRa tests
 - [Test1 - XPlained Pro](lora/loratest1.md) : OK
 - [Test2 - Integration MCU board and Lora Module](lora/loratest2.md) : NOK
+- [Test3 - Integration MCU board and Lora Module](lora/loratest3.md) : OK
 
 ## Humidity tests
 - [Test1](humidity/humiditytest1.md) : NOK
