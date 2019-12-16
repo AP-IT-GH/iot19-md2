@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1646,10 +1646,12 @@ design rules under a new name.</description>
 </signal>
 <signal name="MOSI">
 <contactref element="LORAMODULE" pad="3"/>
-<contactref element="SV1" pad="4"/>
-<wire x1="15.7" y1="62.01" x2="15.7" y2="63.96" width="0.3048" layer="1"/>
-<wire x1="15.7" y1="63.96" x2="16.51" y2="64.77" width="0.3048" layer="1"/>
-<wire x1="16.51" y1="64.77" x2="16.51" y2="67.31" width="0.3048" layer="1"/>
+<contactref element="SV1" pad="5"/>
+<wire x1="19.05" y1="67.31" x2="19.05" y2="66.04" width="0.3048" layer="1"/>
+<wire x1="19.05" y1="66.04" x2="18.415" y2="65.405" width="0.3048" layer="1"/>
+<wire x1="18.415" y1="65.405" x2="16.51" y2="65.405" width="0.3048" layer="1"/>
+<wire x1="15.7" y1="64.595" x2="15.7" y2="62.01" width="0.3048" layer="1"/>
+<wire x1="16.51" y1="65.405" x2="15.7" y2="64.595" width="0.3048" layer="1"/>
 </signal>
 <signal name="RESET_LORA">
 <contactref element="LORAMODULE" pad="6"/>
@@ -1674,10 +1676,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="SCK">
 <contactref element="LORAMODULE" pad="4"/>
-<contactref element="SV1" pad="3"/>
-<wire x1="13.7" y1="62.01" x2="13.7" y2="64.5" width="0.3048" layer="1"/>
-<wire x1="13.7" y1="64.5" x2="13.97" y2="64.77" width="0.3048" layer="1"/>
-<wire x1="13.97" y1="64.77" x2="13.97" y2="67.31" width="0.3048" layer="1"/>
+<contactref element="SV1" pad="4"/>
+<wire x1="16.51" y1="67.31" x2="16.51" y2="66.675" width="0.3048" layer="1"/>
+<wire x1="16.51" y1="66.675" x2="13.7" y2="63.865" width="0.3048" layer="1"/>
+<wire x1="13.7" y1="63.865" x2="13.7" y2="62.01" width="0.3048" layer="1"/>
 </signal>
 <signal name="NSS">
 <contactref element="LORAMODULE" pad="5"/>
@@ -1688,10 +1690,16 @@ design rules under a new name.</description>
 </signal>
 <signal name="MISO">
 <contactref element="LORAMODULE" pad="2"/>
-<contactref element="SV1" pad="5"/>
-<wire x1="17.7" y1="62.01" x2="17.7" y2="64.69" width="0.3048" layer="1"/>
-<wire x1="17.7" y1="64.69" x2="19.05" y2="66.04" width="0.3048" layer="1"/>
-<wire x1="19.05" y1="66.04" x2="19.05" y2="67.31" width="0.3048" layer="1"/>
+<contactref element="SV1" pad="3"/>
+<wire x1="13.97" y1="67.31" x2="13.97" y2="68.58" width="0.3048" layer="1"/>
+<wire x1="14.3256" y1="68.9356" x2="20.5994" y2="68.9356" width="0.3048" layer="1"/>
+<wire x1="20.5994" y1="68.9356" x2="20.955" y2="68.58" width="0.3048" layer="1"/>
+<wire x1="20.955" y1="64.77" x2="20.32" y2="64.135" width="0.3048" layer="1"/>
+<wire x1="20.32" y1="64.135" x2="18.415" y2="64.135" width="0.3048" layer="1"/>
+<wire x1="17.7" y1="63.42" x2="17.7" y2="62.01" width="0.3048" layer="1"/>
+<wire x1="13.97" y1="68.58" x2="14.3256" y2="68.9356" width="0.3048" layer="1"/>
+<wire x1="20.955" y1="68.58" x2="20.955" y2="64.77" width="0.3048" layer="1"/>
+<wire x1="18.415" y1="64.135" x2="17.7" y2="63.42" width="0.3048" layer="1"/>
 </signal>
 <signal name="VDD">
 <contactref element="LORAMODULE" pad="13"/>
