@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IBoxData } from '../services/model/IBoxData';
 
 @Component({
   selector: 'app-dashboard',
@@ -38,6 +39,8 @@ export class DashboardComponent implements OnInit {
   gaugeValueG = 0.3;
   gaugeLabelG = "G force";
   gaugeAppendTextG = "G";
+
+  box: IBoxData
 
   constructor() { }
 

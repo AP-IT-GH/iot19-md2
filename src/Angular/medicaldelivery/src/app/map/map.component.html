@@ -1,4 +1,4 @@
-<mat-card class="example-card">
+<!-- <mat-card class="example-card">
     <mat-card-header>
         <div mat-card-avatar class="example-header-image">
             <mat-icon class="icon">map</mat-icon>
@@ -23,4 +23,18 @@
             <app-dashboard></app-dashboard>
         </div>
           </mat-card-content>
-</mat-card>
+</mat-card> -->
+
+<div style="
+    margin: 0px;
+    width: 78%;
+    height: 350px; 
+    border: 2px solid gray;
+    border-radius: 5px;
+    float: left;
+    "
+    leaflet 
+    (leafletMapReady)="onMapReady($event)"
+    [leafletOptions]="options"
+    [leafletLayersControl]="layersControl">
+</div> 

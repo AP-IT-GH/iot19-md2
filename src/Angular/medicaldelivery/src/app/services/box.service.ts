@@ -2,6 +2,9 @@ import { Injectable } from '@angular/core';
 import { AngularFireDatabase, AngularFireObject, AngularFireList } from '@angular/fire/database'; 
 import { IBox } from './model/IBox';
 import { IDelivery } from './model/IDelivery';
+import * as firebase from 'firebase/app';
+import { ThrowStmt } from '@angular/compiler';
+import { IBoxData } from './model/IBoxData';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +18,9 @@ export class BoxService {
   
   Deliveries: AngularFireList<any>
   Delivery: AngularFireObject<IDelivery>
+
+  BoxDatas: AngularFireList<any>
+  BoxData: AngularFireObject<IBoxData>
 
   constructor(public db: AngularFireDatabase) {
   }
@@ -34,9 +40,14 @@ export class BoxService {
     return this.Deliveries
   }
 
-  GetDelBox(id: string){
-    this.Deliveries = this.db.list('/deliveries/' + id + "/boxes/") as AngularFireList<IDelivery>
-    return this.Deliveries
+  GetBoxData(id){
+    this.BoxDatas = this.db.list('/box_data/' + id) as AngularFireList<IBoxData>
+    return this.BoxDatas
+  }
+
+  GetSingleBoxOfDelivery(deliveryID: string, boxID){
+    this.Box = this.db.object('/deliveries/' + deliveryID + '/boxes/' + boxID + '/') as AngularFireObject<IBox>
+    return this.Box
   }
 
   AddDelivery(delivery: IDelivery){
@@ -46,4 +57,17 @@ export class BoxService {
   AddBoxToDelivery(id: string, box: IBox){
     this.db.object('/deliveries/' + id + "/boxes/" + box.id + '/').set(box)
   }
+
+  DeleteBoxFromDelivery(deliveryID:string, boxID: IBox){
+    this.db.object('/deliveries/' + deliveryID + '/boxes/' + boxID + '/').remove()
+  }
+
+  Key(){
+    return firebase.database().ref().push().key;
+  }  
+
+  objectValues(obj){
+    return Object.values(obj);
+  }
+
 }

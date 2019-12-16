@@ -14,13 +14,10 @@
     font-size: 30px;
 }
 
-.wrapper {
-}
-
 .button {
     margin:auto;
     display:block;
-    margin-top: 5%;
+    margin-top: 1%;
 }
 .example-card {
     width: 100px;

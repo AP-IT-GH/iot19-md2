@@ -25,7 +25,7 @@ export class DeliveryComponent implements OnInit {
 
   Add(){    
     this.delivery = {
-      Id: this.delivery.Transportername.replace(/\s+/g, '') + "_"+ this.delivery.BeginPoint.replace(" ", '-')  + "_"+ this.delivery.EndPoint.replace(" ", '-'),
+      Id: this.boxSvc.Key(),
       Transportername: this.delivery.Transportername,
       BeginPoint: this.delivery.BeginPoint,
       EndPoint: this.delivery.EndPoint,

@@ -29,10 +29,6 @@ export class HomeComponent implements OnInit {
     this.GetDeliveries();
   }
 
-  objectValues(obj){
-    return Object.values(obj);
-  }
-
   GetDeliveries(){
     this.boxSvc.GetAllDeliveries().valueChanges().subscribe(delivery => {
       this.deliveries = delivery;
@@ -40,7 +36,7 @@ export class HomeComponent implements OnInit {
       console.log(this.deliveries)
 
       delivery.filter(d => {
-        console.log(d.boxes)
+        console.log("length: "+ d.boxes.lenght)
       })
 
     })
@@ -54,10 +50,17 @@ export class HomeComponent implements OnInit {
     })
   }
 
-  GoToSingleDelivery(id: string) {
+  DeleteBox(DeliveryID, BoxID){
+    this.boxSvc.DeleteBoxFromDelivery(DeliveryID, BoxID)
+  }
 
+  GoToSingleDelivery(id: string) {
     this.deliveries
     this.route.navigate(['/delivery/'+ id + '/addBox']);
+  }
+
+  GoToInfo(id: string, boxid){
+    this.route.navigate(['info/' + id + "/" + boxid])
   }
 
 }

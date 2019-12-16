@@ -48,10 +48,11 @@
             </mat-card-title>
           </mat-card-header>
 
-          <div class="grid" >
-            <div class="item" *ngFor="let box of objectValues(delivery.boxes)">
+          <div class="grid" *ngIf="delivery.boxes" >
+            <div class="item" *ngFor="let box of boxSvc.objectValues(delivery.boxes)">
               <mat-card style="width: 230px; border: 2px solid;" [ngStyle]="{'border-color': box.state ? 'green' : 'red'}" >
-                <button style="float: right; margin-top: -7px;" mat-raised-button color="primary">Info</button>
+                <button (click)="GoToInfo(delivery.Id, box.id)" style="float: right; margin-top: -7px;" mat-raised-button color="primary">Info</button>
+                <mat-icon (click)="DeleteBox(delivery.Id, box.id)" style="float: right; margin-top: -3px; margin-right: 2px;" color="warn">delete</mat-icon>
                 <mat-card-header style="text-align: left; margin-right: 50px; margin: -15px; margin-top: 0px;">
                   <mat-card-title style="margin-left: -30%;">
                     <img src="assets/aid.png" style=" vertical-align:middle;"  width="25px" height="25px" alt="">
@@ -64,8 +65,8 @@
         </mat-card>    
 
         <mat-card style="
-          width: 95%;
-          height: 170%;
+          width: 98%;
+          height: 110%;
           margin-top: 2%;">
           <mat-list-item role="listitem">
             <mat-card-header>
@@ -73,12 +74,19 @@
               <mat-card-subtitle> {{delivery.Description}} </mat-card-subtitle>
             </mat-card-header>               
           </mat-list-item>
-        </mat-card>
-        
+        </mat-card>        
       </div>
-      
-      <app-map></app-map>  
 
+      <mat-card style="width: 45%;
+      height: 360px;
+      margin-top: 2%;">
+        <mat-card-content>
+          <app-map></app-map>
+          <div style="margin-left: 1%; float: right;">
+            <app-dashboard></app-dashboard>
+          </div>
+        </mat-card-content>
+      </mat-card>
     </mat-expansion-panel>
   </mat-accordion>
 </div>

@@ -34,6 +34,7 @@ import { NotificationComponent } from './notification/notification.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgxGaugeModule } from 'ngx-gauge';
+import { InformationComponent } from './pages/information/information.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { NgxGaugeModule } from 'ngx-gauge';
     MapComponent,
     NotificationComponent,
     DialogComponent,
-    DashboardComponent
+    DashboardComponent,
+    InformationComponent
   ],
   imports: [
     

@@ -1,0 +1,10 @@
+<mat-list role="list" *ngFor="let box of Boxdatas">
+    <div *ngIf="box">
+        <h3 mat-subheader>Timestamps: {{box.timestamp}}</h3>
+        <div>
+            <mat-list-item role="listitem">Humidity Value: {{box.humidity.value}}%</mat-list-item>
+            <mat-list-item role="listitem">Temperature Value: {{box.temperature.value}}°C</mat-list-item>
+        </div>
+        <button mat-raised-button color="primary">Delete</button>
+    </div>
+</mat-list>

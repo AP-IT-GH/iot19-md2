@@ -16,4 +16,6 @@ export class DialogComponent implements OnInit {
     right: `40px`});
   }
 
+  
+
 }
