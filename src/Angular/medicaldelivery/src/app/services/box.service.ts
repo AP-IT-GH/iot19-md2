@@ -25,7 +25,7 @@ export class BoxService {
   constructor(private zone: NgZone, public db: AngularFireDatabase) {
     this.db.database.ref("/boxData/").on("child_added",(snapshot)=>{
       var boxData = [];
-      boxData= snapshot.val();
+      boxData= Object.values(snapshot.val());
       console.log(boxData);
     })
   }
@@ -73,18 +73,6 @@ export class BoxService {
 
   Key(){
     return firebase.database().ref().push().key;
-  }
-
-
-  onUp(){
-    firebase.database().ref("/boxData").on("child_added", (child) => {
-      this.zone.run(() => {
-        var obj = child.val()
-
-        console.log("obj: " + obj)
-        return obj
-      })
-    })
   }
 
   objectValues(obj){
