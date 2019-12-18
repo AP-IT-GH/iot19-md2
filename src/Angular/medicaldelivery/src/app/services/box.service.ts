@@ -1,9 +1,8 @@
 import { Injectable, NgZone } from '@angular/core';
-import { AngularFireDatabase, AngularFireObject, AngularFireList } from '@angular/fire/database'; 
+import { AngularFireDatabase, AngularFireObject, AngularFireList, snapshotChanges } from '@angular/fire/database'; 
 import { IBox } from './model/IBox';
 import { IDelivery } from './model/IDelivery';
 import * as firebase from 'firebase/app';
-import { ThrowStmt } from '@angular/compiler';
 import { IBoxData } from './model/IBoxData';
 
 @Injectable({
@@ -22,14 +21,20 @@ export class BoxService {
   BoxDatas: AngularFireList<any>
   BoxData: AngularFireObject<IBoxData>
 
+  public data: any
+
   constructor(private zone: NgZone, public db: AngularFireDatabase) {
-    this.db.database.ref("/boxData/").on("child_added",(snapshot)=>{
+      firebase.database().ref("/boxData/").on("child_added",(snapshot) =>{
+    
       var boxData: IBoxData[] = [];
       boxData = Object.values(snapshot.val()).map((box:IBoxData)=>{
         return box;
-      });
+      });      
 
-      console.log(boxData)
+      var test = boxData[boxData.length - 1]
+      this.data = test
+      
+      console.log(this.data)
     })
   }
 
@@ -59,6 +64,7 @@ export class BoxService {
   }
   
   GetBoxData(){
+    console.log(this.BoxData)
     return this.BoxData = this.db.object('/boxData')
   }
 

@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { icon, latLng,Map, marker, point, polyline, tileLayer, LatLng } from 'leaflet';
 import { BoxService } from '../services/box.service';
+import { IBoxData } from '../services/model/IBoxData';
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
@@ -9,6 +10,8 @@ import { BoxService } from '../services/box.service';
 export class MapComponent implements OnInit {
   startPosition = [12, 12]; 
   endPosition = [0, 0];
+
+  @Input() id:any;
 
 // zoom  om je route tussen de bounds te tonen
   onMapReady(map: Map) {
@@ -64,6 +67,9 @@ export class MapComponent implements OnInit {
     zoom: 7,
     center: latLng([ 0, 0 ])
   };
+  
+  boxDatas: IBoxData[]
+  data: any;
 
   constructor(private boxSvc: BoxService) { }
 
@@ -80,6 +86,8 @@ export class MapComponent implements OnInit {
 
    */
 
+   this.update();
+
   }
 
   UpdateLocation(lat, long){
@@ -89,7 +97,16 @@ export class MapComponent implements OnInit {
   }
 
   update(){
-    
+    this.boxSvc.GetSingleBoxData(this.id).valueChanges().subscribe(box => {
+      this.boxDatas = box
+
+      this.data = box[box.length - 1]
+
+      this.UpdateLocation(this.data.Location.Lat, this.data.Location.Long)
+
+      console.log("lat: " + this.data.Location.Lat)
+      console.log("long: " + this.data.Location.Long)
+    })
   }
 
 }

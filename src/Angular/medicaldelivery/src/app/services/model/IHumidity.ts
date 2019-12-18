@@ -1,4 +1,4 @@
 export interface IHumidity {
-    value: number;
-    isWithinBoundary: boolean;
+    Value: number;
+    IsWithinBoundary: boolean;
 }

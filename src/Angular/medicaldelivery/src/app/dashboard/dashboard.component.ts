@@ -10,10 +10,6 @@ import { BoxService } from '../services/box.service';
 export class DashboardComponent implements OnInit {
 
   @Input() id:any;
-  
-  valueTempBox1:any;
-  valueHumBox1:any;
-  valueGForceBox1:any;
 
   EndCap ="round"
   
@@ -33,63 +29,39 @@ export class DashboardComponent implements OnInit {
 
   // Temperature
   gaugeType = "arch";
-  gaugeValueTemp = 25;
+  gaugeValueTemp;
   gaugeLabel = "Temperature";
   gaugeAppendText = "°C";
 
   //Humidity
-  gaugeValueHum = 10;
+  gaugeValueHum;
   gaugeLabelHum = "Humidity";
   gaugeAppendHum = "Rh %";
 
   // GForce
-  gaugeValueG = 0.3;
+  gaugeValueG;
   gaugeLabelG = "G force";
   gaugeAppendTextG = "G";
 
   boxDatas: IBoxData[]
-
-  box: IBoxData
+  data: any;
 
   constructor(private boxSvc: BoxService) { 
   }
 
-  ngOnInit() {
-    this.GetBoxData();  
-    console.log("temp: " + this.valueTempBox1)
-    console.log("id: " + this.id)
+  ngOnInit() { 
+    this.getBoxData();
   }
 
-  GetBoxData(){
+  getBoxData(){
+    this.boxSvc.GetSingleBoxData(this.id).valueChanges().subscribe(box => {
+      this.boxDatas = box
 
-    switch(this.id){
-      case "box1": {
-        this.boxSvc.GetSingleBoxData(this.id).valueChanges().subscribe(box => {
-          this.boxDatas = box
-    
-          box.filter(b => {
-            this.valueTempBox1 = b.temperature.value
-            this.valueHumBox1 = b.humidity.value
-            this.valueGForceBox1 = b.position_orientation.GForce
-          })
-        })
-        break;
-      }
+      this.data = box[box.length - 1]
 
-      case "box2": {
-        this.boxSvc.GetSingleBoxData(this.id).valueChanges().subscribe(box => {
-          this.boxDatas = box
-    
-          box.filter(b => {
-            this.valueTempBox1 = b.temperature.value
-            this.valueHumBox1 = b.humidity.value
-            this.valueGForceBox1 = b.position_orientation.GForce
-          })
-
-          console.log(this.valueHumBox1)
-        })
-        break;
-      }
-    }
+      this.gaugeValueTemp =  this.data.Temperature.Value
+      this.gaugeValueHum =  this.data.Humidity.Value
+      this.gaugeValueG =  this.data.PositionOrientation.GForce
+    })
   }
 }

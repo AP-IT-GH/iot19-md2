@@ -15,7 +15,7 @@ export class InformationComponent implements OnInit {
 
   Boxdatas: IBoxData[]
   NodData: boolean = false
-
+  data:any
   boxInfo: IBox
 
   constructor(public activatedRoute: ActivatedRoute, private boxSvc: BoxService, public route: Router ){ 
@@ -30,14 +30,12 @@ export class InformationComponent implements OnInit {
   }
 
   GetBoxInfo(){
-    this.boxSvc.GetSingleBoxData(this.idbox).valueChanges().subscribe(data => {
-      this.Boxdatas = data     
+    this.boxSvc.GetSingleBoxData(this.idbox).valueChanges().subscribe(box => {
+      this.Boxdatas = box
 
-      if(data == null){
-        this.NodData = true
-      }
+      this.data = box[box.length - 1]
 
-      console.log(this.NodData)
+      console.log(this.data)
 
     })  
   }

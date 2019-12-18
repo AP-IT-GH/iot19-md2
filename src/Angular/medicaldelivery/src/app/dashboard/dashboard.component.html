@@ -8,7 +8,7 @@
   <div style="display: block;">
      <ngx-gauge 
         [type]="gaugeType" 
-        [value]="valueTempBox1" 
+        [value]="gaugeValueTemp" 
         [label]="gaugeLabel"
         [thresholds]="thresholdConfigTemp"
         [append]="gaugeAppendText"
@@ -24,7 +24,7 @@
   <div style="display: block;">
      <ngx-gauge 
         [type]="gaugeType" 
-        [value]="valueHumBox1" 
+        [value]="gaugeValueHum" 
         [label]="gaugeLabelHum" 
         [append]="gaugeAppendHum"
         [thresholds]="thresholdConfigHum"
@@ -40,7 +40,7 @@
   <div style="display: block;">
     <ngx-gauge  
         [type]="gaugeType" 
-        [value]="valueGForceBox1" 
+        [value]="gaugeValueG" 
         [label]="gaugeLabelG" 
         [append]="gaugeAppendTextG"
         [size]="size"
