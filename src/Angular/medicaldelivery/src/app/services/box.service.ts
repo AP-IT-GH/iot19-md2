@@ -24,9 +24,12 @@ export class BoxService {
 
   constructor(private zone: NgZone, public db: AngularFireDatabase) {
     this.db.database.ref("/boxData/").on("child_added",(snapshot)=>{
-      var boxData = [];
-      boxData= Object.values(snapshot.val());
-      console.log(boxData);
+      var boxData: IBoxData[] = [];
+      boxData = Object.values(snapshot.val()).map((box:IBoxData)=>{
+        return box;
+      });
+
+      console.log(boxData)
     })
   }
 
