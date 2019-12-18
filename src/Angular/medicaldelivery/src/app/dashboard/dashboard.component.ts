@@ -49,25 +49,18 @@ export class DashboardComponent implements OnInit {
 
   boxDatas: IBoxData[]
 
+  box: IBoxData
+
   constructor(private boxSvc: BoxService) { 
   }
 
   ngOnInit() {
-    this.GetBoxData();    
+    this.GetBoxData();  
     console.log("temp: " + this.valueTempBox1)
     console.log("id: " + this.id)
   }
 
   GetBoxData(){
-    /*this.boxSvc.GetSingleBoxData(this.id).valueChanges().subscribe(box => {
-      this.boxDatas = box
-
-      box.filter(b => {
-        this.valueTempBox1 = b.temperature.value
-        this.valueHumBox1 = b.humidity.value
-        this.valueGForceBox1 = b.position_orientation.GForce
-      })
-    })*/
 
     switch(this.id){
       case "box1": {

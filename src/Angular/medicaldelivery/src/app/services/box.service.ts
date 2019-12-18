@@ -23,11 +23,7 @@ export class BoxService {
   BoxData: AngularFireObject<IBoxData>
 
   constructor(private zone: NgZone, public db: AngularFireDatabase) {
-    this.db.database.ref("/boxData/").on("child_added",(snapshot)=>{
-      var boxData = [];
-      boxData= snapshot.val();
-      console.log(boxData);
-    })
+    
   }
 
   GetAllBoxes(){
@@ -47,6 +43,11 @@ export class BoxService {
 
   GetSingleBoxData(id){
     this.BoxDatas = this.db.list('/boxData/' + id) as AngularFireList<IBoxData>
+    return this.BoxDatas
+  }
+
+  GetBoxDatas(){
+    this.BoxDatas = this.db.list('/boxData/') as AngularFireList<IBoxData>
     return this.BoxDatas
   }
   
