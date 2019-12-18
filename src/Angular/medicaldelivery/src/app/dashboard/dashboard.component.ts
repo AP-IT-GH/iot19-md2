@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { IBoxData } from '../services/model/IBoxData';
+import { BoxService } from '../services/box.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,6 +8,12 @@ import { IBoxData } from '../services/model/IBoxData';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+
+  @Input() id:any;
+  
+  valueTempBox1:any;
+  valueHumBox1:any;
+  valueGForceBox1:any;
 
   EndCap ="round"
   
@@ -40,11 +47,56 @@ export class DashboardComponent implements OnInit {
   gaugeLabelG = "G force";
   gaugeAppendTextG = "G";
 
-  box: IBoxData
+  boxDatas: IBoxData[]
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private boxSvc: BoxService) { 
   }
 
+  ngOnInit() {
+    this.GetBoxData();    
+    console.log("temp: " + this.valueTempBox1)
+    console.log("id: " + this.id)
+  }
+
+  GetBoxData(){
+    /*this.boxSvc.GetSingleBoxData(this.id).valueChanges().subscribe(box => {
+      this.boxDatas = box
+
+      box.filter(b => {
+        this.valueTempBox1 = b.temperature.value
+        this.valueHumBox1 = b.humidity.value
+        this.valueGForceBox1 = b.position_orientation.GForce
+      })
+    })*/
+
+    switch(this.id){
+      case "box1": {
+        this.boxSvc.GetSingleBoxData(this.id).valueChanges().subscribe(box => {
+          this.boxDatas = box
+    
+          box.filter(b => {
+            this.valueTempBox1 = b.temperature.value
+            this.valueHumBox1 = b.humidity.value
+            this.valueGForceBox1 = b.position_orientation.GForce
+          })
+        })
+        break;
+      }
+
+      case "box2": {
+        this.boxSvc.GetSingleBoxData(this.id).valueChanges().subscribe(box => {
+          this.boxDatas = box
+    
+          box.filter(b => {
+            this.valueTempBox1 = b.temperature.value
+            this.valueHumBox1 = b.humidity.value
+            this.valueGForceBox1 = b.position_orientation.GForce
+          })
+
+          console.log(this.valueHumBox1)
+        })
+        break;
+      }
+    }
+  }
 }

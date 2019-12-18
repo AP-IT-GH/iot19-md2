@@ -1,5 +1,5 @@
 export interface IPositionOrientation {
     GForce: number;
-    GForceIsWithinBoundary: boolean;
-    OrientationIsWithinBoundary: boolean;
+    GForce_isWithinBoundary: boolean;
+    Orientation_isWithinBoundary:  boolean;
 }

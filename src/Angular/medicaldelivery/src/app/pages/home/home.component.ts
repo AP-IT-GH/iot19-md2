@@ -13,10 +13,6 @@ export class HomeComponent implements OnInit {
 
   boxes: IBox[];
   deliveries: IDelivery[];
-
-  test: any 
-
-  hasNoBox: boolean = false
   constructor(
     private boxSvc: BoxService,
     private route: Router
@@ -27,18 +23,12 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.GetBoxes();
     this.GetDeliveries();
+
   }
 
   GetDeliveries(){
     this.boxSvc.GetAllDeliveries().valueChanges().subscribe(delivery => {
       this.deliveries = delivery;
-      
-      console.log(this.deliveries)
-
-      delivery.filter(d => {
-        console.log("length: "+ d.boxes.lenght)
-      })
-
     })
   }
 
@@ -48,10 +38,6 @@ export class HomeComponent implements OnInit {
 
       console.log(this.boxes)
     })
-  }
-
-  DeleteBox(DeliveryID, BoxID){
-    this.boxSvc.DeleteBoxFromDelivery(DeliveryID, BoxID)
   }
 
   GoToSingleDelivery(id: string) {

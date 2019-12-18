@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, NgZone } from '@angular/core';
 import { AngularFireDatabase, AngularFireObject, AngularFireList } from '@angular/fire/database'; 
 import { IBox } from './model/IBox';
 import { IDelivery } from './model/IDelivery';
@@ -22,7 +22,12 @@ export class BoxService {
   BoxDatas: AngularFireList<any>
   BoxData: AngularFireObject<IBoxData>
 
-  constructor(public db: AngularFireDatabase) {
+  constructor(private zone: NgZone, public db: AngularFireDatabase) {
+    this.db.database.ref("/boxData/").on("child_added",(snapshot)=>{
+      var boxData = [];
+      boxData= snapshot.val();
+      console.log(boxData);
+    })
   }
 
   GetAllBoxes(){
@@ -40,9 +45,13 @@ export class BoxService {
     return this.Deliveries
   }
 
-  GetBoxData(id){
-    this.BoxDatas = this.db.list('/box_data/' + id) as AngularFireList<IBoxData>
+  GetSingleBoxData(id){
+    this.BoxDatas = this.db.list('/boxData/' + id) as AngularFireList<IBoxData>
     return this.BoxDatas
+  }
+  
+  GetBoxData(){
+    return this.BoxData = this.db.object('/boxData')
   }
 
   GetSingleBoxOfDelivery(deliveryID: string, boxID){
@@ -64,7 +73,19 @@ export class BoxService {
 
   Key(){
     return firebase.database().ref().push().key;
-  }  
+  }
+
+
+  onUp(){
+    firebase.database().ref("/boxData").on("child_added", (child) => {
+      this.zone.run(() => {
+        var obj = child.val()
+
+        console.log("obj: " + obj)
+        return obj
+      })
+    })
+  }
 
   objectValues(obj){
     return Object.values(obj);

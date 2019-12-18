@@ -1,4 +1,4 @@
 export interface ILocation {
-    Long: number;
-    Lat: number;
+    long: number;
+    lat: number;
 }
