@@ -78,12 +78,13 @@
 
       <mat-card style="width: 45%;
       height: 360px;
-      margin-top: 2%;">
+      margin-top: 2%;" >
         <mat-card-content>
-          <app-map id="md-node1"></app-map>
+          <app-map *ngIf="delivery.boxes" id="md-node1"></app-map>
           <div style="margin-left: 1%; float: right;">
-            <app-dashboard id="md-node1"></app-dashboard>
+            <app-dashboard *ngIf="delivery.boxes" id="md-node1"></app-dashboard>
           </div>
+          <h1 *ngIf="!delivery.boxes">Voeg Box Toe</h1>
         </mat-card-content>
       </mat-card>
     </mat-expansion-panel>

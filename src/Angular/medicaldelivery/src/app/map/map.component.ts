@@ -17,7 +17,7 @@ export class MapComponent implements OnInit {
   onMapReady(map: Map) {
     map.fitBounds(this.route.getBounds(), {
       padding: point(24, 24),
-      maxZoom: 1,
+      maxZoom: 10,
       animate: true
     });
   }

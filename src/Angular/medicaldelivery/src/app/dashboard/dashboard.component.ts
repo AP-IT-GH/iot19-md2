@@ -54,7 +54,7 @@ export class DashboardComponent implements OnInit {
   }
 
   getBoxData(){
-    this.boxSvc.GetSingleBoxData(this.id).valueChanges().subscribe(box => {
+    this.boxSvc.GetSingleBoxData("md-node2").valueChanges().subscribe(box => {
       this.boxDatas = box
 
       this.data = box[box.length - 1]
