@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { icon, latLng,Map, marker, point, polyline, tileLayer, LatLng } from 'leaflet';
+import { icon, latLng,Map, marker, point, polyline, tileLayer, LatLng, map } from 'leaflet';
 import { BoxService } from '../services/box.service';
 import { IBoxData } from '../services/model/IBoxData';
 @Component({
@@ -9,7 +9,7 @@ import { IBoxData } from '../services/model/IBoxData';
 })
 export class MapComponent implements OnInit {
   startPosition = [12, 12]; 
-  endPosition = [0, 0];
+  endPosition = [51.229789, 4.417152];
 
   @Input() id:any;
 
@@ -64,8 +64,8 @@ export class MapComponent implements OnInit {
   // Set the initial set of displayed layers (we could also use the leafletLayers input binding for this)
   options = {
     layers: [ this.streetMaps, this.route, this.Deliveryend ],
-    zoom: 7,
-    center: latLng([ 0, 0 ])
+    zoom: 15,
+    center: latLng([ 51.229789, 4.417152 ])
   };
   
   boxDatas: IBoxData[]
@@ -86,8 +86,9 @@ export class MapComponent implements OnInit {
 
    */
 
-   this.update();
-
+   setInterval(() => {
+      this.update();
+    }, 2000);
   }
 
   UpdateLocation(lat, long){
@@ -102,8 +103,12 @@ export class MapComponent implements OnInit {
 
       this.data = box[box.length - 1]
 
+/*       if(box.length >= 14){
+        this.route = polyline(this.data.Location.Lat, this.data.Location.Long).remove();
+      } */
+      
       this.UpdateLocation(this.data.Location.Lat, this.data.Location.Long)
-
+      
       console.log("lat: " + this.data.Location.Lat)
       console.log("long: " + this.data.Location.Long)
     })

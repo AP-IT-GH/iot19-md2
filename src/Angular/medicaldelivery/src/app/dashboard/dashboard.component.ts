@@ -59,9 +59,12 @@ export class DashboardComponent implements OnInit {
 
       this.data = box[box.length - 1]
 
-      this.gaugeValueTemp =  this.data.Temperature.Value
-      this.gaugeValueHum =  this.data.Humidity.Value
-      this.gaugeValueG =  this.data.PositionOrientation.GForce
+      setInterval(() => {
+        this.gaugeValueTemp =  this.data.Temperature.Value
+        this.gaugeValueHum =  this.data.Humidity.Value
+        this.gaugeValueG =  this.data.PositionOrientation.GForce
+      }, 2000);
+
     })
   }
 }
