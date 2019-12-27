@@ -22,3 +22,6 @@ Via deze [template](testrapport.md) worden alle test geschreven vervolgens moete
 
 ## GPS tests
 - [Test1](gps/gpstest1.md) : NOK
+
+## Integration tests
+- [Test1](integration/integrationtest1): NOK

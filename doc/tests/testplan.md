@@ -42,3 +42,14 @@
     - [] Every 2 secondes
     - [] Data should be printed as: NameSensor: xx.xx unit.
     - [] Add screenshot of timestamp and data
+
+## Testplan integration
+
+- [] Connected Humidity
+- [] Log value
+- [] Connected 9DoF
+- [] Log value
+- [] Connected GPS
+- [] Log value
+- [] Able to serial.print all values
+- [] Connected LoRa Module
