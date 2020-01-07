@@ -49,16 +49,16 @@ All the sensor modules are given power through the MCU board every module has 2 
 
 #### LoRa Module pins
 
-The connection between the MCU and the LoRa is SPI. Therefor the typical SPI pins are used MISO, MOSI, SCK and NSS. The reset pin from the LoRa module is connected with an DIO pin from the MCU so the MCU can reset the LoRa module.
+The connection between the MCU and the LoRa is SPI. Therefore the typical SPI pins are used MISO, MOSI, SCK and NSS. The reset pin from the LoRa module is connected with an DIO pin from the MCU so the MCU can reset the LoRa module. But when using the SAMD21 chips if the legacy SPI pins are not selected you'll have to create your own SPI connection [link to example](). Watch carefully in the datasheet which sercom is what en in the pinmapping of your library if the port is compatible.
 
 > PA12 - DIO0       
 > PA13 - DIO1       
 > PA14 - DIO2           
 > PA20 - RESET LoRa         
 > PA19 - NSS        
-> PA17 - SCK  
-> PA16 - MOSI  
-> PA18 - MISO
+> PA17 - SCK SERCOM1:[1] | ALT SERCOM3:[1]    
+> PA16 - MOSI SERCOM1:[0] | ALT SERCOM3:[0]   
+> PA18 - MISO SERCOM1:[2] | ALT SERCOM3:[2]   
 
 #### GPS Module pins
 
