@@ -14,7 +14,6 @@ export class InformationComponent implements OnInit {
   idbox: any;
 
   Boxdatas: IBoxData[]
-  NodData: boolean = false
   data:any
   boxInfo: IBox
 
@@ -34,9 +33,6 @@ export class InformationComponent implements OnInit {
       this.Boxdatas = box
 
       this.data = box[box.length - 1]
-
-      console.log(this.data)
-
     })  
   }
 

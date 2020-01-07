@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';  
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { MatDialogModule,
          MatFormFieldModule, 
          MatExpansionModule,
          MatGridListModule,
+         MatSnackBarModule,
          MatIconModule } from "@angular/material"
 import { Ng5SliderModule } from 'ng5-slider';
 
@@ -51,6 +53,7 @@ import { InformationComponent } from './pages/information/information.component'
   imports: [
     
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
@@ -65,6 +68,7 @@ import { InformationComponent } from './pages/information/information.component'
     MatExpansionModule,
     MatChipsModule,
     MatListModule,
+    MatSnackBarModule,
     TextFieldModule,
     Ng5SliderModule,
     AngularFireModule.initializeApp(environment.firebase),

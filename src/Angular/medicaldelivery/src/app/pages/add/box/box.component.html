@@ -1,19 +1,26 @@
-<div class = "grid" >
-    <div class="item" *ngFor="let box of boxes">
-        <mat-card class="card">
+<div class="cards" *ngIf="boxes">
+    <mat-card class="card" *ngFor="let box of boxes">
+        <div *ngIf="box">
             <mat-card-header>
                 <mat-card-title> {{box.id}} </mat-card-title>
             </mat-card-header>
-            <mat-card-content>
-                <p>
-                    Content: {{box.content}} <br>
-                    State: {{box.state}} <br>
-                    Humidity_boundaries: Min: {{box.humidity_boundaries.min}}, Max: {{box.humidity_boundaries.max}} <br>
-                    Temperature_boundaries: Min: {{box.temperature_boundaries.min}}, Max: {{box.temperature_boundaries.max}}
-                </p>
-            </mat-card-content>
-        <mat-card-actions>
-            <button mat-raised-button color="primary" (click)="add(box)">ADD</button>
-        </mat-card-actions>
-    </mat-card></div>
+            <div class="text">
+                <mat-card-content>
+                    <p>
+                       Content: {{box.content}} <br>
+                       State: {{box.state}} <br>
+                       Humidity_boundaries: Min: {{box.humidity_boundaries.min}}, Max: {{box.humidity_boundaries.max}} <br>
+                       Temperature_boundaries: Min: {{box.temperature_boundaries.min}}, Max: {{box.temperature_boundaries.max}}
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-raised-button color="primary" (click)="add(box)">ADD</button>
+                </mat-card-actions>
+            </div>
+        </div>
+    </mat-card>
+</div>
+    
+<div style="padding: 1%;">
+    <button mat-raised-button color="primary" routerLink="/home" routerLinkActive="router-link-active">Home</button>
 </div>

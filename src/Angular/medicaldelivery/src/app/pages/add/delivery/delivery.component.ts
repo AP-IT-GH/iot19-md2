@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { BoxService } from 'src/app/services/box.service'
 import { IDelivery } from 'src/app/services/model/IDelivery';
+import {MatSnackBar} from '@angular/material/snack-bar';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-delivery',
@@ -18,8 +20,8 @@ export class DeliveryComponent implements OnInit {
     "Description": null,
     "boxes": null
   }
-
-  constructor(public route: Router, public boxSvc: BoxService) { }
+  
+  constructor(public route: Router, public boxSvc: BoxService, public message: MatSnackBar) { }
 
   ngOnInit() { }
 
@@ -34,6 +36,10 @@ export class DeliveryComponent implements OnInit {
     }
     
     this.boxSvc.AddDelivery(this.delivery);
-    this.route.navigateByUrl("/home")
+    this.message.open("Add box(es)", this.delivery.Transportername,{
+      duration: 2000,
+    });
+
+    this.route.navigate(['/delivery/'+ this.delivery.Id + '/addBox']);
   }
 }

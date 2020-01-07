@@ -5,6 +5,6 @@ export interface IDelivery {
     Description: string;
     EndPoint: string;
     Transportername: string;
-    boxes: string[];
+    boxes: IBox[];
     Id: string;
 }

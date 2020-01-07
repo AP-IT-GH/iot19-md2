@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IBoxData } from '../services/model/IBoxData';
 import { BoxService } from '../services/box.service';
+import { IBox } from '../services/model/IBox';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +10,7 @@ import { BoxService } from '../services/box.service';
 })
 export class DashboardComponent implements OnInit {
 
-  @Input() id:any;
+  @Input() boxId:any;  
 
   EndCap ="round"
   
@@ -44,17 +45,21 @@ export class DashboardComponent implements OnInit {
   gaugeAppendTextG = "G";
 
   boxDatas: IBoxData[]
+  boxData: IBoxData
   data: any;
+
+  box: IBox
 
   constructor(private boxSvc: BoxService) { 
   }
 
   ngOnInit() { 
     this.getBoxData();
+    console.log(this.boxId)
   }
 
   getBoxData(){
-    this.boxSvc.GetSingleBoxData("md-node2").valueChanges().subscribe(box => {
+    this.boxSvc.GetSingleBoxData(this.boxId).valueChanges().subscribe(box => {
       this.boxDatas = box
 
       this.data = box[box.length - 1]
@@ -64,7 +69,6 @@ export class DashboardComponent implements OnInit {
         this.gaugeValueHum =  this.data.Humidity.Value
         this.gaugeValueG =  this.data.PositionOrientation.GForce
       }, 2000);
-
     })
   }
 }

@@ -74,18 +74,6 @@ export class MapComponent implements OnInit {
   constructor(private boxSvc: BoxService) { }
 
   ngOnInit() {
-  /*
-    let i = 0;
-    let j = 0;
-
-    setInterval(() => {
-      this.UpdateLocation(i, j); 
-      i = i + 0.001;
-      j = j + 0.001;
-    }, 2000);
-
-   */
-
    setInterval(() => {
       this.update();
     }, 2000);
@@ -102,15 +90,8 @@ export class MapComponent implements OnInit {
       this.boxDatas = box
 
       this.data = box[box.length - 1]
-
-/*       if(box.length >= 14){
-        this.route = polyline(this.data.Location.Lat, this.data.Location.Long).remove();
-      } */
       
       this.UpdateLocation(this.data.Location.Lat, this.data.Location.Long)
-      
-      console.log("lat: " + this.data.Location.Lat)
-      console.log("long: " + this.data.Location.Long)
     })
   }
 

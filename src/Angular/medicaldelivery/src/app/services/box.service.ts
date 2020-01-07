@@ -22,7 +22,6 @@ export class BoxService {
   BoxData: AngularFireObject<IBoxData>
 
   public data: any
-
   constructor(private zone: NgZone, public db: AngularFireDatabase) {
       firebase.database().ref("/boxData/").on("child_added",(snapshot) =>{
     
@@ -49,13 +48,18 @@ export class BoxService {
   }
   
   GetDeliveryById(id){
-    this.Deliveries = this.db.list('/deliveries/' + id) as AngularFireList<IDelivery>
-    return this.Deliveries
+    this.Delivery = this.db.object('/deliveries/' + id)
+    return this.Delivery
   }
 
   GetSingleBoxData(id){
     this.BoxDatas = this.db.list('/boxData/' + id) as AngularFireList<IBoxData>
     return this.BoxDatas
+  }
+
+  SingleData(id){
+    this.BoxData = this.db.object('/boxData/' + id)
+    return this.BoxData
   }
 
   GetBoxDatas(){
@@ -81,8 +85,12 @@ export class BoxService {
     this.db.object('/deliveries/' + id + "/boxes/" + box.id + '/').set(box)
   }
 
+  DeleteDelivery(deliveryID:string){
+    return this.db.object('/deliveries/' + deliveryID).remove()
+  }
+
   DeleteBoxFromDelivery(deliveryID:string, boxID: IBox){
-    this.db.object('/deliveries/' + deliveryID + '/boxes/' + boxID + '/').remove()
+    return this.db.object('/deliveries/' + deliveryID + '/boxes/' + boxID + '/').remove()
   }
 
   Key(){

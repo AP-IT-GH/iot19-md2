@@ -13,30 +13,34 @@ export class HomeComponent implements OnInit {
 
   boxes: IBox[];
   deliveries: IDelivery[];
+
+  box: any
+
   constructor(
     private boxSvc: BoxService,
     private route: Router
-    ) {
-    }
+    ) { }
 
   
   ngOnInit() {
     this.GetBoxes();
     this.GetDeliveries();
-
   }
 
   GetDeliveries(){
     this.boxSvc.GetAllDeliveries().valueChanges().subscribe(delivery => {
       this.deliveries = delivery;
+      delivery.filter(del => {
+        this.boxSvc.objectValues(del.boxes).forEach(b => {
+          this.box = b
+        });
+      })
     })
   }
 
   GetBoxes(){
     this.boxSvc.GetAllBoxes().valueChanges().subscribe(box=> {
       this.boxes = box;
-
-      console.log(this.boxes)
     })
   }
 
@@ -47,6 +51,11 @@ export class HomeComponent implements OnInit {
 
   GoToInfo(id: string, boxid){
     this.route.navigate(['info/' + id + "/" + boxid])
+  }
+
+  DeleteDelivery(id){
+    this.boxSvc.DeleteDelivery(id)
+    this.GetDeliveries()
   }
 
 }
