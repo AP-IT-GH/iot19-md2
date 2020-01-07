@@ -1,31 +1,84 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';  
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './pages/home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http'; 
+
+import { MatDialogModule,  
+         MatChipsModule, 
+         MatListModule, 
+         MatToolbarModule, 
+         MatInputModule, 
+         MatButtonModule, 
+         MatCardModule, 
+         MatFormFieldModule, 
+         MatExpansionModule,
+         MatGridListModule,
+         MatSnackBarModule,
+         MatIconModule } from "@angular/material"
+import { Ng5SliderModule } from 'ng5-slider';
+
+import {TextFieldModule} from '@angular/cdk/text-field';
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { environment } from '../environments/environment.prod';
+import { DeliveryComponent } from './pages/add/delivery/delivery.component';
+import { BoxComponent } from './pages/add/box/box.component';
 import { MapComponent } from './map/map.component';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { NotificationComponent } from './notification/notification.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DialogComponent } from './dialog/dialog.component';
-import { MatDialogModule, MatButtonModule } from '@angular/material';
-import { FormsModule } from '@angular/forms';
-
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NgxGaugeModule } from 'ngx-gauge';
+import { InformationComponent } from './pages/information/information.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
+    DeliveryComponent,
+    BoxComponent,
     MapComponent,
     NotificationComponent,
-    DialogComponent
+    DialogComponent,
+    DashboardComponent,
+    InformationComponent
   ],
   imports: [
     
     BrowserModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
+    MatButtonModule,
+    MatCardModule,
+    MatIconModule,
+    MatGridListModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatToolbarModule,
+    MatExpansionModule,
+    MatChipsModule,
+    MatListModule,
+    MatSnackBarModule,
+    TextFieldModule,
+    Ng5SliderModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
     FormsModule,
     MatButtonModule,
     MatDialogModule,
+    MatCardModule,
     AppRoutingModule,
+    NgxGaugeModule,
     LeafletModule.forRoot(),
     BrowserAnimationsModule
   ],

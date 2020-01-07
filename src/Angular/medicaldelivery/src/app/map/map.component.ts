@@ -1,16 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import { icon, latLng,Map, marker, point, polyline, tileLayer } from 'leaflet';
+import { Component, OnInit, Input } from '@angular/core';
+import { icon, latLng,Map, marker, point, polyline, tileLayer, LatLng, map } from 'leaflet';
+import { BoxService } from '../services/box.service';
+import { IBoxData } from '../services/model/IBoxData';
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css']
 })
 export class MapComponent implements OnInit {
+  startPosition = [12, 12]; 
+  endPosition = [51.229789, 4.417152];
+
+  @Input() id:any;
+
 // zoom  om je route tussen de bounds te tonen
   onMapReady(map: Map) {
     map.fitBounds(this.route.getBounds(), {
       padding: point(24, 24),
-      maxZoom: 12,
+      maxZoom: 10,
       animate: true
     });
   }
@@ -25,42 +32,21 @@ export class MapComponent implements OnInit {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   });
 
-  // marker voor einde  aan te tonen
-  Deliveryend = marker([ -29.297858, 27.454434 ], {
-    icon: icon({
-      iconSize: [ 25, 41 ],
-      iconAnchor: [ 13, 41 ],
-      iconUrl: 'leaflet/marker-icon.png',
-      shadowUrl: 'leaflet/marker-shadow.png'
-    })
-  });
-
   // marker om het begin aan te tonen
-  deliveryStart = marker([ -29.142768, 26.262815 ], {
+
+
+  // marker voor einde  aan te tonen
+  Deliveryend = marker([ this.endPosition[0], this.endPosition[1] ], {
     icon: icon({
-      iconSize: [ 25, 41 ],
+      iconSize: [ 41, 41 ],
       iconAnchor: [ 13, 41 ],
-      iconUrl: 'leaflet/marker-icon.png',
+      iconUrl: 'assets/delivery-truck.png',
       shadowUrl: 'leaflet/marker-shadow.png'
     })
   });
 
   // Pad arr voor je route uit te stippelen
-  route = polyline([[-29.142768, 26.262815 ],
-    [ -29.134879, 26.271583 ],
-    [ -29.194221, 26.421989],
-    [-29.212130, 26.475675 ],
-    [ -29.277201, 26.580948],
-    [ -29.259529, 26.625816 ],
-    [-29.233107, 26.831753 ],
-    [ -29.246216, 26.951963 ],
-    [-29.202505, 27.129920 ],
-    [ -29.198810, 27.245035],
-    [ -29.220116, 27.295332],
-    [ -29.237525, 27.339296],
-    [-29.255026, 27.379141 ],
-    [ -29.284071, 27.406363 ],
-    [ -29.297858, 27.454434 ]]);
+  route = polyline([]);
 
   // Layers control object met basislayers en overlay layers
   layersControl = {
@@ -70,7 +56,6 @@ export class MapComponent implements OnInit {
     },
     overlays: {
       'Deliveryend': this.Deliveryend,
-      'deliveryStart': this.deliveryStart,
       'route': this.route
     }
   };
@@ -78,14 +63,36 @@ export class MapComponent implements OnInit {
 
   // Set the initial set of displayed layers (we could also use the leafletLayers input binding for this)
   options = {
-    layers: [ this.streetMaps, this.route, this.Deliveryend, this.deliveryStart ],
-    zoom: 7,
-    center: latLng([ 46.879966, -121.726909 ])
+    layers: [ this.streetMaps, this.route, this.Deliveryend ],
+    zoom: 15,
+    center: latLng([ 51.229789, 4.417152 ])
   };
+  
+  boxDatas: IBoxData[]
+  data: any;
 
-  constructor() { }
+  constructor(private boxSvc: BoxService) { }
 
   ngOnInit() {
+   setInterval(() => {
+      this.update();
+    }, 2000);
+  }
+
+  UpdateLocation(lat, long){
+    if(lat == 0 && long == 0) return;
+    this.route.addLatLng([lat, long]);
+    this.Deliveryend.setLatLng([lat, long]);
+  }
+
+  update(){
+    this.boxSvc.GetSingleBoxData(this.id).valueChanges().subscribe(box => {
+      this.boxDatas = box
+
+      this.data = box[box.length - 1]
+      
+      this.UpdateLocation(this.data.Location.Lat, this.data.Location.Long)
+    })
   }
 
 }

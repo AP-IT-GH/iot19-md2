@@ -1,0 +1,111 @@
+<div class="toolbar" role="banner">
+    <p class="title"> Medical Delivery</p>
+    <button mat-button  routerLink="/delivery"  class="addTransporter" role="main" >  
+      Add Transporter <mat-icon class="icon">add_circle</mat-icon>
+   </button>
+</div>
+
+<div style="margin: 2%;" *ngIf="deliveries">
+  <mat-accordion style="padding: 5px;" *ngFor="let delivery of deliveries">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <mat-list>
+            Transporter Info
+          </mat-list>
+        </mat-panel-title>
+        <mat-panel-description>
+          <mat-list>
+            Transporter: {{delivery.Transportername}}
+          </mat-list>
+        </mat-panel-description>
+        <mat-panel-description>
+          <mat-list *ngIf="delivery.boxes">
+            Boxes {{boxSvc.objectValues(delivery.boxes).length}} <img src="assets/aid.png" width="15px" height="15px" alt="">
+          </mat-list>
+          <mat-list *ngIf="!delivery.boxes">
+            Boxes 0 <img src="assets/aid.png" width="15px" height="15px" alt="">
+          </mat-list>
+        </mat-panel-description>
+      </mat-expansion-panel-header>  
+      <mat-card style="height: 35px;">
+        <mat-chip-list style="float: right;">
+          <mat-chip style="float: right;" (click)="DeleteDelivery(delivery.Id)" color="warn" style="cursor: pointer;" selected>Delete Transporter</mat-chip>
+          <mat-chip style="float: right;" (click)="GoToSingleDelivery(delivery.Id)" color="primary" style="cursor: pointer;" selected>Add new Box to {{delivery.Transportername}}</mat-chip>
+        </mat-chip-list>
+        <div class="divOuter">
+          <div class="div1">
+            <h4 mat-line>From</h4>
+            <p mat-line style="margin-top: -25px;"> {{delivery.BeginPoint}} </p>
+          </div>
+          <div class="div2">
+            <img src="assets/delivery-truck.png" width="50px" height="50px">
+          </div>
+          <div class="div3">
+            <h4 mat-line>To</h4>
+            <p mat-line style="margin-top: -25px;"> {{delivery.EndPoint}} </p>
+          </div>
+        </div>
+      </mat-card>
+      <div class="example-card">
+
+        <mat-card style="height: 200px; overflow-y: scroll;">
+          <mat-card-header>
+            <mat-card-title>
+              Boxes
+            </mat-card-title>
+          </mat-card-header>
+
+          <div class="grid" *ngIf="delivery.boxes" >
+            <div class="item" *ngFor="let box of boxSvc.objectValues(delivery.boxes)">
+              <mat-card style="width: 230px; border: 2px solid;" [ngStyle]="{'border-color': box.state ? 'green' : 'red'}" >
+                <button (click)="GoToInfo(delivery.Id, box.id)" style="float: right; margin-top: -7px;" mat-raised-button color="primary">Info</button>
+                <mat-card-header style="text-align: left; margin-right: 50px; margin: -15px; margin-top: 0px;">
+                  <mat-card-title style="margin-left: -20%;">
+                    <img src="assets/aid.png" style=" vertical-align:middle;"  width="25px" height="25px" alt="">
+                    {{box.id}}
+                  </mat-card-title>
+                </mat-card-header>
+              </mat-card>
+            </div>
+          </div> 
+            
+          <div class="noBox">
+            <h1 *ngIf="!delivery.boxes">Add Box</h1>
+          </div>
+        </mat-card> 
+
+        <mat-card style="
+          width: 96%;
+          height: 110%;
+          margin-top: 2%;">
+          <mat-list-item role="listitem">
+            <mat-card-header>
+              <mat-card-title>Description</mat-card-title>
+              <mat-card-subtitle *ngIf="delivery.boxes"> {{delivery.Description}} </mat-card-subtitle>
+            </mat-card-header>              
+          </mat-list-item>  
+          <mat-card-content *ngIf="!delivery.boxes|| !delivery.Description">        
+            <div class="noDescrp">
+              <h1 *ngIf="!delivery.boxes || !delivery.Description">No Description available</h1>
+            </div>
+          </mat-card-content>  
+        </mat-card>  
+      </div>
+
+      <mat-card style="width: 45%;
+      height: 360px;
+      margin-top: 2%;" >
+        <mat-card-content>
+          <app-map *ngIf="delivery.boxes" [id]="box.id" ></app-map>
+          <div style="margin-left: 1%; float: right;">
+            <app-dashboard *ngIf="delivery.boxes" [boxId]="box.id"></app-dashboard>
+          </div>
+          <div class="noDash">
+            <h1 *ngIf="!delivery.boxes">Add Box to make dashboard visible</h1>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

@@ -20,7 +20,7 @@ export class NotificationComponent implements OnInit {
     }
 
     showDialog(){
-      const dialogRef = this.dialog.open(DialogComponent, {
+      const dialogRef = this.dialog.open(DialogComponent,{
         width: '450px',
         height: '200px'
       }); 

@@ -1,0 +1,26 @@
+<div class="example-container">
+    <mat-form-field style="margin-top: 5%;" appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="delivery.Transportername" >
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline">
+        <mat-label>Begin</mat-label>
+        <input matInput type="text" [(ngModel)]="delivery.BeginPoint" placeholder="Start hospital">
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline">
+        <mat-label>Destination</mat-label>
+        <input matInput type="text" [(ngModel)]="delivery.EndPoint" placeholder="End hospital">
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline">
+        <mat-label>Description</mat-label>
+        <textarea matInput [(ngModel)]="delivery.Description"></textarea>
+    </mat-form-field>
+    
+    <div padding>
+        <button mat-raised-button color="primary" class="back" routerLink="/home" routerLinkActive="router-link-active" >Back</button>
+        <button mat-raised-button color="primary" class="add" (click)="Add()">Add</button>
+    </div>
+</div>

@@ -1,12 +1,16 @@
+/* #container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+ */
+.example-card {
+  width: 45%;
+  height: 50%;
+  margin-top: 2%;
+}
 
-.map {
-    height: 100%;
-    padding: 0;
-  }
-  
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
+.example-header-image {
+  margin-right: -20px;
+}

@@ -1,0 +1,20 @@
+::ng-deep .example-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+  
+.example-container > * {
+    width: 80%;
+}
+
+.back{
+    margin-right: 5px;  
+    background-color:black;
+}
+
+.add{
+    background-color:gray;
+}
